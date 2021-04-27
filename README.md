@@ -33,9 +33,9 @@ Ce projet représente plus de 5h de travail a nous deux
 
 ## Languages et Framework utilisé pour ce site
 
-### HTML 5
-### SCSS
-### Javascript
+### - HTML 5
+### - SCSS
+### - Javascript
   -> React, Vue
-### php
+### - php
 
