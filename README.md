@@ -33,7 +33,7 @@ Ce projet représente plus de 5h de travail a nous deux
 
 ## Languages et Framework utilisé pour ce site
 
-### ```diff
+```diff
 - HTML 5
 ```
 ### SCSS
