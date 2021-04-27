@@ -7,20 +7,27 @@ Pour telecharger notre projet vous devez simplement cliquer sur le bouton vert '
 
 Apres ca un dossier zip vas se telecharger et vous n'aurez plus qu'a cliquer sur le ficher 'index.html' 
 
-## Usage
+## Pourquoi ?
 
-```python
-import foobar
+Avec Louis nous avons longement chercher quel sujet choisir pour remplir le contenu de notre site. Puis nous avon smis en commun nos loisirs/hobbys et nous nous sommes tous les deux rendu compte que nous avions une passion pour la musique mais nous aimions aussi tous les deux les vidéos de skate bien tourné.
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+Nous avions remarquer auparavant que aucun site de skate n'était bien bien organisé et vraiment agréable a regarder. 
+
+C'est pourquoi nous avons voulous rassembler ces éléments sur un site avec une bonne ergonomie utilisant des technologies modernes.
+
+## Connaissance
+
+Durant la création de ce projet, nous avons du apprendre et prendre en mains de nouvelles technologies tel que le Vue.js ou encore React.js qui sont des frameworks en pleine expension dans le monde du developpement.
+
+Voici un script réaliser en Vue js afin de créer un effet de ...
+```javascript
+function woaw () {
+  print("Hello World")
+}
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## Contribution
+Tout au long de ce projet nous avons su nous repartir les taches. Louis s'occuper du contenu des pages et de l'agencement ainsi qu'une petite partie du code et Nesta c'est occupé de faire la grosse partie du code.
 
-Please make sure to update tests as appropriate.
+Ce projet représente plus de 5h de travail a nous deux
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
