@@ -33,9 +33,9 @@ Ce projet représente plus de 5h de travail a nous deux
 
 ## Languages et Framework utilisé pour ce site
 
-
 HTML 5
-SCSS
+CSS 3
+  -> Media queries pour la gestion de la resolution et animation pour rendre le site dynamique
 Javascript
   -> React, Vue
 php
