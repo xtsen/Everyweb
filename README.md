@@ -36,7 +36,6 @@ Ce projet représente plus de 5h de travail a nous deux
 ### HTML 5
 ### SCSS
 ### Javascript
-  -> React
-  -> Vue
+  -> React, Vue
 ### php
 
