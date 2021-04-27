@@ -33,9 +33,8 @@ Ce projet représente plus de 5h de travail a nous deux
 
 ## Languages et Framework utilisé pour ce site
 
-```diff
-- HTML 5
-```
+
+<span style="color: green"> HTML 5 </span>
 ### SCSS
 ### Javascript
   -> React, Vue
