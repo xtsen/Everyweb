@@ -1,14 +1,11 @@
 # Projet de fin d'année NSI
-
-Foobar is a Python library for dealing with word pluralization.
+Nous avons choisi de faire un site avec Louis regroupant nos deux hobby : les videos et clip de sakte et bien sur la bonne musique
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Pour telecharger notre projet vous devez simplement cliquer sur le bouton vert 'code' 
 
-```bash
-pip install foobar
-```
+Apres ca un dossier zip vas se telecharger et vous n'aurez plus qu'a cliquer sur le ficher 'index.html' 
 
 ## Usage
 
