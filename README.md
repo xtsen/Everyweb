@@ -29,7 +29,7 @@ function woaw () {
 ## Contribution
 Tout au long de ce projet nous avons su nous repartir les taches. Louis s'occuper du contenu des pages et de l'agencement ainsi qu'une petite partie du code et Nesta c'est occupé de faire la grosse partie du code.
 
-Ce projet représente plus de 5h de travail a nous deux
+Ce projet représente plus de 10h de travail a nous deux
 
 ## Languages et Framework utilisé pour ce site
 

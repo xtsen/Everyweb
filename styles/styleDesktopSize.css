@@ -7,29 +7,7 @@ html {
 }
 /* HeroHeader */
 .imgBody {
-    position: absolute; 
     width: 100%;
     left: calc(50% - 1440px/2);
     top: 0px;
-}
-
-.heroTitle {
-    position: absolute; 
-    left: 3%;
-    top: 50%;
-
-    font-style: italic;
-    font-weight: bold;
-    font-size: 48px;
-}
-
-.heroSubTitle {
-    position: absolute; 
-    width: 451px;
-    left: 10%;
-    top: 70%;
-
-    font-style: italic;
-    font-weight: 500;
-    font-size: 36px;
 }
