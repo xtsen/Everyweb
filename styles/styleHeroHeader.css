@@ -29,4 +29,5 @@ html {
     80%{background-image: url("../src/skate5.jpeg");}
     90%{background-image: url("../src/skate5.jpeg");}
     100%{background-image: url("../src/skate1.jpeg");}
+    /* l'image du 100% et du 0% doivent etre identique */
 }
