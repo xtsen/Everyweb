@@ -9,7 +9,8 @@ ul {
     text-align: center;
 }
 li.elementNav { 
-    display: table-cell;
+    display: table-cell; 
+    position: relative; 
     font-family: Roboto;
     font-style: italic;
     font-size: 1.5em;
@@ -19,11 +20,16 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
+
+    position: relative;
 }
 a:after {    
     background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
     height: 2px;
     left: 50%;
+    position: absolute;
     background: #fff;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
