@@ -6,22 +6,18 @@ html {
     background-color: #222222;
 }
 /* HeroHeader */
-.slides{
-    width: 100%;
-    left: calc(50% - 1440px/2);
-    height: 2%;
-}
 .slide{
+    /* les images doivent absolument avoir une resolution de 1200x600 */
     max-width: 100%;
-    margin: 0 auto;
     padding-top: 75%;
-    
+
     background-repeat: no-repeat;
     background-size: contain;
 
     animation: fondu 30s ease-in-out infinite both;
 }
-@keyframes fondu{
+@keyframes fondu {
+    /* par la suite transformer ces liens par des liens imgur pour eviter le telechargement trop long des ressources */
     0%{background-image: url("../src/skate1.jpeg");}
     10%{background-image: url("../src/skate1.jpeg");}
     20%{background-image: url("../src/skate2.jpeg");}
