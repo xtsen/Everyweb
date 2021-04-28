@@ -3,14 +3,11 @@ body {
 }
 nav {
     margin-top: 2%;
-    height: 10%;
 }
 ul {
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
-    padding: 0; 
-    list-style: none; 
+    width: 50%;
     display: table;
     text-align: center;
 }
@@ -18,12 +15,11 @@ li.elementNav {
     list-style-type: none;
     font-family: Roboto;
     font-style: italic;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 li { 
     display: table-cell; 
     position: relative; 
-    padding: 15px 0;
 }
 a {
     color: #fff;
@@ -32,7 +28,6 @@ a {
     letter-spacing: 0.15em;
     
     display: inline-block;
-    padding: 15px 20px;
     position: relative;
 }
 a:after {    

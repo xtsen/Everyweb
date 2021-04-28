@@ -1,0 +1,36 @@
+html {
+    font-family: Roboto;
+    color: #ffffff;
+}
+*::selection {
+    background-color: #222222;
+}
+/* HeroHeader */
+.slides{
+    width: 100%;
+    left: calc(50% - 1440px/2);
+    height: 2%;
+}
+.slide{
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 75%;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    animation: fondu 30s ease-in-out infinite both;
+}
+@keyframes fondu{
+    0%{background-image: url("../src/skate1.jpeg");}
+    10%{background-image: url("../src/skate1.jpeg");}
+    20%{background-image: url("../src/skate2.jpeg");}
+    30%{background-image: url("../src/skate2.jpeg");}
+    40%{background-image: url("../src/skate3.jpeg");}
+    50%{background-image: url("../src/skate3.jpeg");}
+    60%{background-image: url("../src/skate4.jpeg");}
+    70%{background-image: url("../src/skate4.jpeg");}
+    80%{background-image: url("../src/skate5.jpeg");}
+    90%{background-image: url("../src/skate5.jpeg");}
+    100%{background-image: url("../src/skate1.jpeg");}
+}
