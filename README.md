@@ -80,6 +80,22 @@ a:after {
 }
 ```
 
+### Les frameworks
+
+Nous avons aussi pris en mains certains frameworks utiles mais nous n'avons gardé seulement le framework qui nous était le plus utile (par un soucis de poid) (ajax).
+Le framework ajax nous a permis de créer une animation "smooth scroll" vers le haut lorsqu'on appui sur le logo.
+voici la fonction pour cette animation.
+```javascript
+$(document).ready(function() {
+    $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+        var page = $(this).attr('href'); // Page cible
+        var speed = 600; // Durée de l'animation (en ms)
+        $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+        return false;
+    });
+});
+```
+
 ## Contribution
 Tout au long de ce projet nous avons su nous repartir les taches. Louis s'occuper du contenu des pages et de l'agencement ainsi qu'une petite partie du code et Nesta c'est occupé de faire la grosse partie du code.
 
