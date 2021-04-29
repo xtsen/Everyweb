@@ -2,10 +2,10 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Accueil</title>
 
         <!-- Différentes sylesheet -->
+        <link rel="stylesheet" href="styles/styleGlobal.css">
         <link rel="stylesheet" href="styles/styleHeroHeader.css">
         <link rel="stylesheet" href="styles/styleNavBar.css">
         <link rel="stylesheet" href="styles/styleSkatePart.css">
@@ -114,7 +114,11 @@
                 <p class="titlePlaylistPart">nos playlists pour vous !</p>
                 <p class="descriptionPlaylistPart">Avec nous ne ratez jamais une occasion de sortir une playlist parfaite pour pour le moment. Et surtour impressionnez vos amis avec de super gouts musicaux !</p>
                 <p class="titleSectionPlaylist">Les coups de coeur de Nesta</p>
+                
+                <!-- playlist Deezer Iframe -->
                 <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/playlist/3999675522" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                
+                <!-- Tableau des playlists -->
                 <div class="gridPlaylist">
                     <a class="PlaylistIcon" href="https://deezer.page.link/bCaPbx7pebetNeGL6">
                         <img class="icon" src="src/playlist.png" alt="icone Playlist">
@@ -150,6 +154,8 @@
                     </a>
                 </div>
             </div>
+
+            <!-- Le scripts js -->
         <script type="text/javascript" src="scripts/scriptIndex.js"></script>
     </body>
 </html>

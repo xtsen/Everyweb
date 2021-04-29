@@ -1,10 +1,4 @@
-html {
-    font-family: Roboto;
-    color: #ffffff;
-}
-*::selection {
-    background-color: #222222;
-}
+
 /* HeroHeader */
 .slide{
     /* les images doivent absolument avoir une resolution de 1200x600 */
