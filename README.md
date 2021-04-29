@@ -1,7 +1,7 @@
 # Projet de fin d'année NSI
 Nous avons choisi de faire un site avec Louis regroupant nos deux hobby : les videos et clip de sakte et bien sur la bonne musique
 
-### Le lien pour aller sur le site : https://xtsen.github.io/skate-in-peace/
+### Le lien pour aller sur le site : https://xtsen.github.io/Skate-in-peace/
 
 ## Installation
 
