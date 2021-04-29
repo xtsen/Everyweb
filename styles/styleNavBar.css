@@ -12,7 +12,7 @@ li.elementNav {
     font-style: italic;
     font-size: 1.5em;
 }
-a {
+li.elementNav a {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -20,7 +20,7 @@ a {
 
     position: relative;
 }
-a:after {    
+li.elementNav a:after {    
     background: none repeat scroll 0 0 transparent;
     content: "";
     display: block;
@@ -31,7 +31,7 @@ a:after {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
-a:hover:after { 
+li.elementNav a:hover:after { 
     width: 100%; 
     left: 0; 
 }
