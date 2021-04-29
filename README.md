@@ -101,7 +101,7 @@ $(document).ready(function() {
 ## Contribution
 Tout au long de ce projet nous avons su nous repartir les taches. Louis s'occuper du contenu des pages et de l'agencement ainsi qu'une petite partie du code et Nesta c'est occupé de faire la grosse partie du code.
 
-Ce projet représente plus de 50h de travail a nous deux
+Ce projet représente plus de 30h de travail a nous deux
 
 ## Languages utilisés pour ce site
 
