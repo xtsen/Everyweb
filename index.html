@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Skate in peace</title>
+        <link rel="shortcut icon" type="image/png" href="src/logo.png"/>
 
         <!-- Différentes sylesheet -->
         <link rel="stylesheet" href="styles/styleGlobal.css">
@@ -16,6 +17,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
     </head>
     <body>
+        <a href="html" class="js-scrollTo">
+            <img src="src/logo.png" class="logoInnerPage">
+        </a>
+            
             <!-- Nav bar -->
             <nav>
                 <ul>
@@ -113,10 +118,10 @@
             <div id="MusicMarker">
                 <p class="titlePlaylistPart">nos playlists pour vous !</p>
                 <p class="descriptionPlaylistPart">Avec nous ne ratez jamais une occasion de sortir une playlist parfaite pour pour le moment. Et surtour impressionnez vos amis avec de super gouts musicaux !</p>
-                <p class="titleSectionPlaylist">Les coups de coeur de Nesta</p>
+                <p class="titleSectionPlaylist">Une dinguerie</p>
                 
                 <!-- playlist Deezer Iframe -->
-                <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/playlist/3999675522" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/226285612" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
                 
                 <!-- Tableau des playlists -->
                 <div class="gridPlaylist">
@@ -159,7 +164,18 @@
                 <p>&copy; 2021 Skate in peace de Louis et Nesta le lien vers le github : <a href="https://github.com/xtsen/NSI-project">https://github.com/xtsen/NSI-project</a></p>
             </footer>
 
-            <!-- Le scripts js -->
+            <!-- Les scripts js -->
         <script type="text/javascript" src="scripts/scriptIndex.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                    var page = $(this).attr('href'); // Page cible
+                    var speed = 600; // Durée de l'animation (en ms)
+                    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                    return false;
+                });
+            });
+        </script>
     </body>
 </html>
