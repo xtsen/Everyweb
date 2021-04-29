@@ -1,7 +1,7 @@
 # Projet de fin d'année NSI
 Nous avons choisi de faire un site avec Louis regroupant nos deux hobby : les videos et clip de sakte et bien sur la bonne musique
 
-### Le lien pour aller sur le site : https://xtsen.github.io/NSI-project/
+### Le lien pour aller sur le site : https://xtsen.github.io/skate-in-peace/
 
 ## Installation
 
@@ -21,9 +21,10 @@ C'est pourquoi nous avons voulous rassembler ces éléments sur un site avec une
 
 ## Connaissance
 
-Durant la création de ce projet, nous avons du apprendre et prendre en mains de nouvelles technologies tel que le Vue.js ou encore React.js qui sont des frameworks en pleine expension dans le monde du developpement.
+Durant la création de ce projet, nous avons du apprendre et prendre en mains de nouvelles technologies tel que le Vue.js ou encore React.js qui sont des frameworks en pleine expension dans le monde du developpement mais pour les utiliser il faut importer des librairies et il faut donc que le rapport poid/utilité soit bon.
 
-Voici un script réaliser en Vue js afin de s'adapter au scroll de l'utilisateur.
+### Aniamtion javascript
+Voici un script réaliser en javascript afin de montrer un élément au scroll de l'utilisateur et donc créer un effet dynamique.
 ```javascript
 window.onscroll = function() {SideSlideImage()};
 
@@ -37,8 +38,9 @@ function SideSlideImage(id) {
     }
 }
 ```
+### Animations css
 
-Mais nous avons aussi decouvert des effet en CSS qui nous ont été très utile comme celui ci dessous qui permet de garder la video ouverte meme au scroll et au dessus de tous les autres éléments
+Nous avons aussi decouvert des effet en CSS qui nous ont été très utile comme celui ci dessous qui permet de garder la video ouverte meme au scroll et au dessus de tous les autres éléments
 
 ```css
 .clip {
@@ -55,7 +57,7 @@ Mais nous avons aussi decouvert des effet en CSS qui nous ont été très utile 
     background-color: rgba(0,0,0,0.4);
 }
 ```
-Nous avons aussi compris l'importance de commenter sonn code afin que l'autre puisse comprendre quel élément correspond à quel animation ou script js.
+Nous avons également compris l'importance de commenter sonn code afin que l'autre puisse comprendre quel élément correspond à quel animation ou script js.
 
 Une animation que nous n'avons rajouter qu'après c'est la ligne qui apparait en dessous de la rubrique dans la barre de navigation
 ```css
@@ -106,5 +108,4 @@ Ce projet représente plus de 50h de travail a nous deux
 ### HTML 5
 ### CSS 3
 ### Javascript
-### php
 
