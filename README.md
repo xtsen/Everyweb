@@ -9,11 +9,13 @@ Apres ca un dossier zip vas se telecharger et vous n'aurez plus qu'a cliquer sur
 
 ## Pourquoi ?
 
-Avec Louis nous avons longement chercher quel sujet choisir pour remplir le contenu de notre site. Puis nous avon smis en commun nos loisirs/hobbys et nous nous sommes tous les deux rendu compte que nous avions une passion pour la musique mais nous aimions aussi tous les deux les vidéos de skate bien tourné.
+Avec Louis nous avons longuement cherché quel sujet choisir pour remplir le contenu de notre site. Puis nous avon mis en commun nos loisirs/hobbys et nous nous sommes tous les deux rendu compte que nous avions une passion pour la musique mais nous aimions aussi tous les deux les vidéos de skate bien tourné.
 
+### Quel interet pour l'utilisateur ?
 Nous avions remarquer auparavant que aucun site de skate n'était bien bien organisé et vraiment agréable a regarder. 
+En plus de cela, très souvent, le site est un peut trop surchargé d'article en tout genre et donc fatiguant pour les yeux.
 
-C'est pourquoi nous avons voulous rassembler ces éléments sur un site avec une bonne ergonomie utilisant des technologies modernes.
+C'est pourquoi nous avons voulous rassembler ces éléments sur un site avec une bonne ergonomie utilisant des technologies modernes et dynamique afin de proposer du contenu sans que cela ne soit ennuyant pour l'utilisateur.
 
 ## Connaissance
 
@@ -81,7 +83,7 @@ Tout au long de ce projet nous avons su nous repartir les taches. Louis s'occupe
 
 Ce projet représente plus de 30h de travail a nous deux
 
-## Languages et Framework utilisé pour ce site
+## Languages utilisés pour ce site
 
 ### HTML 5
 ### CSS 3
