@@ -109,3 +109,14 @@ Ce projet représente plus de 50h de travail a nous deux
 ### CSS 3
 ### Javascript
 
+## Fonctionnalitées
+
+### Si vous placez votre souris au dessus d'un des trois mots en haut de la page une ligne apparait en dessous du mot en commencant par le milieu
+### Cliquer sur "Skate" vous emmène directement vers la rubrique "skate"
+### Cliquer sur "Playlist" vous emmène directement vers la rubrique "Playlist"
+### Cliquer sur "A propos" vous emmène vers la page about.html
+### Toutes les 4 secondes l'image du header change
+### Si vous scrollez jusqu'a 720pixels, un paragraphe parlant de notre rubrique skate va arriver du bas et apparaitre petit à petit
+### Cliquer sur un des icones "playlist" en bas de la page vous redirige avec un lien deezer vers la playlist qui correspond
+### Si vous cliquez sur le lien vers le github en bas de la page vous serez redirigé vers cette page
+### Si vous cliquez sur le logo en bas à droite vous serez emmené en haut de la page
