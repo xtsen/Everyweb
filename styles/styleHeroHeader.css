@@ -9,7 +9,7 @@ html {
 .slide{
     /* les images doivent absolument avoir une resolution de 1200x600 */
     max-width: 100%;
-    padding-top: 75%;
+    padding-top: 55%;
 
     background-repeat: no-repeat;
     background-size: contain;

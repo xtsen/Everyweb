@@ -9,37 +9,106 @@
         <link rel="stylesheet" href="styles/styleHeroHeader.css">
         <link rel="stylesheet" href="styles/styleNavBar.css">
         <link rel="stylesheet" href="styles/styleSkatePart.css">
-        
+        <link rel="stylesheet" href="styles/styleGallerie.scss">
 
         <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- Nav bar -->
-        <nav>
-            <ul>
-                <li class="elementNav"><a href="index#SkateMarker" class="linkNavbar">Skate</a></li>
-                <li class="elementNav"><a href="index.html#MusicMarker" class="linkNavbar">Playlist</a></li>
-                <li class="elementNav"><a href="about.html" class="linkNavbar">A propos</a></li>
-            </ul>
-        </nav>
-        
-        <!-- diapo -->
-        <div class="slides">
-            <div class="slide"></div>
-        </div>
+            <!-- Nav bar -->
+            <nav>
+                <ul>
+                    <li class="elementNav"><a href="#SkateMarker" class="linkNavbar">Skate</a></li>
+                    <li class="elementNav"><a href="#MusicMarker" class="linkNavbar">Playlist</a></li>
+                    <li class="elementNav"><a href="about.html" class="linkNavbar">A propos</a></li>
+                </ul>
+            </nav>
+            
+            <!-- diapo -->
+            <div class="slides">
+                <div class="slide"></div>
+            </div>
 
-        <!-- Page2 -> Skate Marker -->
-        <div id="SkateMarker">
+            <!-- Page2 -> Skate Marker -->
+            <div id="SkateMarker">
 
-        </div>
+                <!-- image grid -->
+                
+                <div class="grid">
+                    <img src="src/skate1.jpeg" class="grid-element"  onclick="videoExpend('clip1')" id="myBtn">
+                    <img src="src/skate2.jpeg" class="grid-element"  onclick="videoExpend('clip2')" id="myBtn">
+                    <img src="src/skate3.jpeg" class="grid-element"  onclick="videoExpend('clip3')" id="myBtn">
+                    <img src="src/skate4.jpeg" class="grid-element"  onclick="videoExpend('clip4')" id="myBtn">
+                    <img src="src/skate5.jpeg" class="grid-element"  onclick="videoExpend('clip5')" id="myBtn">
+                    <img src="src/skate1.jpeg" class="grid-element"  onclick="videoExpend('clip6')" id="myBtn">
+                    <img src="src/skate2.jpeg" class="grid-element"  onclick="videoExpend('clip7')" id="myBtn">
+                </div>
 
-        <!-- Page3 -> Music Marker -->
-        <div id="MusicMarker">
+                <!-- Vidéo 1 -->
+                <div id="clip1" class="clip">
+                    <div class="clip-content">
+                        <span class="close" onclick="videoClose('clip1', 'video1')">×</span>
+                        <video controls=true autoplay class="video" id="video1" src="https://outils-javascript.aliasdmc.fr/img/videos/mov_bbb.mp4">
+                    </div>
+                </div>
+                <!-- Vidéo 2 -->
+                
 
-        </div>
+                <div id="clip2" class="clip">
+                    <div class="clip-content">
+                        <span class="close" onclick="videoClose('clip2', 'video2')">×</span>
+                        <video controls=true autoplay class="video" id="video2" src="https://outils-javascript.aliasdmc.fr/img/videos/mov_bbb.mp4">
+                    </div>
+                </div>
+                <!-- Vidéo 3 -->
+                
 
+                <div id="clip3" class="clip">
+                    <div class="clip-content">
+                        <span class="close" onclick="videoClose('clip3', 'video3')">×</span>
+                        <video controls=true autoplay class="video" id="video3" src="https://outils-javascript.aliasdmc.fr/img/videos/mov_bbb.mp4">
+                    </div>
+                </div>
+                <!-- Vidéo 4 --> 
+
+                <div id="clip4" class="clip">
+                    <div class="clip-content">
+                        <span class="close" onclick="videoClose('clip4', 'video4')">×</span>
+                        <video controls=true autoplay class="video" id="video4" src="https://outils-javascript.aliasdmc.fr/img/videos/mov_bbb.mp4">
+                    </div>
+                </div>
+                <!-- Vidéo 5 --> 
+
+                <div id="clip5" class="clip">
+                    <div class="clip-content">
+                        <span class="close" onclick="videoClose('clip5', 'video5')">×</span>
+                        <video controls=true autoplay class="video" id="video5" src="https://outils-javascript.aliasdmc.fr/img/videos/mov_bbb.mp4">
+                    </div>
+                </div>
+                <!-- Vidéo 6 --> 
+
+                <div id="clip6" class="clip">
+                    <div class="clip-content">
+                        <span class="close" onclick="videoClose('clip6', 'video6')">×</span>
+                        <video controls=true autoplay class="video" id="video6" src="https://outils-javascript.aliasdmc.fr/img/videos/mov_bbb.mp4">
+                    </div>
+                </div>
+                <!-- Vidéo 7 --> 
+
+                <div id="clip7" class="clip">
+                    <div class="clip-content">
+                        <span class="close" onclick="videoClose('clip7', 'video7')">×</span>
+                        <video controls=true autoplay class="video" id="video7" src="https://outils-javascript.aliasdmc.fr/img/videos/mov_bbb.mp4">
+                    </div>
+                </div>
+
+            </div>
+
+                    <!-- Page3 -> Music Marker -->
+            <div id="MusicMarker">
+
+            </div>
         <script type="text/javascript" src="scripts/scriptIndex.js"></script>
     </body>
 </html>
