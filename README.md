@@ -21,8 +21,15 @@ Durant la création de ce projet, nous avons du apprendre et prendre en mains de
 
 Voici un script réaliser en Vue js afin de créer un effet de ...
 ```javascript
-function woaw () {
-  print("Hello World")
+function SideSlideImage(id) {
+    // 
+    if (document.documentElement.scrollTop > 700 && document.documentElement.scrollTop < 2400) {
+        document.getElementById("sideSlide").className = "sideSkateDescription";
+    }else if (document.body.scrollTop < 700 || document.documentElement.scrollTop < 700) {
+        document.getElementById("sideSlide").className = "hiddenSideSlide";
+    }else if (document.body.scrollTop > 2400 || document.documentElement.scrollTop > 2400) {
+        document.getElementById("sideSlide").className = "hiddenSideSlide";
+    }
 }
 ```
 
