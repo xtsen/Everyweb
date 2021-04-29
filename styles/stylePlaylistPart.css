@@ -2,7 +2,34 @@
     font-family: Roboto;
     text-transform: uppercase;
     font-size: 2.5em;
+    font-style: italic;
     font-weight: 500;
     margin-top: 5%;
     width: 100%;
+}
+.descriptionPlaylistPart {
+    font-family: Roboto;
+    font-size: 2em;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+}
+.gridPlaylist {
+    margin-left: 12%;
+    display: grid;
+    width: 80%;
+    grid-template-columns: auto auto auto auto;
+}
+.PlaylistIcon {
+    margin-top: 15%;
+    width: 80%;
+}
+.icon {
+    margin-left: 24%;
+    width: 50%;
+}
+.titlePlaylist {
+    width: 100%;
+    font-size: 150%;
+    text-align: center;
 }
