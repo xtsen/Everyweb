@@ -13,3 +13,16 @@ function videoClose(idSpan, idVideo) {
     video.pause();
     video.currentTime = 0;
 }
+
+window.onscroll = function() {SideSlideImage()};
+
+function SideSlideImage(id) {
+    // 
+    if (document.documentElement.scrollTop > 700 && document.documentElement.scrollTop < 2400) {
+        document.getElementById("sideSlide").className = "sideSkateDescription";
+    }else if (document.body.scrollTop < 700 || document.documentElement.scrollTop < 700) {
+        document.getElementById("sideSlide").className = "hiddenSideSlide";
+    }else if (document.body.scrollTop > 2400 || document.documentElement.scrollTop > 2400) {
+        document.getElementById("sideSlide").className = "hiddenSideSlide";
+    }
+}
