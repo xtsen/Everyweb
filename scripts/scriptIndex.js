@@ -1,3 +1,6 @@
+console.log("Un projet mené par Nesta et Louis")
+console.log("le lien vers le github : https://github.com/xtsen/NSI-project")
+
 var btn = document.getElementById("myBtn");
 
 var span = document.getElementsByClassName("close")[0];
@@ -7,8 +10,8 @@ function videoExpend(id) {
     clip.style.display = "block";
 }
 function videoClose(idSpan, idVideo) {
-    var clip1 = document.getElementById(idSpan);
-    clip1.style.display = "none";
+    var clip = document.getElementById(idSpan);
+    clip.style.display = "none";
     video = document.getElementById(idVideo);
     video.pause();
     video.currentTime = 0;
