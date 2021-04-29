@@ -19,10 +19,11 @@ C'est pourquoi nous avons voulous rassembler ces éléments sur un site avec une
 
 Durant la création de ce projet, nous avons du apprendre et prendre en mains de nouvelles technologies tel que le Vue.js ou encore React.js qui sont des frameworks en pleine expension dans le monde du developpement.
 
-Voici un script réaliser en Vue js afin de créer un effet de ...
+Voici un script réaliser en Vue js afin de s'adapter au scroll de l'utilisateur.
 ```javascript
+window.onscroll = function() {SideSlideImage()};
+
 function SideSlideImage(id) {
-    // 
     if (document.documentElement.scrollTop > 700 && document.documentElement.scrollTop < 2400) {
         document.getElementById("sideSlide").className = "sideSkateDescription";
     }else if (document.body.scrollTop < 700 || document.documentElement.scrollTop < 700) {
@@ -33,17 +34,57 @@ function SideSlideImage(id) {
 }
 ```
 
+Mais nous avons aussi decouvert des effet en CSS qui nous ont été très utile comme celui ci dessous qui permet de garder la video ouverte meme au scroll et au dessus de tous les autres éléments
+
+```css
+.clip {
+    display: none;
+    position: fixed;
+    z-index: 10000000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+```
+Nous avons aussi compris l'importance de commenter sonn code afin que l'autre puisse comprendre quel élément correspond à quel animation ou script js.
+
+Une animation que nous n'avons rajouter qu'après c'est la ligne qui apparait en dessous de la rubrique dans la barre de navigation
+```css
+a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    position: relative;
+}
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+```
+
 ## Contribution
 Tout au long de ce projet nous avons su nous repartir les taches. Louis s'occuper du contenu des pages et de l'agencement ainsi qu'une petite partie du code et Nesta c'est occupé de faire la grosse partie du code.
 
-Ce projet représente plus de 20h de travail a nous deux
+Ce projet représente plus de 30h de travail a nous deux
 
 ## Languages et Framework utilisé pour ce site
 
 ### HTML 5
 ### CSS 3
-  -> Media queries pour la gestion de la resolution et animation pour rendre le site dynamique
 ### Javascript
-  -> React, Vue
 ### php
 
