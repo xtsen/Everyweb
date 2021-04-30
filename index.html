@@ -7,7 +7,7 @@
 
         <!-- Différentes sylesheet -->
         <link rel="stylesheet" href="styles/styleGlobal.css">
-        <link rel="stylesheet" href="styles/styleHeroHeader.css">
+        <link rel="stylesheet" href="styles/styleHeroHeaderIndex.css">
         <link rel="stylesheet" href="styles/styleNavBar.css">
         <link rel="stylesheet" href="styles/styleSkatePart.css">
         <link rel="stylesheet" href="styles/stylePlaylistPart.css">
@@ -21,153 +21,153 @@
             <img src="src/icons/logo.png" class="logoInnerPage">
         </a>
             
-            <!-- Nav bar -->
-            <nav>
-                <ul>
-                    <li class="elementNav"><a class="js-scrollToSkate" class="linkNavbar">Skate</a></li>
-                    <li class="elementNav"><a class="js-scrollToPlaylist" class="linkNavbar">Playlist</a></li>
-                    <li class="elementNav"><a href="about.html" class="linkNavbar">A propos</a></li>
-                </ul>
-            </nav>
+        <!-- Nav bar -->
+        <nav>
+            <ul>
+                <li class="elementNav"><a class="js-scrollToSkate" class="linkNavbar">Skate</a></li>
+                <li class="elementNav"><a class="js-scrollToPlaylist" class="linkNavbar">Playlist</a></li>
+                <li class="elementNav"><a href="about.html" class="linkNavbar">A propos</a></li>
+            </ul>
+        </nav>
+        
+        <!-- diapo -->
+        <div class="slides">
+            <div class="slide"></div>
+        </div>
+
+        <!-- Page2 -> Skate Marker -->
+        <div id="SkateMarker">
+
+            <div class="hiddenSideSlide" id="sideSlide">
+                <p class="heroTitleSkatePart">nos clips de skate</p>
+                <p class="descriptionSkatePart">Voici les videos de skate que nous avons réalisé. la plupart ont été tourné au skate park d'aizenay avec la participation de notament : Auxanne, Timothé, Mathys, Michael, Maxence et Baptiste</p>
+                <p class="descriptionSkatePart">Pour visionner une de nos vidéos cliquez sur une image</p>
+            </div>
+
+            <!-- image grid -->
+            <div class="grid" id="grid">
+                <img src="src/images/skateNightGautier1.jpg" class="grid-element"  onclick="videoExpend('clip1')" id="myBtn">
+                <img src="src/images/skate2mecTorseNue.jpg" class="grid-element"  onclick="videoExpend('clip2')" id="myBtn">
+                <img src="src/images/skateNightGautier2.jpg" class="grid-element"  onclick="videoExpend('clip3')" id="myBtn">
+                <img src="src/images/skateMathis.jpg" class="grid-element"  onclick="videoExpend('clip4')" id="myBtn">
+                <img src="src/images/skateAllanHight.jpg" class="grid-element"  onclick="videoExpend('clip5')" id="myBtn">
+                <img src="src/images/skateMathysdedos.jpg" class="grid-element"  onclick="videoExpend('clip6')" id="myBtn">
+                <img src="src/images/MathysPose.jpg" class="grid-element"  onclick="videoExpend('clip7')" id="myBtn">
+            </div>
+
+            <!-- Vidéo 1 -->
+            <div id="clip1" class="clip">
+                <div class="clip-content">
+                    <span class="close" onclick="videoClose('clip1', 'video1')">×</span>
+                    <video controls=true class="video" id="video1" src="src/videos/videoSkateFishEye.mp4">
+                </div>
+            </div>
+            <!-- Vidéo 2 -->
             
-            <!-- diapo -->
-            <div class="slides">
-                <div class="slide"></div>
+
+            <div id="clip2" class="clip">
+                <div class="clip-content">
+                    <span class="close" onclick="videoClose('clip2', 'video2')">×</span>
+                    <video controls=true class="video" id="video2" src="src/videos/videoSkate1.mp4">
+                </div>
             </div>
-
-            <!-- Page2 -> Skate Marker -->
-            <div id="SkateMarker">
-
-                <div class="hiddenSideSlide" id="sideSlide">
-                    <p class="heroTitleSkatePart">nos clips de skate</p>
-                    <p class="descriptionSkatePart">Voici les videos de skate que nous avons réalisé. la plupart ont été tourné au skate park d'aizenay avec la participation de notament : Auxanne, Timothé, Mathys, Michael, Maxence et Baptiste</p>
-                    <p class="descriptionSkatePart">Pour visionner une de nos vidéos cliquez sur une image</p>
-                </div>
-
-                <!-- image grid -->
-                <div class="grid" id="grid">
-                    <img src="src/images/skateNightGautier1.jpg" class="grid-element"  onclick="videoExpend('clip1')" id="myBtn">
-                    <img src="src/images/skate2mecTorseNue.jpg" class="grid-element"  onclick="videoExpend('clip2')" id="myBtn">
-                    <img src="src/images/skateNightGautier2.jpg" class="grid-element"  onclick="videoExpend('clip3')" id="myBtn">
-                    <img src="src/images/skateMathis.jpg" class="grid-element"  onclick="videoExpend('clip4')" id="myBtn">
-                    <img src="src/images/skateAllanHight.jpg" class="grid-element"  onclick="videoExpend('clip5')" id="myBtn">
-                    <img src="src/images/skateMathysdedos.jpg" class="grid-element"  onclick="videoExpend('clip6')" id="myBtn">
-                    <img src="src/images/MathysPose.jpg" class="grid-element"  onclick="videoExpend('clip7')" id="myBtn">
-                </div>
-
-                <!-- Vidéo 1 -->
-                <div id="clip1" class="clip">
-                    <div class="clip-content">
-                        <span class="close" onclick="videoClose('clip1', 'video1')">×</span>
-                        <video controls=true class="video" id="video1" src="src/videos/videoSkateFishEye.mp4">
-                    </div>
-                </div>
-                <!-- Vidéo 2 -->
-                
-
-                <div id="clip2" class="clip">
-                    <div class="clip-content">
-                        <span class="close" onclick="videoClose('clip2', 'video2')">×</span>
-                        <video controls=true class="video" id="video2" src="src/videos/videoSkate1.mp4">
-                    </div>
-                </div>
-                <!-- Vidéo 3 -->
-                
-
-                <div id="clip3" class="clip">
-                    <div class="clip-content">
-                        <span class="close" onclick="videoClose('clip3', 'video3')">×</span>
-                        <video controls=true class="video" id="video3" src="src/videos/videoSkatePowerSlide.mp4">
-                    </div>
-                </div>
-                <!-- Vidéo 4 --> 
-
-                <div id="clip4" class="clip">
-                    <div class="clip-content">
-                        <span class="close" onclick="videoClose('clip4', 'video4')">×</span>
-                        <video controls=true class="video" id="video4" src="src/videos/videoSkateTimothe1.mp4">
-                    </div>
-                </div>
-                <!-- Vidéo 5 --> 
-
-                <div id="clip5" class="clip">
-                    <div class="clip-content">
-                        <span class="close" onclick="videoClose('clip5', 'video5')">×</span>
-                        <video controls=true class="video" id="video5" src="src/videos/videoSkateMathys.mp4">
-                    </div>
-                </div>
-                <!-- Vidéo 6 --> 
-
-                <div id="clip6" class="clip">
-                    <div class="clip-content">
-                        <span class="close" onclick="videoClose('clip6', 'video6')">×</span>
-                        <video controls=true class="video" id="video6" src="src/videos/videoSkateMichaelManual.mp4">
-                    </div>
-                </div>
-                <!-- Vidéo 7 --> 
-
-                <div id="clip7" class="clip">
-                    <div class="clip-content">
-                        <span class="close" onclick="videoClose('clip7', 'video7')">×</span>
-                        <video controls=true class="video" id="video7" src="https://outils-javascript.aliasdmc.fr/img/videos/mov_bbb.mp4">
-                    </div>
-                </div>
-
-            </div>
-
-                    <!-- Page3 -> Music Marker -->
-            <div id="MusicMarker">
-                <p class="titlePlaylistPart">nos playlists pour vous !</p>
-                <p class="descriptionPlaylistPart">Avec nous ne ratez jamais une occasion de sortir une playlist parfaite pour pour le moment. Et surtour impressionnez vos amis avec de super gouts musicaux !</p>
-                
-                
-                <!-- playlist Deezer Iframe -->
-                <p class="titleSectionPlaylist">Album de la semaine</p>
-                <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/226285612" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
-                <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/222605782" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+            <!-- Vidéo 3 -->
             
-                <!-- Tableau des playlists -->
-                <div class="gridPlaylist">
-                    <a class="PlaylistIcon" href="https://deezer.page.link/bCaPbx7pebetNeGL6">
-                        <img class="icon" src="src/icons/playlist.png" alt="icone Playlist">
-                        <p class="titlePlaylist">Coup de coeur de Nesta</p>
-                    </a>
-                    <a class="PlaylistIcon" href="https://deezer.page.link/nNevmNChJcGoRxcT8">
-                        <img class="icon" src="src/icons/playlist.png" alt="icone Playlist" >
-                        <p class="titlePlaylist">Prends ton skate</p>
-                    </a>
-                    <a class="PlaylistIcon" href="https://deezer.page.link/PnqNfTZz3iTQPi7M7">
-                        <img class="icon" src="src/icons/playlist.png" alt="icone Playlist">
-                        <p class="titlePlaylist">Detends toi</p>
-                    </a>
-                    <a class="PlaylistIcon" href="#">
-                        <img class="icon" src="src/icons/playlist.png" alt="icone Playlist">
-                        <p class="titlePlaylist">Coup de coeur de Louis</p>
-                    </a>
-                    <a class="PlaylistIcon" href="#">
-                        <img class="icon" src="src/icons/playlist.png" alt="icone Playlist">
-                        <p class="titlePlaylist">Playlist chill</p>
-                    </a>
-                    <a class="PlaylistIcon" href="https://deezer.page.link/gwfbRa8RLGt9YGWA6">
-                        <img class="icon" src="src/icons/playlist.png" alt="icone Playlist">
-                        <p class="titlePlaylist">En soirée</p>
-                    </a>
-                    <a class="PlaylistIcon" href="https://deezer.page.link/MvgqPKYyP34X5zSt8">
-                        <img class="icon" src="src/icons/playlist.png" alt="icone Playlist">
-                        <p class="titlePlaylist">Pour pecho</p>
-                    </a>
-                    <a class="PlaylistIcon" href="https://deezer.page.link/Y1iDUHSwKyNrBxvL6">
-                        <img class="icon" src="src/icons/playlist.png" alt="icone Playlist">
-                        <p class="titlePlaylist">Vieux sons</p>
-                    </a>
+
+            <div id="clip3" class="clip">
+                <div class="clip-content">
+                    <span class="close" onclick="videoClose('clip3', 'video3')">×</span>
+                    <video controls=true class="video" id="video3" src="src/videos/videoSkatePowerSlide.mp4">
+                </div>
+            </div>
+            <!-- Vidéo 4 --> 
+
+            <div id="clip4" class="clip">
+                <div class="clip-content">
+                    <span class="close" onclick="videoClose('clip4', 'video4')">×</span>
+                    <video controls=true class="video" id="video4" src="src/videos/videoSkateTimothe1.mp4">
+                </div>
+            </div>
+            <!-- Vidéo 5 --> 
+
+            <div id="clip5" class="clip">
+                <div class="clip-content">
+                    <span class="close" onclick="videoClose('clip5', 'video5')">×</span>
+                    <video controls=true class="video" id="video5" src="src/videos/videoSkateMathys.mp4">
+                </div>
+            </div>
+            <!-- Vidéo 6 --> 
+
+            <div id="clip6" class="clip">
+                <div class="clip-content">
+                    <span class="close" onclick="videoClose('clip6', 'video6')">×</span>
+                    <video controls=true class="video" id="video6" src="src/videos/videoSkateMichaelManual.mp4">
+                </div>
+            </div>
+            <!-- Vidéo 7 --> 
+
+            <div id="clip7" class="clip">
+                <div class="clip-content">
+                    <span class="close" onclick="videoClose('clip7', 'video7')">×</span>
+                    <video controls=true class="video" id="video7" src="https://outils-javascript.aliasdmc.fr/img/videos/mov_bbb.mp4">
                 </div>
             </div>
 
-            <footer>
-                <p>&copy; 2021 Skate in peace de Louis et Nesta le lien vers le github : <a href="https://github.com/xtsen/Skate-in-peace">https://github.com/xtsen/Skate-in-peace</a></p>
-            </footer>
+        </div>
 
-            <!-- Les scripts js -->
+        <!-- Page3 -> Music Marker -->
+        <div id="MusicMarker">
+            <p class="titlePlaylistPart">nos playlists pour vous !</p>
+            <p class="descriptionPlaylistPart">Avec nous ne ratez jamais une occasion de sortir une playlist parfaite pour pour le moment. Et surtour impressionnez vos amis avec de super gouts musicaux !</p>
+            
+            
+            <!-- playlist Deezer Iframe -->
+            <p class="titleSectionPlaylist">Album de la semaine</p>
+            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/226285612" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/222605782" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        
+            <!-- Tableau des playlists -->
+            <div class="gridPlaylist">
+                <a class="PlaylistIcon" href="https://deezer.page.link/bCaPbx7pebetNeGL6">
+                    <img class="icon" src="src/icons/playlist.png" alt="icone Playlist">
+                    <p class="titlePlaylist">Coup de coeur de Nesta</p>
+                </a>
+                <a class="PlaylistIcon" href="https://deezer.page.link/nNevmNChJcGoRxcT8">
+                    <img class="icon" src="src/icons/playlist.png" alt="icone Playlist" >
+                    <p class="titlePlaylist">Prends ton skate</p>
+                </a>
+                <a class="PlaylistIcon" href="https://deezer.page.link/PnqNfTZz3iTQPi7M7">
+                    <img class="icon" src="src/icons/playlist.png" alt="icone Playlist">
+                    <p class="titlePlaylist">Detends toi</p>
+                </a>
+                <a class="PlaylistIcon" href="#">
+                    <img class="icon" src="src/icons/playlist.png" alt="icone Playlist">
+                    <p class="titlePlaylist">Coup de coeur de Louis</p>
+                </a>
+                <a class="PlaylistIcon" href="#">
+                    <img class="icon" src="src/icons/playlist.png" alt="icone Playlist">
+                    <p class="titlePlaylist">Playlist chill</p>
+                </a>
+                <a class="PlaylistIcon" href="https://deezer.page.link/gwfbRa8RLGt9YGWA6">
+                    <img class="icon" src="src/icons/playlist.png" alt="icone Playlist">
+                    <p class="titlePlaylist">En soirée</p>
+                </a>
+                <a class="PlaylistIcon" href="https://deezer.page.link/MvgqPKYyP34X5zSt8">
+                    <img class="icon" src="src/icons/playlist.png" alt="icone Playlist">
+                    <p class="titlePlaylist">Pour pecho</p>
+                </a>
+                <a class="PlaylistIcon" href="https://deezer.page.link/Y1iDUHSwKyNrBxvL6">
+                    <img class="icon" src="src/icons/playlist.png" alt="icone Playlist">
+                    <p class="titlePlaylist">Vieux sons</p>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2021 Skate in peace de Louis et Nesta le lien vers le github : <a href="https://github.com/xtsen/Skate-in-peace">https://github.com/xtsen/Skate-in-peace</a></p>
+        </footer>
+
+        <!-- Les scripts js -->
         <script type="text/javascript" src="scripts/scriptIndex.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>

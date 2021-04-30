@@ -1,0 +1,61 @@
+.HeroTitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 7em;
+    margin-left: 10%;
+}
+
+#hideHeroTitle1 {
+    display: block;
+    content: ' ';
+    position: absolute;
+    top: 15%;
+    width: 75%;
+    height: 20%;
+    background-color: #000000;
+    border-radius: 15px;
+}
+.hideHeroTitle {
+    animation: showHeroTitles 0.3s ease forwards;
+}
+@keyframes showHeroTitles {
+    0% {
+        height: 20%;
+    }
+    100% {
+        height: 2%;
+        background-color: #222222;
+    }
+}
+#hideHeroTitle2 {
+    content: ' ';
+    position: absolute;
+    top: 45%;
+    width: 75%;
+    height: 20%;
+    background-color: #000000;
+    border-radius: 15px;
+}
+#hideHeroTitle3 {
+    content: ' ';
+    position: absolute;
+    top: 75%;
+    width: 75%;
+    height: 20%;
+    background-color: #000000;
+    border-radius: 15px;
+}
+.eyeIcon {
+    width: 7%;
+    margin-left: 46%;
+    margin-top: 2%;
+}
+.descriptionHeader {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}

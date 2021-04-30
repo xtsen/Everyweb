@@ -3,6 +3,15 @@ body{
     font-family: Roboto;
     color: white;
 }
+.logoInnerPage {
+    position: fixed;
+    width: 5%;
+    right: 1%;
+    bottom: 1%;
+}
+.logoInnerPage:active {
+    animation: pulse 0.1s ease forwards;
+}
 footer p {
     text-align: center;
     font-size: 1em;

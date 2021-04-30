@@ -26,15 +26,6 @@
     /* l'image du 100% et du 0% doivent etre identique */
 }
 
-.logoInnerPage {
-    position: fixed;
-    width: 5%;
-    right: 1%;
-    bottom: 1%;
-}
-.logoInnerPage:active {
-    animation: pulse 0.1s ease forwards;
-}
 @keyframes pulse {
     0% {
         transform: scale(1);
