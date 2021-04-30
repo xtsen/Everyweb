@@ -1,0 +1,18 @@
+a.link {
+    color: white;
+    text-decoration: none;
+}
+div.divLink {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    margin-left: 35%;
+}
+div.divLink img {
+    width: 15%;
+    margin-right: 5%;
+}
+div.divLink p {
+    font-size: 3em;
+}
