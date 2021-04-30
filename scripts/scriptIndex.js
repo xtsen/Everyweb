@@ -20,11 +20,11 @@ function videoClose(idSpan, idVideo) {
 window.onscroll = function() {SideSlideImage()};
 
 function SideSlideImage() {
-    if (document.documentElement.scrollTop > 700 && document.documentElement.scrollTop < 2200) {
+    if (document.documentElement.scrollTop > 700 && document.documentElement.scrollTop < 2100) {
         document.getElementById("sideSlide").className = "sideSkateDescription";
     }else if (document.body.scrollTop < 700 || document.documentElement.scrollTop < 700) {
         document.getElementById("sideSlide").className = "hiddenSideSlide";
-    }else if (document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) {
+    }else if (document.body.scrollTop > 2100 || document.documentElement.scrollTop > 2100) {
         document.getElementById("sideSlide").className = "hiddenSideSlide";
     }
 }
