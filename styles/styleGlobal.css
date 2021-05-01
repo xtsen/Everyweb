@@ -16,7 +16,7 @@ body{
 @media screen and (max-width: 1000px) {
     footer p {
         text-align: center;
-        font-size: 0.3em;
+        font-size: 0.5em;
         color: #575757;
     }
 }
