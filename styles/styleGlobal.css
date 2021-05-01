@@ -26,7 +26,7 @@ footer p a {
 
 /* page transition */
 .animationBody {
-    animation: bodyOpacity 1s forwards;
+    animation: bodyOpacity 3s forwards;
 }
 @keyframes bodyOpacity {
     0% {
