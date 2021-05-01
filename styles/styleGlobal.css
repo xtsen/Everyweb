@@ -2,6 +2,7 @@ body{
     background-color: #222222;
     font-family: Roboto;
     color: white;
+    opacity: 0;
 }
 .logoInnerPage {
     position: fixed;
@@ -21,4 +22,17 @@ footer p a {
     font-size: 1em;
     color: #575757;
     text-decoration: none;
+}
+
+/* page transition */
+.animationBody {
+    animation: bodyOpacity 1s forwards;
+}
+@keyframes bodyOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
