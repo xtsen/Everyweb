@@ -13,13 +13,21 @@ body{
 .logoInnerPage:active {
     animation: pulse 0.1s ease forwards;
 }
-footer p {
-    text-align: center;
-    font-size: 1em;
-    color: #575757;
+@media screen and (max-width: 1000px) {
+    footer p {
+        text-align: center;
+        font-size: 0.3em;
+        color: #575757;
+    }
+}
+@media screen and (min-width: 1001px) {
+    footer p {
+        text-align: center;
+        font-size: 1em;
+        color: #575757;
+    }
 }
 footer p a {
-    font-size: 1em;
     color: #575757;
     text-decoration: none;
 }
