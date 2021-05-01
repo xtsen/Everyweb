@@ -4,16 +4,16 @@ body{
     color: white;
     opacity: 0;
 }
-.logoInnerPage {
-    position: fixed;
-    width: 5%;
-    right: 1%;
-    bottom: 1%;
-}
 .logoInnerPage:active {
     animation: pulse 0.1s ease forwards;
 }
 @media screen and (max-width: 1000px) {
+    .logoInnerPage {
+        position: fixed;
+        width: 10%;
+        right: 1%;
+        bottom: 1%;
+    }
     footer p {
         text-align: center;
         font-size: 0.5em;
@@ -21,6 +21,12 @@ body{
     }
 }
 @media screen and (min-width: 1001px) {
+    .logoInnerPage {
+        position: fixed;
+        width: 5%;
+        right: 1%;
+        bottom: 1%;
+    }
     footer p {
         text-align: center;
         font-size: 1em;

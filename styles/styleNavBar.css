@@ -6,19 +6,39 @@ nav {
     top: 0;
     background-color: #222222;
 }
-ul {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    display: table;
-    text-align: center;
+@media screen and (min-width: 1001px)
+{
+    ul {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        display: table;
+        text-align: center;
+    }
+    li.elementNav { 
+        display: table-cell; 
+        position: relative; 
+        font-family: Roboto;
+        font-style: italic;
+        font-size: 1.5em;
+    }
 }
-li.elementNav { 
-    display: table-cell; 
-    position: relative; 
-    font-family: Roboto;
-    font-style: italic;
-    font-size: 1.5em;
+@media screen and (max-width: 1000px)
+{
+    ul {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        display: table;
+        text-align: center;
+    }
+    li.elementNav { 
+        display: table-cell; 
+        position: relative; 
+        font-family: Roboto;
+        font-style: italic;
+        font-size: 2em;
+    }
 }
 li.elementNav a {
     color: #fff;
