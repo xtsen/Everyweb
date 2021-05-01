@@ -2,6 +2,8 @@
 Nous avons choisi de faire un site avec Louis regroupant nos deux hobby : les videos et clip de sakte et bien sur la bonne musique
 
 ### Le lien pour aller sur le site : https://xtsen.github.io/Skate-in-peace/
+### Nous respectons le choix du navigateur de l'utilisateur c'est pourquoi notre site est disponible sur Tor : http://uctw27z3lh4wnmi3q4xsswjo5v7ch3wkbki7usuad27rchz7rdmzhdqd.onion
+A cause de la politique de protection des données de Tor certaine fonctionnalitées sont indisponible
 
 ## Installation
 
