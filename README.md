@@ -115,8 +115,14 @@ Ce projet représente plus de 30h de travail a nous deux
 ### Cliquer sur "Skate" vous emmène directement vers la rubrique "skate"
 ### Cliquer sur "Playlist" vous emmène directement vers la rubrique "Playlist"
 ### Cliquer sur "A propos" vous emmène vers la page about.html
+### Si vous avez cliqué sur le lien "A propos" une la page apparaitra petit a petit pendant 3 secondes
 ### Toutes les 4 secondes l'image du header change
 ### Si vous scrollez jusqu'a 720pixels, un paragraphe parlant de notre rubrique skate va arriver du bas et apparaitre petit à petit
 ### Cliquer sur un des icones "playlist" en bas de la page vous redirige avec un lien deezer vers la playlist qui correspond
 ### Si vous cliquez sur le lien vers le github en bas de la page vous serez redirigé vers cette page
 ### Si vous cliquez sur le logo en bas à droite vous serez emmené en haut de la page
+### Si vous cliquez sur les yeux barrés les "caches" s'enleveront et révéleront des mots en dessous
+### Si vous positionnez votre souris sur un des deux prénoms un fond bleu apparaitra sur le prénom
+### Si vous cliquez sur le logo github vous serez redirigé vers mon github 
+### Si vous cliquez sur le logo de deezer vous serez redirigé vers mon profil deezer
+### Si vous cliquez sur l'icone planète www vous serez redirigé vers mon linktree avec tous les sites que j'ai déjà réalisé
