@@ -1,67 +1,140 @@
-.HeroTitle {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 7em;
-    margin-left: 10%;
-}
-
-#hideHeroTitle1 {
-    transition: all 10s ease;
-    display: block;
-    content: ' ';
-    position: absolute;
-    top: 15%;
-    width: 75%;
-    height: 20%;
-    background-color: #000000;
-    border-radius: 15px;
-}
-#hideHeroTitle1:hover {
-    height: 12%;
-}
-.hideHeroTitle {
-    animation: showHeroTitles 0.3s ease forwards;
-}
-@keyframes showHeroTitles {
-    0% {
+@media screen and (min-width: 1001px)
+{
+    .hideHeroTitle {
+        animation: showHeroTitles 0.3s ease forwards;
+    }
+    @keyframes showHeroTitles {
+        0% {
+            height: 20%;
+        }
+        100% {
+            height: 2%;
+            background-color: #222222;
+            display: none;
+        }
+    }
+    .HeroTitle {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 7em;
+        margin-left: 10%;
+    }
+    #hideHeroTitle1 {
+        transition: all 10s ease;
+        display: block;
+        content: ' ';
+        position: absolute;
+        top: 15%;
+        width: 75%;
         height: 20%;
+        background-color: #000000;
+        border-radius: 15px;
     }
-    100% {
-        height: 2%;
-        background-color: #222222;
-        display: none;
+    #hideHeroTitle1:hover {
+        height: 12%;
+    }
+    #hideHeroTitle2 {
+        transition: all 10s ease;
+        content: ' ';
+        position: absolute;
+        top: 45%;
+        width: 75%;
+        height: 20%;
+        background-color: #000000;
+        border-radius: 15px;
+    }
+    #hideHeroTitle2:hover {
+        height: 12%;
+    }
+    #hideHeroTitle3 {
+        transition: all 10s ease;
+        content: ' ';
+        position: absolute;
+        top: 75%;
+        width: 75%;
+        height: 20%;
+        background-color: #794343;
+        border-radius: 15px;
+    }
+    #hideHeroTitle3:hover {
+        height: 12%;
+    }
+    .eyeIcon {
+        width: 7%;
+        margin-left: 46%;
+        margin-top: 2%;
     }
 }
-#hideHeroTitle2 {
-    transition: all 10s ease;
-    content: ' ';
-    position: absolute;
-    top: 45%;
-    width: 75%;
-    height: 20%;
-    background-color: #000000;
-    border-radius: 15px;
-}
-#hideHeroTitle2:hover {
-    height: 12%;
-}
-#hideHeroTitle3 {
-    transition: all 10s ease;
-    content: ' ';
-    position: absolute;
-    top: 75%;
-    width: 75%;
-    height: 20%;
-    background-color: #794343;
-    border-radius: 15px;
-}
-#hideHeroTitle3:hover {
-    height: 12%;
-}
-.eyeIcon {
-    width: 7%;
-    margin-left: 46%;
-    margin-top: 2%;
+@media screen and (max-width: 1000px)
+{
+    .hideHeroTitle {
+        animation: showHeroTitles 0.3s ease forwards;
+    }
+    @keyframes showHeroTitles {
+        0% {
+            height: 20%;
+        }
+        100% {
+            height: 2%;
+            width: 1%;
+            background-color: #222222;
+            display: none;
+        }
+    }
+    .HeroTitle {
+        margin-top: 10%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 6em;
+        margin-left: 10%;
+    }
+    #hideHeroTitle1 {
+        transition: all 10s ease;
+        display: block;
+        content: ' ';
+        position: absolute;
+        top: 5%;
+        width: 100%;
+        height: 10%;
+        background-color: #000000;
+        border-radius: 15px;
+    }
+    #hideHeroTitle1:hover {
+        height: 5%;
+    }
+    #hideHeroTitle2 {
+        transition: all 10s ease;
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 18%;
+        width: 100%;
+        height: 10%;
+        background-color: #000000;
+        border-radius: 15px;
+    }
+    #hideHeroTitle2:hover {
+        height: 12%;
+    }
+    #hideHeroTitle3 {
+        transition: all 10s ease;
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 28%;
+        width: 100%;
+        height: 10%;
+        background-color: #794343;
+        border-radius: 15px;
+    }
+    #hideHeroTitle3:hover {
+        height: 12%;
+    }
+    .eyeIcon {
+        width: 7%;
+        margin-left: 46%;
+        margin-top: 5%;
+    }
 }
 .descriptionHeader {
     font-family: 'Roboto', sans-serif;
