@@ -8,6 +8,7 @@ A cause de la politique de protection des données de Tor certaine fonctionnalit
 ## Installation
 
 Pour telecharger notre projet vous devez simplement cliquer sur le bouton vert 'code' 
+et cliquez sur 'Telecharger en format ZIP'
 
 Apres ca un dossier zip vas se telecharger et vous n'aurez plus qu'a cliquer sur le ficher 'index.html' 
 
