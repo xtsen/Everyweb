@@ -6,22 +6,6 @@ function load() {
 
 }
 
-var btn = document.getElementById("myBtn");
-
-var span = document.getElementsByClassName("close")[0];
-
-function videoExpend(id) {
-    var clip = document.getElementById(id);
-    clip.style.display = "block";
-}
-function videoClose(idSpan, idVideo) {
-    var clip = document.getElementById(idSpan);
-    clip.style.display = "none";
-    video = document.getElementById(idVideo);
-    video.pause();
-    video.currentTime = 0;
-}
-
 if (window.screen.availWidth > 1020) {
     window.onscroll = function() {SideSlideImageDesktop()};
     console.log("desktop size")
