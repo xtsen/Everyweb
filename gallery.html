@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Skate in peace</title>
+        <link rel="shortcut icon" type="image/png" href="src/icons/logo.png"/>
+
+        <!-- Différentes sylesheet -->
+        <link rel="stylesheet" href="styles/styleGlobal.css">
+        <link rel="stylesheet" href="styles/styleNavBar.css">
+        <link rel="stylesheet" href="styles/styleGallery.css">
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,500&display=swap" rel="stylesheet">
+    </head>
+    <body id="body" onload="load()">
+        <a href="html" class="js-scrollTo">
+            <img src="src/icons/logo.png" class="logoInnerPage">
+        </a>
+
+        <!-- Nav bar -->
+        <nav>
+            <ul>
+                <li class="elementNav"><a href="index.html" class="linkNavbar">Home</a></li>
+                <li class="elementNav"><a href="gallery.html" class="linkNavbar">Gallerie</a></li>
+                <li class="elementNav"><a href="about.html" class="linkNavbar">A propos</a></li>
+            </ul>
+        </nav>
+
+        <!-- Gallerie -->
+
+
+        <script type="text/javascript" src="scripts/scriptGallery.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                    var page = $(this).attr('href'); // Page cible
+                    var speed = 600; // Durée de l'animation (en ms)
+                    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>
