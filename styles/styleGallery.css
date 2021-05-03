@@ -26,6 +26,14 @@
         grid-row-gap: 10%;
     }
 }
+@media screen and (max-width: 500px) {
+    .gallery {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 10%;
+    }
+}
 .item {
     display: flex;
     justify-content: center;
