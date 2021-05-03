@@ -30,6 +30,7 @@
 
         <!-- Gallerie -->
         <p class="titleGallery">Retrouvez ici vos clips de skate ou decouvrez-en de nouveaux !</p>
+        <p class="mailTitle"><a class="sendMailTitle" href="#mail">Vous aussi envoyez nous vos videos</a></p>
         <div class="bigGallery">
             <div class="gallery">
                 <div style="background-image: url(src/icons/logo.png); background-size: cover;" class="item">
@@ -146,7 +147,7 @@
                 <div style="background-image: url(src/icons/logo.png); background-size: cover;" class="item">
                     <div class="description">
                         <p class="tricksName">Nom du tricks : Slide</p>
-                        <p class="OwnerName">Personne : ?</p>
+                        <p class="OwnerName">Personne : Emile</p>
                         <p class="fail">Fail : non</p>
                         <button class="btn-slide-up" onclick="videoExpend('clip12')" id="myBtn">
                             <span>Voir la video</span>
@@ -196,7 +197,7 @@
                 <div style="background-image: url(src/icons/logo.png); background-size: cover;" class="item">
                     <div class="description">
                         <p class="tricksName">Nom du tricks : Backside</p>
-                        <p class="OwnerName">Personne : ?</p>
+                        <p class="OwnerName">Personne : Gautier</p>
                         <p class="fail">Fail : non</p>
                         <button class="btn-slide-up" onclick="videoExpend('clip17')" id="myBtn">
                             <span>Voir la video</span>
@@ -396,8 +397,14 @@
                 <video controls=true class="video" id="video20" src="src/videos/Fails/KickflipAllanMairie.MP4">
             </div>
         </div>
+        <!-- Espace d'envoi -->
+        <div class="contactContainer" id="mail">
+            <p class="titleContact">Envoyez nous vos videos !</p>
+            <div class="sendMailContainer">
+                <a class="sendMail" href="mailto:?to=skateinpeace.contact@gmail.com &subject=Mail%20de%20S.I.P. &body=Voici%20ma%20vidéo%20de%20skate%20ci%20dessus%20:%20"> Envoyer </a>
+            </div>
+        </div>
 
-    </div>
 
         <script type="text/javascript" src="scripts/scriptGallery.js"></script>
         <script type="text/javascript" src="scripts/globalScript.js"></script>
@@ -405,6 +412,12 @@
         <script>
             $(document).ready(function() {
                 $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                    var page = $(this).attr('href'); // Page cible
+                    var speed = 600; // Durée de l'animation (en ms)
+                    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                    return false;
+                });
+                $('.sendMailTitle').on('click', function() { // Au clic sur un élément
                     var page = $(this).attr('href'); // Page cible
                     var speed = 600; // Durée de l'animation (en ms)
                     $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go

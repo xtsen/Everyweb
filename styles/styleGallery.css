@@ -3,12 +3,21 @@
     text-align: center;
     font-size: 160%;
 }
+.mailTitle {
+    text-align: center;
+}
+.sendMailTitle {
+    font-size: 130%;
+    color: #fff;
+    text-decoration: underline 0.5px;
+    text-align: center;
+}
 .bigGallery {
     display: flex;
     width: 100%;
     margin-top: 10%;
     justify-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 40%;
 }
 @media screen and (min-width: 1001px) {
     .gallery {
@@ -163,4 +172,33 @@
 }
 .importantMessage {
     color: tomato;
+}
+
+/* mail box */
+
+.contactContainer {
+    width: 85%;
+    background-color: rgb(64, 197, 238);
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.titleContact {
+    font-size: 180%;
+    text-align: center;
+}
+
+.sendMailContainer {
+    width: fit-content;
+    background-color: rgb(34, 98, 172);
+    padding: 2%;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.sendMail {
+    color: #fff;
+    text-decoration: none;
+    font-size: 150%;
 }

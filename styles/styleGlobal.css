@@ -6,6 +6,7 @@ body{
     color: white;
     opacity: 0;
     margin: 0;
+    height: 100%;
 }
 @keyframes gradient {
     0% {
