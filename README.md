@@ -115,8 +115,7 @@ Ce projet représente plus de 30h de travail a nous deux
 ## Fonctionnalitées
 
 ### Si vous placez votre souris au dessus d'un des trois mots en haut de la page une ligne apparait en dessous du mot en commencant par le milieu
-### Cliquer sur "Skate" vous emmène directement vers la rubrique "skate"
-### Cliquer sur "Playlist" vous emmène directement vers la rubrique "Playlist"
+### Si vous cliquez sur la rubrique "Gallerie" cela vous emmène vers la page gallery.html
 ### Cliquer sur "A propos" vous emmène vers la page about.html
 ### Si vous avez cliqué sur le lien "A propos" une la page apparaitra petit a petit pendant 3 secondes
 ### Toutes les 4 secondes l'image du header change
@@ -129,3 +128,4 @@ Ce projet représente plus de 30h de travail a nous deux
 ### Si vous cliquez sur le logo github vous serez redirigé vers mon github 
 ### Si vous cliquez sur le logo de deezer vous serez redirigé vers mon profil deezer
 ### Si vous cliquez sur l'icone planète www vous serez redirigé vers mon linktree avec tous les sites que j'ai déjà réalisé
+### Si vous cliquez sur "voir la vidéo" une video chargera a partir d'un url youtube
