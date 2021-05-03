@@ -3,7 +3,21 @@ body{
     font-family: Roboto;
     color: white;
     opacity: 0;
+    margin: 0;
 }
+/* page transition */
+.animationBody {
+    animation: bodyOpacity 1s forwards;
+}
+@keyframes bodyOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .logoInnerPage:active {
     animation: pulse 0.1s ease forwards;
 }
@@ -36,19 +50,6 @@ body{
 footer p a {
     color: #575757;
     text-decoration: none;
-}
-
-/* page transition */
-.animationBody {
-    animation: bodyOpacity 3s forwards;
-}
-@keyframes bodyOpacity {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 /* footer about */
