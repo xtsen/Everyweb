@@ -86,6 +86,7 @@
 .video {
     margin-left: 9vw;
     width: 60vw;
+    height: 100vh;
 }
 .clip {
     display: none;

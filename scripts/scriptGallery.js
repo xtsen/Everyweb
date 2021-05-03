@@ -13,6 +13,6 @@ function videoClose(idSpan, idVideo) {
     var clip = document.getElementById(idSpan);
     clip.style.display = "none";
     video = document.getElementById(idVideo);
-    video.pause();
+    video.stopVideo();
     video.currentTime = 0;
 }
