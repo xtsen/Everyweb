@@ -1,6 +1,12 @@
 console.log("Un projet mené par Nesta et Louis")
 console.log("le lien vers le github : https://github.com/xtsen/Skate-in-peace")
 
+if (window.screen.availWidth > 1020) {
+    window.onscroll = function() {SideSlideImageDesktop()};
+}
+else if (window.screen.availWidth > 319) {
+    window.onscroll = function() {SideSlideImagePhone()};
+} 
 
 function SideSlideImageDesktop() {
     if (document.documentElement.scrollTop > 650 && document.documentElement.scrollTop < 2100) {
