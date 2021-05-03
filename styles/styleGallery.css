@@ -10,11 +10,21 @@
     justify-content: center;
     margin-bottom: 10%;
 }
-.gallery {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-row-gap: 10%;
+@media screen and (min-width: 1001px) {
+    .gallery {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-row-gap: 10%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .gallery {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 10%;
+    }
 }
 .item {
     display: flex;
