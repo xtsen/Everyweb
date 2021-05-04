@@ -13,10 +13,8 @@
     text-align: center;
 }
 .bigGallery {
-    display: flex;
     width: 100%;
     margin-top: 10%;
-    justify-content: center;
     margin-bottom: 40%;
 }
 @media screen and (min-width: 1001px) {
@@ -43,12 +41,12 @@
         grid-row-gap: 10%;
     }
 }
-.item {
+/* .item {
     display: flex;
     justify-content: center;
     width: 80%;
     height: 15em;
-}
+} */
 .item:hover {
     animation: hoverVideos 0.5s ease;
     animation-fill-mode: forwards;
@@ -202,3 +200,11 @@
     text-decoration: none;
     font-size: 150%;
 }
+
+/* Filters */
+/* .Matys {
+    display: none;
+}
+.Baptiste {
+    display: none;
+} */

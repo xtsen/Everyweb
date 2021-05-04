@@ -31,12 +31,46 @@
         <!-- Gallerie -->
         <p class="titleGallery">Retrouvez ici vos clips de skate ou decouvrez-en de nouveaux !</p>
         <p class="mailTitle"><a class="sendMailTitle" href="#mail">Vous aussi envoyez nous vos videos</a></p>
+
+        <!-- Fonction recherche
+        <div class="filters">
+            <div class="filter">
+                <label for="name-select">Rechercher par personne :</label>
+
+                <select name="name" id="name-select">
+                    <option value="none">--Choisissez--</option>
+                    <option value="Matys">Matys</option>
+                    <option value="Maxence">Maxence</option>
+                    <option value="Allan">Allan</option>
+                    <option value="Gautier">Gautier</option>
+                    <option value="Emile">Emile</option>
+                    <option value="Mickael">Mickael</option>
+                    <option value="Baptiste">Baptiste</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="tricks-select">Rechercher par tricks :</label>
+
+                <select name="tricks" id="tricks-select">
+                    <option value="none">--Choisissez--</option>
+                    <option value="ollie">Ollie</option>
+                    <option value="slide">Slide</option>
+                    <option value="backside">Backside</option>
+                    <option value="kickflip">Kickflip</option>
+                    <option value="manual">Manual</option>
+                    <option value="varial">Varial</option >
+                    <option value="popeShovIt">pope shove-it</option>
+                </select>
+            </div>
+            <button class="search" onclick="search()">Rechercher</button>
+        </div> -->
+
         <div class="bigGallery">
             <div class="gallery">
-                <div style="background-image: url(src/icons/logo.png); background-size: cover;" class="item">
+                <di style="background-image: url(src/icons/logo.png); background-size: cover;" class="item">
                     <div class="description">
                         <p class="numberTricks">Nom du tricks : Backside</p>
-                        <p class="OwnerName">Personne : Mathys</p>
+                        <p class="OwnerName">Personne : Matys</p>
                         <p class="fail">Fail : non</p>
                         <button class="btn-slide-up" onclick="videoExpend('clip1')" id="myBtn">
                             <span>Voir la video</span>
@@ -66,7 +100,7 @@
                 <div style="background-image: url(src/icons/logo.png); background-size: cover;" class="item">
                     <div class="description">
                         <p class="tricksName">Nom du tricks : Kickflip</p>
-                        <p class="OwnerName">Personne : Mathys</p>
+                        <p class="OwnerName">Personne : Matys</p>
                         <p class="fail">Fail : non</p>
                         <button class="btn-slide-up" onclick="videoExpend('clip4')" id="myBtn">
                             <span>Voir la video</span>
@@ -87,7 +121,7 @@
                 <div style="background-image: url(src/icons/logo.png); background-size: cover;" class="item">
                     <div class="description">
                         <p class="tricksName">Nom du tricks : Ollie</p>
-                        <p class="OwnerName">Personne : Mathys</p>
+                        <p class="OwnerName">Personne : Matys</p>
                         <p class="fail">Fail : non</p>
                         <button class="btn-slide-up" onclick="videoExpend('clip6')" id="myBtn">
                             <span>Voir la video</span>
@@ -97,7 +131,7 @@
                 <div style="background-image: url(src/icons/logo.png); background-size: cover;" class="item">
                     <div class="description">
                         <p class="tricksName">Nom du tricks : Ollie</p>
-                        <p class="OwnerName">Personne : Mathys</p>
+                        <p class="OwnerName">Personne : Matys</p>
                         <p class="fail">Fail : non</p>
                         <button class="btn-slide-up" onclick="videoExpend('clip7')" id="myBtn">
                             <span>Voir la video</span>
@@ -167,7 +201,7 @@
                 <div style="background-image: url(src/icons/logo.png); background-size: cover;" class="item">
                     <div class="description">
                         <p class="numberTricks">Combien de tricks : 5</p>
-                        <p class="OwnerName">Personne : Mathys</p>
+                        <p class="OwnerName">Personne : Matys</p>
                         <p class="fail">Fail : non</p>
                         <button class="btn-slide-up" onclick="videoExpend('clip14')" id="myBtn">
                             <span>Voir la video</span>
@@ -206,7 +240,7 @@
                 </div>
                 <div style="background-image: url(src/icons/logo.png); background-size: cover;" class="item">
                     <div class="description">
-                        <p class="tricksName">Nom du tricks : pop shov</p>
+                        <p class="tricksName">Nom du tricks : pope shove-it</p>
                         <p class="OwnerName">Personne : Allan et ?</p>
                         <p class="fail">Fail : non</p>
                         <button class="btn-slide-up" onclick="videoExpend('clip18')" id="myBtn">
@@ -217,7 +251,7 @@
                 <div style="background-image: url(src/icons/logo.png); background-size: cover;" class="item">
                     <div class="description">
                         <p class="tricksName">Nom du tricks : ?</p>
-                        <p class="OwnerName">Personne : Mathys</p>
+                        <p class="OwnerName">Personne : Matys</p>
                         <p class="fail">Fail : oui</p>
                         <button class="btn-slide-up" onclick="videoExpend('clip19')" id="myBtn">
                             <span>Voir la video</span>

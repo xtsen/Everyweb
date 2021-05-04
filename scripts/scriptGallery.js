@@ -16,3 +16,8 @@ function videoClose(idSpan, idVideo) {
     video.pause();
     video.currentTime = 0;
 }
+
+// Search function
+function search() {
+    choice = document.getElementById("name-select");
+}
