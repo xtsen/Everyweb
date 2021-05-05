@@ -34,35 +34,40 @@
 
         <!-- Fonction recherche -->
         <div class="filters">
-            <div class="filter">
-                <label for="name-select">Rechercher par personne :</label>
-
-                <select name="name" id="name-select">
-                    <option value="none">--Choisissez--</option>
-                    <option value="Matys">Matys</option>
-                    <option value="Maxence">Maxence</option>
-                    <option value="Allan">Allan</option>
-                    <option value="Gautier">Gautier</option>
-                    <option value="Emile">Emile</option>
-                    <option value="Mickael">Mickael</option>
-                    <option value="Baptiste">Baptiste</option>
-                </select>
+            <div class="gridFilterBar">
+                <div class="filter">
+                    <label for="name-select">Rechercher par personne :</label>
+    
+                    <select name="name" id="name-select">
+                        <option value="none">--Choisissez--</option>
+                        <option value="Matys">Matys</option>
+                        <option value="Maxence">Maxence</option>
+                        <option value="Allan">Allan</option>
+                        <option value="Gautier">Gautier</option>
+                        <option value="Emile">Emile</option>
+                        <option value="Mickael">Mickael</option>
+                        <option value="Baptiste">Baptiste</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="tricks-select">Rechercher par tricks :</label>
+    
+                    <select name="tricks" id="tricks-select">
+                        <option value="none">--Choisissez--</option>
+                        <option value="ollie">Ollie</option>
+                        <option value="slide">Slide</option>
+                        <option value="backside">Backside</option>
+                        <option value="kickflip">Kickflip</option>
+                        <option value="manual">Manual</option>
+                        <option value="varial">Varial</option >
+                        <option value="popeShovIt">pope shove-it</option>
+                    </select>
+                </div>
+                <div class="search" onclick="search()">
+                    <p>Rechercher</p> 
+                </div>
             </div>
-            <div class="filter">
-                <label for="tricks-select">Rechercher par tricks :</label>
-
-                <select name="tricks" id="tricks-select">
-                    <option value="none">--Choisissez--</option>
-                    <option value="ollie">Ollie</option>
-                    <option value="slide">Slide</option>
-                    <option value="backside">Backside</option>
-                    <option value="kickflip">Kickflip</option>
-                    <option value="manual">Manual</option>
-                    <option value="varial">Varial</option >
-                    <option value="popeShovIt">pope shove-it</option>
-                </select>
-            </div>
-            <button class="search" onclick="search()">Rechercher</button>
+            
         </div>
 
         <div class="bigGallery">

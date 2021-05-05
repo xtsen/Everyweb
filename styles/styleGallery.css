@@ -204,9 +204,40 @@
 }
 
 /* Filters */
-/* .Matys {
-    display: none;
+.filters {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e0e0e0;
+    color: #222222;
+    padding: 2%;
+    border-radius: 15px;
 }
-.Baptiste {
-    display: none;
-} */
+.gridFilterBar {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 20%;
+}
+.filter {
+    font-size: 130%;
+
+}
+.search {
+    padding: 2%;
+    font-size: 110%;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+.search:hover {
+    background-color: #222222;
+    color: #fff;
+}
+.search p {
+    text-align: center;
+}
