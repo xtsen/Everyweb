@@ -177,6 +177,8 @@
 /* mail box */
 
 .contactContainer {
+    bottom: 1%;
+    display: flex;
     width: 85%;
     background-color: rgb(64, 197, 238);
     padding: 1%;
@@ -191,11 +193,13 @@
 }
 
 .sendMailContainer {
-    width: fit-content;
+    display: flex;
     background-color: rgb(34, 98, 172);
     padding: 2%;
     border-radius: 20px;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 .sendMail {
     color: #fff;
