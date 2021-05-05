@@ -210,8 +210,8 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #e0e0e0;
-    color: #222222;
+    background-color: #464646;
+    color: #ffffff;
     padding: 2%;
     border-radius: 15px;
 }
@@ -234,10 +234,14 @@
     background-color: #ffffff;
     transition: all 0.3s ease;
 }
-.search:hover {
+.search:hover{
     background-color: #222222;
     color: #fff;
 }
 .search p {
     text-align: center;
+    color: #000;
+}
+.search:hover p {
+    color: rgb(255, 255, 255);
 }

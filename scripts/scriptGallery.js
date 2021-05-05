@@ -38,6 +38,7 @@ function searchName() {
     GautierVideos = ["containerVideo1", "containerVideo2", "containerVideo3", "containerVideo4", "containerVideo5", "containerVideo6", "containerVideo7", "containerVideo8", "containerVideo9", "containerVideo11", "containerVideo12", "containerVideo13", "containerVideo14", "containerVideo15", "containerVideo16", "containerVideo18", "containerVideo19", "containerVideo20"]
     EmileVideos = ["containerVideo1", "containerVideo2", "containerVideo3", "containerVideo4", "containerVideo5", "containerVideo6", "containerVideo7", "containerVideo8", "containerVideo9", "containerVideo11", "containerVideo13", "containerVideo14", "containerVideo15", "containerVideo16", "containerVideo17", "containerVideo18", "containerVideo19", "containerVideo20"]
     MickaelVideos = ["containerVideo1", "containerVideo2", "containerVideo3", "containerVideo4", "containerVideo6", "containerVideo7", "containerVideo8", "containerVideo9", "containerVideo11", "containerVideo12", "containerVideo13", "containerVideo14", "containerVideo15", "containerVideo16", "containerVideo17", "containerVideo18", "containerVideo19", "containerVideo20"]
+    TimotheeVideos = ["containerVideo1", "containerVideo2", "containerVideo3", "containerVideo4", "containerVideo5", "containerVideo6", "containerVideo7", "containerVideo8", "containerVideo9", "containerVideo11", "containerVideo12", "containerVideo13", "containerVideo14", "containerVideo16", "containerVideo17", "containerVideo18", "containerVideo19", "containerVideo20"]
 
     if (choiceName == "Matys") {
         MatysVideos.forEach(element => document.getElementById(element).style.display = "none");
@@ -59,6 +60,9 @@ function searchName() {
     }
     else if (choiceName == "Mickael") {
         MickaelVideos.forEach(element => document.getElementById(element).style.display = "none");
+    }
+    else if (choiceName == "Timothee") {
+        TimotheeVideos.forEach(element => document.getElementById(element).style.display = "none");
     }
 }
 function searchTricks() {
