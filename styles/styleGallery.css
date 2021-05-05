@@ -222,12 +222,23 @@
     font-size: 140%;
     margin-bottom: 3%;
 }
-.gridFilterBar {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-row-gap: 20%;
-    grid-column-gap: 10%;
-    width: 80%;
+@media screen and (max-width: 1000px) {
+    .gridFilterBar {
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 20%;
+        grid-column-gap: 10%;
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1001px) {
+    .gridFilterBar {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row-gap: 20%;
+        grid-column-gap: 10%;
+        width: 80%;
+    }
 }
 .filter {
     font-size: 130%;
