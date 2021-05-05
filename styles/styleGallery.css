@@ -206,7 +206,6 @@
 /* Filters */
 .filters {
     display: flex;
-    justify-content: center;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -214,34 +213,43 @@
     color: #ffffff;
     padding: 2%;
     border-radius: 15px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.titleFilter {
+    text-align: center;
+    font-size: 140%;
+    margin-bottom: 3%;
 }
 .gridFilterBar {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     grid-row-gap: 20%;
+    grid-column-gap: 10%;
+    width: 80%;
 }
 .filter {
     font-size: 130%;
-
+    margin-bottom: 3%;
 }
 .search {
-    padding: 2%;
-    font-size: 110%;
-    border-radius: 3px;
+    margin-top: -1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 1%;
+    font-size: 120%;
+    border-radius: 100px;
     position: relative;
     cursor: pointer;
     border: none;
     background-color: #ffffff;
     transition: all 0.3s ease;
+    text-align: center;
+    color: #000;
 }
 .search:hover{
     background-color: #222222;
     color: #fff;
-}
-.search p {
-    text-align: center;
-    color: #000;
-}
-.search:hover p {
-    color: rgb(255, 255, 255);
 }

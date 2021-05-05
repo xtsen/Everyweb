@@ -100,3 +100,9 @@ function searchTricks() {
         PopeShovItVideos.forEach(element => document.getElementById(element).style.display = "none");
     }
 }
+
+function reset() {
+    document.getElementById("tricks-select").value = "none"
+    document.getElementById("name-select").value = "none"
+    search();
+}
