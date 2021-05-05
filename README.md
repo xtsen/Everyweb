@@ -129,3 +129,5 @@ Ce projet représente plus de 30h de travail a nous deux
 ### Si vous cliquez sur le logo de deezer vous serez redirigé vers mon profil deezer
 ### Si vous cliquez sur l'icone planète www vous serez redirigé vers mon linktree avec tous les sites que j'ai déjà réalisé
 ### Si vous cliquez sur "voir la vidéo" une video chargera a partir d'un url youtube
+### Si vous remplissez les champs de filtre en haut de la page et que vous cliquez sur le bouton "rechercher", la recherche se filtrera 
+### Si vous double cliquez sur le bouton "rechercher", la recherche se reinitialize
