@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Birthday</title>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+        ::selection {
+            background-color: #222222;
+            color: #ffffff;
+        }
+        body {
+            font-family: sans-serif;
+            font-size: 200px;
+            background-color: #222222;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2.title {
+            display: block;
+            background-color: rgb(255, 232, 98);
+            color: #222222;
+            margin: 0;
+            margin-top: 10%;
+            padding: 0;
+            
+            animation: titleHidden 0.5s 3s ease forwards;
+        }
+        @keyframes titleHidden {
+            100% {
+                opacity: 1;
+                transform: translateY(-200%);
+            }
+        }
+        #counter {
+            opacity: 0;
+            font-size: 150px;
+            animation: titleHidden 0.5s 3s ease forwards;
+        }
+        </style>
+    </head>
+    <body>
+        <h2 class="title">Birthday</h2>
+        <h2 id="counter"></h2>
+        <script type="text/javascript" src="counter.js"></script>
+    </body>
+</html>
