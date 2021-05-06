@@ -1,4 +1,4 @@
-@media screen and (min-width: 1001px)
+/* @media screen and (min-width: 1001px)
 {
     .hideHeroTitle {
         animation: showHeroTitles 0.3s ease forwards;
@@ -18,8 +18,8 @@
         font-weight: 500;
         font-size: 7em;
         margin-left: 10%;
-    }
-    #hideHeroTitle1 {
+    } */
+    /* #hideHeroTitle1 {
         transition: all 10s ease;
         display: block;
         content: ' ';
@@ -135,6 +135,28 @@
         margin-left: 46%;
         margin-top: 5%;
     }
+} */
+.heroTitles {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    font-weight: 00;
+    font-size: 150px;
+    line-height: 1;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    opacity: 0.9;
+    color: transparent;
+    margin-left: 100px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to bottom, transparent 50%, #ffffff 50% );
+    transition: background-position ease-out 0.4s;
+    background-size: 1% 200%;
+}
+.title:hover {
+    background-position: 0 -100%;
 }
 .descriptionHeader {
     font-family: 'Roboto', sans-serif;
