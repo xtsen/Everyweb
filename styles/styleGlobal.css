@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: #222222;
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
     font-family: Roboto;
@@ -7,7 +7,83 @@ body{
     opacity: 0;
     margin: 0;
     height: 100%;
+    animation: apparition 1s 0.5s ease forwards;
+    opacity: 0;
 }
+
+/* Nav bar */
+nav {
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #222222;
+    animation: apparition 0.4s 1.6s ease-out forwards;
+}
+@keyframes apparition {
+    100%{
+      opacity: 1;
+    }
+  }
+@media screen and (min-width: 1001px)
+{
+    ul {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        display: table;
+        text-align: center;
+    }
+    li.elementNav { 
+        display: table-cell; 
+        position: relative; 
+        font-family: Roboto;
+        font-style: italic;
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 1000px)
+{
+    ul {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        display: table;
+        text-align: center;
+    }
+    li.elementNav { 
+        display: table-cell; 
+        position: relative; 
+        font-family: Roboto;
+        font-style: italic;
+        font-size: 2em;
+    }
+}
+li.elementNav a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    position: relative;
+}
+li.elementNav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+li.elementNav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -20,7 +96,7 @@ body{
     }
 }
 /* page transition */
-.animationBody {
+/* .animationBody {
     animation: bodyOpacity 1s forwards;
 }
 @keyframes bodyOpacity {
@@ -32,7 +108,7 @@ body{
         background: none;
         background-color: #222222;
     }
-}
+} */
 
 .logoInnerPage:active {
     animation: pulse 0.1s ease forwards;
