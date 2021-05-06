@@ -143,7 +143,11 @@ footer p a {
     color: #575757;
     text-decoration: none;
 }
-
+.linkHiddenWebsiteFooter {
+    color: #575757;
+    text-decoration: none;
+    cursor: none;
+}
 /* footer about */
 .btn-marquee {
     left: 5%;

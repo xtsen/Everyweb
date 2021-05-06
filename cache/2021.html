@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2020</title>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+        body {
+            font-family: sans-serif;
+            background-color: #222222;
+            color: #fff;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        *, ::before, ::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-family: 'Jost', sans-serif;
+        }
+        body {
+            background: #333;
+        }
+        h1 {
+            font-size: 150px;
+            text-align: center;
+            padding: 240px 0;
+            color: #f1f1f1;
+        }
+        .box-timeline {
+            width: 100%;
+            background: #f1f1f1;
+            position: relative;
+            padding: 80px 0 250px 0;
+            margin-bottom: 100px;
+        }
+
+        .ligne {
+            height: 3454px;
+            width: 8px;
+            margin: 0 auto;
+            background: #333;
+        }
+
+        .rond {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #333;
+            position: absolute;
+            border: 1px solid #000;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+        /* 1000 - 160 + 80 / 3 =~ 306 */
+        .r1{top: 80px;}
+        .r2{top: 386px;}
+        .r3{top: 692px;}
+        .r4{top: 1000px;}
+        .r5{top: 1308px;}
+        .r6{top: 1616px;}
+        .r7{top: 1924px;}
+        .r8{top: 2232px;}
+        .r9{top: 2540px;}
+        .r10{top: 2848px;}
+        .r11{top: 3156px;}
+        .r12{top: 3454px;}
+
+        .box {
+            color: #333;
+            width: 400px;
+            min-height: 200px;
+            padding: 20px;
+            border-radius: 3px;
+            height: auto;
+            background: #f1f1f1;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .b1 {
+            top: 80px;
+            left: calc(50% - 270px);
+        }
+        .b2 {
+            top: 386px;
+            left: calc(50% + 270px);
+        }
+        .b3 {
+            top: 692px;
+            left: calc(50% - 270px);
+        }
+        .b4 {
+            top: 1000px;
+            left: calc(50% + 270px);
+        }
+        .b5 {
+            top: 1308px;
+            left: calc(50% - 270px);
+        }
+        .b6 {
+            top: 1616px;
+            left: calc(50% + 270px);
+        }
+        .b7 {
+            top: 1924px;
+            left: calc(50% - 270px);
+        }
+        .b8 {
+            top: 2232px;
+            left: calc(50% + 270px);
+        }
+        .b9 {
+            top: 2540px;
+            left: calc(50% - 270px);
+        }
+        .b10 {
+            top: 2848px;
+            left: calc(50% + 270px);
+        }
+        .b11 {
+            top: 3156px;
+            left: calc(50% - 270px);
+        }
+        .b12 {
+            top: 3454px;
+            left: calc(50% + 270px);
+        }
+
+        .box p {
+            line-height: 20px;
+            font-size: 18px;
+            margin: 10px 0 20px 0;
+        }
+        .btn {
+            display: block;
+            background: midnightblue;
+            padding: 10px;
+            width: 120px;
+            text-align: center;
+            color: #f1f1f1;
+            text-decoration: none;
+            border-radius: 3px;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            .ligne {
+                position: relative;
+                left: 200px;
+            }
+            .rond {
+                left: calc(50% + 200px);
+            }
+            .box {
+                left: calc(50% - 50px)
+            }
+
+        }
+        .logoInnerPage:active {
+            animation: pulse 0.1s ease forwards;
+        }
+        @media screen and (max-width: 1000px) {
+            .logoInnerPage {
+                position: fixed;
+                width: 10%;
+                right: 1%;
+                bottom: 1%;
+            }
+        }
+        @media screen and (min-width: 1001px) {
+            .logoInnerPage {
+                position: fixed;
+                width: 5%;
+                right: 1%;
+                bottom: 1%;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <a href="../index.html">
+            <img src="../src/icons/logo.png" class="logoInnerPage">
+        </a>
+        <h1>2020</h1>
+
+        <div class="box-timeline">
+
+            <div class="ligne"></div>
+    
+            <div class="rond r1" data-anim="1">&#128293;</div>
+            <div class="rond r2" data-anim="2">&#129298;</div>
+            <div class="rond r3" data-anim="3">&#128170;</div>
+            <div class="rond r4" data-anim="4">&#129327;</div>
+            <div class="rond r5" data-anim="5">&#128167;</div>
+            <div class="rond r6" data-anim="6">&#127783;</div>
+            <div class="rond r7" data-anim="7">&#9889;</div>
+            <div class="rond r8" data-anim="8">&#9728;</div>
+            <div class="rond r9" data-anim="5">&#128567;</div>
+            <div class="rond r10" data-anim="6">&#127786;</div>
+            <div class="rond r11" data-anim="7">&#127974;</div>
+            <div class="rond r12" data-anim="8">&#128128;</div>
+    
+    
+            <div class="box b1" data-anim="1">
+                <h2>Janvier</h2>
+                <p>
+                    L'Australie est confrontée à de violents incendies, l'incendie a brûlé plus de dix-huit millions d'hectares, et plus d'un milliard d'animaux ont péri.
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/2020" class="btn">Voir plus</a>
+            </div>
+            <div class="box b2" data-anim="2">
+                <h2>Février</h2>
+                <p>
+                    En Europe, le mois de février 2020 est le deuxième mois de février le plus chaud connu, avec une température supérieure de 3,9 °C à la moyenne des mois de février depuis le début des relevés de température
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/2020" class="btn">Voir plus</a>
+            </div>
+            <div class="box b3" data-anim="3">
+                <h2>Mars</h2>
+                <p>
+                    Avec la baisse de la consommation d'énergie par les industries, et la diminution des émissions liées aux transports, provoquées par la pandémie de maladie à Covid-19 une baisse des teneur de dioxyde d'azote et de dioxyde de carbone sont également observées en Italie du Nord entre le 7 février et le 8 mars sur le même modèle que ce qui avait été observé en Chine en janvier-février. Le mois de mars 2020 est le deuxième mois de mars le plus chaud jamais enregistré dans le monde
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/2020" class="btn">Voir plus</a>
+            </div>
+            <div class="box b4" data-anim="4">
+                <h2>Avril</h2>
+                <p>
+                    Sans lien avec la pandémie, une série d'incendies de forêt se déclarent dans la zone d'exclusion de Tchernobyl, ce qui entraîne un taux de radioactivité 16 fois supérieur à la normale dans cette zone.
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/2020" class="btn">Voir plus</a>
+            </div>
+            <div class="box b5" data-anim="5">
+                <h2>Mai</h2>
+                <p>
+                    Du 4 mai au 23 juin 2020, l'association Ocean Voyages Institute mène une expédition dans le continent de plastique, et y récupère 103 tonnes de déchets plastiques et les ramène à Hawaï pour recyclage, ce qui bat très largement le précédent record de repêche de déchets plastiques qui était de 48 tonnes (également détenu par l'association). Le mois de mai 2020 est le mois de mai le plus chaud jamais enregistré dans le monde
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/2020" class="btn">Voir plus</a>
+            </div>
+            <div class="box b6" data-anim="6">
+                <h2>Juin</h2>
+                <p>
+                    Mi-juin, un épisode cévenol concerne la France (Massif central et les Cévennes), c'est un épisode exceptionnel pour cette période de l'année car ce phénomène ce produit fréquemment en automne et hiver
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/2020" class="btn">Voir plus</a>
+            </div>
+            <div class="box b7" data-anim="7">
+                <h2>Juillet</h2>
+                <p>
+                    Le 5 juillet en Inde, les autorités du Bihar annonce que la foudre a tué 147 personnes en 10 jours, soit plus que le bilan annuel des années précédentes alors que ce n'est que le début de la mousson, l'hypothèse d'un nombre d'éclairs et d'impacts plus intense à cause de la hausse de température et de l'humidité de l'atmosphère en conséquence du dérèglement climatique est privilégiée.
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/2020" class="btn">Voir plus</a>
+            </div>
+            <div class="box b8" data-anim="8">
+                <h2>Aout</h2>
+                <p>
+                    Début août, une canicule concerne la France plus précisément les régions Ile-de-France et Hauts-de-France, 15 départements du nord de la France sont placés en vigilance rouge canicule par Météo-France c'est la 3e alerte vigilance rouge canicule, 1 an après les deux premières vigilances rouges canicules historiques de 2019. Le port de Beyrouth (Liban) est détruit par deux violentes explosions.
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/2020" class="btn">Voir plus</a>
+            </div>
+            <div class="box b9" data-anim="9">
+                <h2>Septembre</h2>
+                <p>
+                    Depuis juin, l'épicentre de la Pandémie de Covid-19 se situe en Amérique, un début de seconde vague est constaté en Europe, au Moyen-Orient et en Asie
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/2020" class="btn">Voir plus</a>
+            </div>
+            <div class="box b10" data-anim="10">
+                <h2>Octobre</h2>
+                <p>
+                    La tempête Alex frappe l'Europe de l'Ouest en faisant plusieurs morts et d'importants dégâts, notamment dans les Alpes-Maritimes (France) et en Ligurie (Italie).
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/2020" class="btn">Voir plus</a>
+            </div>
+            <div class="box b11" data-anim="11">
+                <h2>Novembre</h2>
+                <p>
+                    Après le vote d'un budget qui réduit celui des écoles, de la lutte contre la pauvreté et des hôpitaux publics, en pleine pandémie de covid-19 et alors que le Guatemala doit gérer les conséquences des ouragans Eta et Iota qui ont fait environ 150 morts et disparus, mais qui accorde de l'argent à de grosses entreprises privées soupçonnées d'avoir bénéficié de favoritisme
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/2020" class="btn">Voir plus</a>
+            </div>
+            <div class="box b12" data-anim="12">
+                <h2>Decembre</h2>
+                <p>
+                    Le gouvernement britannique lance une alerte à propos de la mutation N501Y du coronavirus SARS-CoV-2, apparu fin septembre dans le sud-est de l'Angleterre, car cette mutation rendrait le virus jusqu'à 70% plus contagieux mais pas plus grave ; dans les jours suivants, plusieurs pays suspendent leurs liaisons avec le Royaume-Uni, et l’Écosse ferme la frontière intérieure avec l'Angleterre.
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/2020" class="btn">Voir plus</a>
+            </div>
+        </div>
+        <h1>2021 !</h1>
+    </body>
+</html>
