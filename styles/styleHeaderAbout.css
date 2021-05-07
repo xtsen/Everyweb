@@ -83,7 +83,9 @@ a.name:hover:after {
     font-size: 50px;
     text-decoration: none;
     position: relative;
-    color: #222;
+    color: rgb(255, 255, 255);
+    margin-left: 45%;
+    margin-bottom: 10%;
 }
 
 .two-lines::before,
@@ -91,7 +93,7 @@ a.name:hover:after {
     content: "";
     position: absolute;
     height: 2px;
-    background: #222;
+    background: rgb(255, 255, 255);
     opacity: 0;
     left: 50%;
     transform: translate(-50%, 10px);
