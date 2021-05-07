@@ -5,7 +5,7 @@
         <title>Thanks to you</title>
         <style type="text/css">
         body {
-            background-color: black;
+            background-color: rgb(0, 0, 0);
             background-image:
             radial-gradient(white, rgba(255,255,255,.2) .33em, transparent 20px),
             radial-gradient(white, rgba(255,255,255,.15) .3em, transparent 30px),
@@ -43,18 +43,50 @@
             color:#FFFF33;
             margin: auto;
             position: absolute;
-            animation: marquee 24s linear infinite;
+            animation: marquee 20s linear infinite;
         }
 
         @keyframes marquee {
-        0% {      transform: perspective(10px) rotateX(1deg);
+            0% {      
+                transform: perspective(10px) rotateX(1deg);
+            }
+                100% { transform: perspective(10px) rotateX(1deg);
+            }
         }
-        100% { transform: perspective(10px) rotateX(1deg);
+        .countDownP {
+            animation: hideCounter 0.5s 11s ease forwards
         }
+        @keyframes hideCounter {
+            100% {
+                opacity: 0;
+            }
+        }
+        .logoInnerPage:active {
+            animation: pulse 0.1s ease forwards;
+        }
+        @media screen and (max-width: 1000px) {
+            .logoInnerPage {
+                position: fixed;
+                width: 10%;
+                right: 1%;
+                bottom: 1%;
+            }
+        }
+        @media screen and (min-width: 1001px) {
+            .logoInnerPage {
+                position: fixed;
+                width: 5%;
+                right: 1%;
+                bottom: 1%;
+            }
         }
         </style>
     </head>
     <body>
+        <a href="../index.html">
+            <img src="../src/icons/logo.png" class="logoInnerPage">
+        </a>
+        <p class="countDownP">Lancement dans <a id="countdonw"></a></p>
         <div> 
             <marquee direction="up" class="scrollingtext" scrollamount="4" behavior="scroll">
                 <br>
@@ -76,5 +108,18 @@
                     <h2>Timothée</h2>
             </marquee>
           </div>
+          <script type="text/javascript">
+            second = 11
+            const seconds = document.getElementById('countdonw');
+            seconds.innerText = second
+            const CountDown = setInterval(() => {
+                const seconds = document.getElementById('countdonw');
+                second -= 1;
+                seconds.innerText = second
+                if (second <= 0) {
+                    second += 1
+                }
+            }, 1000)
+        </script>
     </body>
 </html>
