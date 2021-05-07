@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Thanks to you</title>
+        <style type="text/css">
+        body {
+            background-color: black;
+            background-image:
+            radial-gradient(white, rgba(255,255,255,.2) .33em, transparent 20px),
+            radial-gradient(white, rgba(255,255,255,.15) .3em, transparent 30px),
+            radial-gradient(white, rgba(255,255,255,.1) .24em, transparent 47px),
+            radial-gradient(white, rgba(255,255,255,.05) .17em, transparent 57px),
+            radial-gradient(rgba(255,255,255,.4),2px, transparent 30px);
+            background-size: 100%, 350px 350px, 250px 250px, 150px 150px; 
+            background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+        }
+
+        marquee {
+            margin: 0 auto;
+            text-align:center;
+        }
+
+        h1, h2, h3, p {
+            color: yellow;
+            text-align: center;
+        }
+
+        h1 {
+            font-size:1em;
+
+        }
+
+        h2 {
+            font-variant:small-caps;
+        }
+
+        .scrollingtext {
+            font-family:"Franklin Gothic";
+            font-size:2em;
+            line-height:1em;
+            text-align: center;
+            color:#FFFF33;
+            margin: auto;
+            position: absolute;
+            animation: marquee 24s linear infinite;
+        }
+
+        @keyframes marquee {
+        0% {      transform: perspective(10px) rotateX(1deg);
+        }
+        100% { transform: perspective(10px) rotateX(1deg);
+        }
+        }
+        </style>
+    </head>
+    <body>
+        <div> 
+            <marquee direction="up" class="scrollingtext" scrollamount="4" behavior="scroll">
+                <br>
+                <h1>Merci aux photographes : </h2>
+                    <h2>Auxanne</h2>
+                    <h2>Maxence</h2>
+                    <h2>Matys</h2>
+                    <h2>Louis</h2>
+                <h1>Merci aux skaters : </h2>
+                    <h2>Auxanne</h2>
+                    <h2>Maxence</h2>
+                    <h2>Matys</h2>
+                    <h2>Gautier</h2>
+                    <h2>Emile</h2>
+                    <h2>Baptiste</h2>
+                    <h2>Allan</h2>
+                    <h2>Gautier</h2>
+                    <h2>Mickael</h2>
+                    <h2>Timothée</h2>
+            </marquee>
+          </div>
+    </body>
+</html>
