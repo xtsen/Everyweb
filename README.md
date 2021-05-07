@@ -134,10 +134,10 @@ Ce projet représente plus de 30h de travail a nous deux
 
 # Pour les developpeurs
 Si vous ne vous y retrouvez pas dans ce monde de skate nous avons aussi pensé à vous !
-### La pages index
+### La pages index :
 Sur la page index se trouve 2 site cachés. Sur ces deux sites vous devrez chercher deux codes de 4 chiffres. Ces codes sont des dates.
-### La page Galerie
+### La page Galerie :
 Sur la page galerie vous trouverez 2 codes pareil de 4 chiffres. N'oubliez pas que les codes de cette page sont mieux cachés !
-### La page A propos
+### La page A propos :
 Sur la page A propos vous trouverez un bouton "contactez nous" et un mail sera deja près remplis vous devrez juste renseigné les codes
 
