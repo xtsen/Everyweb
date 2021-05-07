@@ -136,6 +136,10 @@
         margin-top: 5%;
     }
 } */
+.flouBody {
+    -webkit-filter: blur(8px);
+}
+
 .heroTitles {
     margin-top: 10%;
     display: flex;
@@ -187,4 +191,29 @@ a.name:after {
 }
 a.name:hover:after {
     top: 10%;
+}
+
+/* footer */
+.contactUs {
+    cursor: pointer;
+    display: relative;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    text-align: center;
+    border-radius: 30px;
+
+    color: #222;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+.contactUs:hover {
+    color: #fff;
+    background-color: #222;
+    border: 1px solid white;
+}
+.aContactUs {
+    color: #fff;
+    text-decoration: none;
 }
