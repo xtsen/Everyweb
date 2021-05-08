@@ -4,8 +4,21 @@
         <meta charset="utf-8" />
         <title>Thanks to you</title>
         <style type="text/css">
+        /* body {
+            font-family: sans-serif;
+            font-size: 50px;
+            background-color: #222222;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        } */
+
         body {
-            background-color: rgb(0, 0, 0);
+            background-color: black;
             background-image:
             radial-gradient(white, rgba(255,255,255,.2) .33em, transparent 20px),
             radial-gradient(white, rgba(255,255,255,.15) .3em, transparent 30px),
@@ -43,27 +56,20 @@
             color:#FFFF33;
             margin: auto;
             position: absolute;
-            animation: marquee 20s linear infinite;
+            animation: marquee 24s linear infinite;
         }
 
         @keyframes marquee {
             0% {      
                 transform: perspective(10px) rotateX(1deg);
             }
-                100% { transform: perspective(10px) rotateX(1deg);
-            }
-        }
-        .countDownP {
-            animation: hideCounter 0.5s 11s ease forwards
-        }
-        @keyframes hideCounter {
-            100% {
-                opacity: 0;
+            100% { 
+                transform: perspective(10px) rotateX(1deg);
             }
         }
         .logoInnerPage:active {
             animation: pulse 0.1s ease forwards;
-        }
+        } 
         @media screen and (max-width: 1000px) {
             .logoInnerPage {
                 position: fixed;
@@ -83,39 +89,44 @@
         </style>
     </head>
     <body>
-        <a href="../index.html">
+        <a href="../index.html" class="linkHome">
             <img src="../src/icons/logo.png" class="logoInnerPage">
         </a>
-        <p class="countDownP">Lancement dans <a id="countdonw"></a></p>
         <div> 
+            <p class="countDownP"><a id="countdonw"></a></p>
             <marquee direction="up" class="scrollingtext" scrollamount="4" behavior="scroll">
                 <br>
-                <h1>Merci aux photographes : </h2>
-                    <h2>Auxanne</h2>
-                    <h2>Maxence</h2>
-                    <h2>Matys</h2>
-                    <h2>Louis</h2>
-                <h1>Merci aux skaters : </h2>
-                    <h2>Auxanne</h2>
-                    <h2>Maxence</h2>
-                    <h2>Matys</h2>
-                    <h2>Gautier</h2>
-                    <h2>Emile</h2>
-                    <h2>Baptiste</h2>
-                    <h2>Allan</h2>
-                    <h2>Gautier</h2>
-                    <h2>Mickael</h2>
-                    <h2>Timothée</h2>
+                <h1>Merci ! </h1>
+                <h2>Merci aux photographes </h2>
+                <p>Auxanne</p>
+                <p>Maxence</p>
+                <p>Matys</p>
+                <p>Louis</p>
+              
+                <h2>Merci aux skaters </h2>
+                <p class="word5">Auxanne</p>
+                <p class="word6">Maxence</p>
+                <p class="word7">Matys</p>
+                <p class="word8">Gautier</p>
+                <p class="word9">Emile</p>
+                <p class="word10">Baptiste</p>
+                <p class="word11">Allan</p>
+                <p class="word12">Gautier</p>
+                <p class="word13">Mickael</p>
+                <p class="word14">Timothée</p>
+          
             </marquee>
           </div>
+           
+            
           <script type="text/javascript">
             second = 11
             const seconds = document.getElementById('countdonw');
-            seconds.innerText = second
+            seconds.innerText = "Lancement dans : " + second + "s"
             const CountDown = setInterval(() => {
                 const seconds = document.getElementById('countdonw');
                 second -= 1;
-                seconds.innerText = second
+                seconds.innerText = "Lancement dans : " + second + "s"
                 if (second <= 0) {
                     second += 1
                 }
