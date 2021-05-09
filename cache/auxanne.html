@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Merci Auxanne !</title>
+
+        <link rel="stylesheet" href="../styles/styleGlobal.css">
+        <style type="text/css">
+        .slideImg{
+            /* les images doivent absolument avoir une resolution de 1200x600 */
+            max-width: 100%;
+            padding-top: 55%;
+
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            animation: fondu 30s ease-in-out infinite both;
+        }
+        @keyframes fondu {
+            /* par la suite transformer ces liens par des liens imgur pour eviter le telechargement trop long des ressources */
+            0%{background-image: url("../src/images/Diapo/skate1.jpg");}
+            10%{background-image: url("../src/images/Diapo/skate1.jpg");}
+            20%{background-image: url("../src/images/Diapo/skate2.jpg");}
+            30%{background-image: url("../src/images/Diapo/skate2.jpg");}
+            40%{background-image: url("../src/images/Diapo/skate3.jpg");}
+            50%{background-image: url("../src/images/Diapo/skate3.jpg");}
+            60%{background-image: url("../src/images/Diapo/skate4.jpg");}
+            70%{background-image: url("../src/images/Diapo/skate4.jpg");}
+            80%{background-image: url("../src/images/Diapo/skate5.jpg");}
+            90%{background-image: url("../src/images/Diapo/skate5.jpg");}
+            100%{background-image: url("../src/images/Diapo/skate1.jpg");}
+            /* l'image du 100% et du 0% doivent etre identique */
+        }
+        </style>
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <a href="../index.html" class="js-scrollTo">
+            <img src="../src/icons/logo.png" class="logoInnerPage">
+        </a>
+        
+        <!-- Nav bar -->
+        <nav>
+            <ul>
+                <li class="elementNav"><a href="../index.html" class="linkNavbar">Home</a></li>
+            </ul>
+        </nav>
+
+        <!-- Présentation -->
+        <div class="pres"></div>
+        
+        <!-- diapo -->
+        <div class="slidesAuxanne">
+            <div class="slideImg"></div>
+        </div>
+    </body>
+</html>

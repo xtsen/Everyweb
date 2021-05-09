@@ -76,6 +76,7 @@
                 width: 10%;
                 right: 1%;
                 bottom: 1%;
+                z-index: 100000;
             }
         }
         @media screen and (min-width: 1001px) {
@@ -84,6 +85,7 @@
                 width: 5%;
                 right: 1%;
                 bottom: 1%;
+                z-index: 100000;
             }
         }
         </style>
@@ -98,7 +100,7 @@
                 <br>
                 <h1>Merci ! </h1>
                 <h2>Merci aux photographes </h2>
-                <p>Auxanne</p>
+                <a href="A.html" class="">Auxanne</a>
                 <p>Maxence</p>
                 <p>Matys</p>
                 <p>Louis</p>
@@ -129,6 +131,7 @@
                 seconds.innerText = "Lancement dans : " + second + "s"
                 if (second <= 0) {
                     second += 1
+                    seconds.innerText = " "
                 }
             }, 1000)
         </script>
