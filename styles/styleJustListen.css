@@ -1,0 +1,227 @@
+::selection {
+    background-color: #222222;
+    color: #fff;
+}
+body{
+    background: #f3f3f3;
+    font-family: Roboto;
+    color: rgb(20, 20, 20);
+    opacity: 0;
+    margin: 0;
+    height: 100%;
+    animation: apparition 1s 0.5s ease forwards;
+    opacity: 0;
+}
+/* Nav bar */
+nav {
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #222222;
+    animation: apparition 0.4s 1.6s ease-out forwards;
+    padding: 0.1%;
+}
+@keyframes apparition {
+    100%{
+      opacity: 1;
+    }
+  }
+@media screen and (min-width: 1001px)
+{
+    ul {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        display: table;
+        text-align: center;
+    }
+    li.elementNav { 
+        display: table-cell; 
+        position: relative; 
+        font-family: Roboto;
+        font-style: italic;
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 1000px)
+{
+    ul {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        display: table;
+        text-align: center;
+    }
+    li.elementNav { 
+        display: table-cell; 
+        position: relative; 
+        font-family: Roboto;
+        font-style: italic;
+        font-size: 2em;
+    }
+}
+li.elementNav a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    position: relative;
+}
+li.elementNav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+li.elementNav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.logoInnerPage:active {
+    animation: pulse 0.1s ease forwards;
+}
+@media screen and (max-width: 1000px) {
+    .logoInnerPage {
+        position: fixed;
+        width: 10%;
+        right: 1%;
+        bottom: 1%;
+    }
+    footer p {
+        text-align: center;
+        font-size: 0.5em;
+        color: #575757;
+    }
+}
+@media screen and (min-width: 1001px) {
+    .logoInnerPage {
+        position: fixed;
+        width: 5%;
+        right: 1%;
+        bottom: 1%;
+    }
+    footer p {
+        text-align: center;
+        font-size: 1em;
+        color: #575757;
+    }
+}
+footer p a {
+    color: #575757;
+    text-decoration: none;
+}
+.linkHiddenWebsiteFooter {
+    color: #575757;
+    text-decoration: none;
+    cursor: none;
+}
+
+/* content */
+
+#MusicMarker {
+    padding: 2%;
+}
+.titlePlaylistPart {
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+}
+.titleSectionPlaylist {
+    font-size: 170%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 3.5rem;
+    content: "Album de la semaine +";
+}
+.titleSectionPlaylist::selection {
+    background-color: #f3f3f3;
+    color: #222222;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .descriptionPlaylistPart {
+        font-family: Roboto;
+        font-size: 1.2em;
+        font-weight: 300;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1001px){
+    .descriptionPlaylistPart {
+        font-family: Roboto;
+        font-size: 2em;
+        font-weight: 300;
+        width: 100%;
+        text-align: center;
+    }
+}
+.deezerWidget {
+    opacity: 0;
+}
+.gridPlaylist {
+    margin-left: 12%;
+    display: grid;
+    width: 80%;
+    grid-template-columns: auto auto auto auto;
+}
+.PlaylistIcon {
+    margin-top: 15%;
+    width: 80%;
+}
+.icon {
+    margin-left: 24%;
+    width: 50%;
+}
+.titlePlaylist {
+    width: 100%;
+    font-size: 150%;
+    text-align: center;
+}
+div.gridPlaylist a {
+    color: rgb(22, 22, 22);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    position: relative;
+}
+div.gridPlaylist a:after {    
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: rgb(22, 22, 22);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+div.gridPlaylist a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
