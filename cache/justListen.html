@@ -30,17 +30,26 @@
             
             <!-- playlist Deezer Iframe -->
 
-            <p class="titleSectionPlaylist" >
-                &nbsp;
+            <p class="titleSectionPlaylist" id="titlePlaylistPlus" onclick="changeNameTitle(true)" >
+                Albums de la semaine +
+            </p>
+            <p class="titleSectionPlaylist" id="titlePlaylistMinus" onclick="changeNameTitle(false)" >
+                Albums de la semaine -
             </p>
             
-            <div class="deezerWidget">
+            <div id="deezerWidget">
                 <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/226285612" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
                 <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/222605782" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
         
             </div>
             
+            <hr>
             <!-- Tableau des playlists -->
+
+            <p class="titleSectionPlaylist">
+                Nos playlists
+            </p>
+
             <div class="gridPlaylist">
                 <a class="PlaylistIcon" href="https://deezer.page.link/bCaPbx7pebetNeGL6">
                     <img class="icon" src="../src/icons/playlist.png" alt="icone Playlist">
@@ -76,5 +85,6 @@
                 </a>
             </div>
         </div>
+        <script type="text/javascript" src="scriptJustListen.js"></script>
     </body>
 </html>
