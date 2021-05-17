@@ -135,7 +135,7 @@ button {
 .btn-slide-up {
     padding: 30px 45px;
     width: 50%;
-    border-radius: 30px;
+    border-radius: 3px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
