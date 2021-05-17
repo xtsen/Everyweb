@@ -134,12 +134,13 @@ button {
 }
 .btn-slide-up {
     padding: 30px 45px;
+    width: 50%;
     border-radius: 30px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
     border: 3px solid #000;
-    margin-left: 20%;
+    margin-left: 25%;
 }
 .btn-slide-up a {
     position: relative;
