@@ -1,28 +1,7 @@
-console.log("Un projet mené par Nesta et Louis")
-console.log("le lien vers le github : https://github.com/xtsen/Skate-in-peace")
-
-if (window.screen.availWidth > 1020) {
-    window.onscroll = function() {SideSlideImageDesktop()};
+function redirect(numberWebsite) {
+    websites = ['file:///Users/nesta/Desktop/Developpement/frontend/2021/Skate%20in%20peace/Skate-in-peace/home.html', 
+                'file:///Users/nesta/Desktop/Developpement/frontend/2021/Skate%20in%20peace/Skate%20Escape/skateEscape.html', 
+                'file:///Users/nesta/Desktop/Developpement/frontend/2021/Skate%20in%20peace/Just%20Listen/justListen.html', 
+                'file:///Users/nesta/Desktop/Developpement/frontend/2021/Skate%20in%20peace/Skate-in-peace/cache/2021.html']
+    window.location.replace(websites[numberWebsite]);
 }
-else if (window.screen.availWidth > 319) {
-    window.onscroll = function() {SideSlideImagePhone()};
-} 
-
-function SideSlideImageDesktop() {
-    if (document.documentElement.scrollTop > 650 && document.documentElement.scrollTop < 2100) {
-        document.getElementById("sideSlide").className = "sideSkateDescription";
-    }else if (document.body.scrollTop < 650 || document.documentElement.scrollTop < 650) {
-        document.getElementById("sideSlide").className = "hiddenSideSlide";
-    }else if (document.body.scrollTop > 2100 || document.documentElement.scrollTop > 2100) {
-        document.getElementById("sideSlide").className = "hiddenSideSlide";
-    }
-} 
-function SideSlideImagePhone() {
-    if (document.documentElement.scrollTop > 350 && document.documentElement.scrollTop < 1000) {
-        document.getElementById("sideSlide").className = "sideSkateDescription";
-    }else if (document.body.scrollTop < 200 || document.documentElement.scrollTop < 200) {
-        document.getElementById("sideSlide").className = "hiddenSideSlide";
-    }else if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-        document.getElementById("sideSlide").className = "hiddenSideSlide";
-    }
-} 
