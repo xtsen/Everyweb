@@ -56,7 +56,6 @@ setTimeout(function(){
   function addPerson() {
     var p = document.createElement('div')
     p.className = 'person '+ani[Math.floor(Math.random()*ani.length)]
-    // p.style.animationDelay = Math.floor(Math.random()*ani.length)+'s'
     p.style.left = Math.random()*window.innerWidth+'px'
     p.style.top = Math.random()*(window.innerHeight - 200)+100+'px'
     gamebox.appendChild(p)
@@ -74,7 +73,6 @@ setTimeout(function(){
     function donate2() {
     var url ='https://xtsen.github.io/Skate-in-peace/index.html'
     window.open(url,'_blank');
-    // window.location.href = url;
   }
     
     var s_rect = person.getBoundingClientRect()
@@ -126,8 +124,7 @@ setTimeout(function(){
     b.forEach(function(elm){
       elm.remove()
     })
-    score++
-    // document.querySelector('#r').innerHTML = score  
+    score++ 
     addPerson()
     addPerson()
     addPerson()
@@ -143,7 +140,6 @@ setTimeout(function(){
     }  
    
     var p = document.querySelectorAll('.person')
-    // console.log(p.length)
     p.forEach(function(elm){
       elm.style.left = Math.random()*window.innerWidth+'px'
       elm.style.top = Math.random()*(window.innerHeight - 200)+100+'px'
@@ -165,16 +161,12 @@ setTimeout(function(){
   
   function idleLogout() {
       var t;
-      window.onload = resetTimer;
-      // window.onmousemove = resetTimer;
-      // window.onmousedown = resetTimer;        
-      window.ontouchstart = resetTimer;  
-      // window.onclick = resetTimer;      
+      window.onload = resetTimer;       
+      window.ontouchstart = resetTimer;      
       window.onkeydown = resetTimer;   
-      // window.addEventListener('scroll', resetTimer, true); 
   
       function yourFunction() {
-          // your function for too long inactivity goes here
+          // Après une longue inactivité
         var s_rect = document.querySelector('#person').getBoundingClientRect()
         var end = document.querySelector('#start').getBoundingClientRect()
     
@@ -184,7 +176,7 @@ setTimeout(function(){
                   s_rect.top > end.bottom)
         if(win) {
           
-          document.querySelector('#winner').innerHTML = '<h1>Congrats!</h1>The only way that any of us <i><b>win</b></i> during this difficult time is to stay home. Avoid others. And we will all be better off for it.<br><br>Thank you. 🙂<h3 onclick="hideWinner()">CONTINUE PLAYING</h3>'
+          document.querySelector('#winner').innerHTML = '<h1>Félicitations</h1>Vous êtes arrivé au bout du jeu !<i><b>Gagné</b></i>Merci d\'avoir joué mais n\'hesitez pas à découvrir nos autres sites<br><br>Merci. 🙂<h3 onclick="hideWinner()">- Continuer à jouer -</h3>'
           document.querySelector('#winner').style.opacity = '1'
           function hideWinner() {
             document.querySelector('#winner').style.opacity = '0'
