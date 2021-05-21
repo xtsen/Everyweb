@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+* {
+	box-sizing: border-box;
+}
 body {
     display: grid;
     font-family: Roboto;
@@ -31,6 +34,72 @@ body {
     text-align: center;
     margin-left: 5%;
     font-size: 150%;
+}
+.labelCheckboxFilter {
+    display: flex; 
+    align-items: center;
+	position: relative;
+    cursor: pointer;
+}
+
+.container {
+	text-align: center;
+    width: 100%;
+}
+
+input {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+label > span {
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	border: 2px solid #9e9e9e;
+	margin-right: 15px;
+	border-radius: 3px;
+	transition: all .3s;
+}
+
+input:checked + label > span {
+	border: 10px solid #F1C40F;
+	animation: bounce 250ms;
+}
+
+input:checked + label > span::before {
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 4px;
+	border-right: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	transform: rotate(45deg);
+	transform-origin: 0% 100%;
+	animation: checked-box 125ms 250ms forwards;
+}
+
+@keyframes checked-box {
+	0% {
+		width: 0;
+		height: 0;
+		border-color: #212121;
+		transform: translate(0,0) rotate(45deg);
+	}
+	33% {
+		width: 4px;
+		height: 0;
+		border-color: #212121;
+		transform: translate(0,0) rotate(45deg);
+	}
+	100% {
+		width: 4px;
+		height: 8px;
+		border-color: #212121;
+		transform: translate(0,-8px) rotate(45deg);
+	}
 }
 
 /* mainBody */
@@ -70,6 +139,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
+    border: 1px solid #fff;
     transition: all 0.3s ease;
 }
 .titleWebsite {
