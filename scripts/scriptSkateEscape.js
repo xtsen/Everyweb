@@ -193,7 +193,7 @@ setTimeout(function(){
       }
       function resetTimer() {
           clearTimeout(t);
-          t = setTimeout(yourFunction, 1.5*60*1000);  // time is in milliseconds
+          t = setTimeout(yourFunction, 1.5*60*1000);  
       }
   }
   idleLogout();
