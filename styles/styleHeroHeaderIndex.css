@@ -12,17 +12,17 @@
 }
 @keyframes fondu {
     /* par la suite transformer ces liens par des liens imgur pour eviter le telechargement trop long des ressources */
-    0%{background-image: url("../src/images/Diapo/skate1.jpg");}
-    10%{background-image: url("../src/images/Diapo/skate1.jpg");}
-    20%{background-image: url("../src/images/Diapo/skate2.jpg");}
-    30%{background-image: url("../src/images/Diapo/skate2.jpg");}
-    40%{background-image: url("../src/images/Diapo/skate3.jpg");}
-    50%{background-image: url("../src/images/Diapo/skate3.jpg");}
-    60%{background-image: url("../src/images/Diapo/skate4.jpg");}
-    70%{background-image: url("../src/images/Diapo/skate4.jpg");}
-    80%{background-image: url("../src/images/Diapo/skate5.jpg");}
-    90%{background-image: url("../src/images/Diapo/skate5.jpg");}
-    100%{background-image: url("../src/images/Diapo/skate1.jpg");}
+    0%{background-image: url("../Skate-in-peace/src/images/Diapo/skate1.jpg");}
+    10%{background-image: url("../Skate-in-peace/src/images/Diapo/skate1.jpg");}
+    20%{background-image: url("../Skate-in-peace/src/images/Diapo/skate2.jpg");}
+    30%{background-image: url("../Skate-in-peace/src/images/Diapo/skate2.jpg");}
+    40%{background-image: url("../Skate-in-peace/src/images/Diapo/skate3.jpg");}
+    50%{background-image: url("../Skate-in-peace/src/images/Diapo/skate3.jpg");}
+    60%{background-image: url("../Skate-in-peace/src/images/Diapo/skate4.jpg");}
+    70%{background-image: url("../Skate-in-peace/src/images/Diapo/skate4.jpg");}
+    80%{background-image: url("../Skate-in-peace/src/images/Diapo/skate5.jpg");}
+    90%{background-image: url("../Skate-in-peace/src/images/Diapo/skate5.jpg");}
+    100%{background-image: url("../Skate-in-peace/src/images/Diapo/skate1.jpg");}
     /* l'image du 100% et du 0% doivent etre identique */
 }
 

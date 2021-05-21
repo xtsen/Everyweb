@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Skate in peace</title>
+        <link rel="shortcut icon" type="image/png" href="src/icons/logo.png"/>
+
+        <!-- Balise meta OG -->
+        <meta property="og:image" content="src/icons/logo.png">
+        <meta property="og:type" content="article">
+        <meta property="og:description" content="Découvrez de nombreux clips de skate tourné au skate park d'aizenay et a celui de la roche sur Yonn mais ce n'est pas tout nous vous avons aussi concocté nos meilleurs playlists !">
+        <meta property="og:locale" content="fr_FR">
+        <meta property="og:title" content="Skate in peace">
+        <meta property="article:author" content="Xtsen">
+
+        <!-- Différentes sylesheet -->
+        <link rel="stylesheet" href="../styles/styleGlobal.css">
+        <link rel="stylesheet" href="../styles/styleHeroHeaderIndex.css">
+        <link rel="stylesheet" href="../styles/styleSkatePart.css">
+        <link rel="stylesheet" href="../styles/stylePlaylistPart.css">
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
+    </head>
+    <body id="body">
+        <a href="html" class="js-scrollTo">
+            <img src="src/icons/logo.png" class="logoInnerPage">
+        </a>
+        
+        <!-- Nav bar -->
+        <nav>
+            <ul>
+                <li class="elementNav"><a href="home.html" class="linkNavbar">Home</a></li>
+                <li class="elementNav"><a href="gallery.html" class="linkNavbar">Galerie</a></li>
+                <li class="elementNav"><a href="about.html" class="linkNavbar">A propos</a></li>
+            </ul>
+        </nav>
+        
+        <!-- diapo -->
+        <div class="slides">
+            <div class="slide"></div>
+        </div>
+
+        <!-- Page2 -> Skate Marker -->
+        <div id="SkateMarker">
+
+            <div class="hiddenSideSlide" id="sideSlide">
+                <p class="heroTitleSkatePart">A la une </p>
+                <p class="descriptionSkatePart">Voici les photos de skate à la une pour cette semaine. Toi aussi envoie nous ta photo ou ta vidéo pour que tout le monde puisse le regarder ! </p>
+                <a class="subDescriptionSkatePart" href="gallery.html">Viens découvrir nos autres videos !</a>
+            </div>
+
+            <!-- image grid -->
+            <div class="grid" id="grid">
+                <img src="src/images/skateNightGautier1.jpg" class="grid-element">
+                <img src="src/images/skate2mecTorseNue.jpg" class="grid-element">
+                <img src="src/images/skateNightGautier2.jpg" class="grid-element">
+                <img src="src/images/skateMathis.jpg" class="grid-element">
+                <img src="src/images/skateAllanHight.jpg" class="grid-element">
+                <img src="src/images/skateMathysdedos.jpg" class="grid-element">
+                <img src="src/images/Diapo/skate5.jpg" class="grid-element">
+            </div>
+
+        <!-- Page3 -> Music Marker -->
+        <hr>
+        <button class="btn-slide-up">
+            <a href="cache/justListen.html" class="linkPlaylistWebsite">Notre plateforme de musique : Just Listen</a>
+        </button> 
+
+        <footer>
+            <p>&copy; <a href="cache/2021.html" class="linkHiddenWebsiteFooter">2021</a> Skate in peace de <a href="cache/birthday.html" class="linkHiddenWebsiteFooter">Louis et Nesta</a> le lien vers le github : <a href="https://github.com/xtsen/Skate-in-peace">https://github.com/xtsen/Skate-in-peace</a></p>
+        </footer>
+
+        <!-- Les scripts js -->
+        <script type="text/javascript" src="../scripts/scriptIndex.js"></script>
+        <script type="text/javascript" src="../scripts/globalScript.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                    var page = $(this).attr('href'); // Page cible
+                    var speed = 600; // Durée de l'animation (en ms)
+                    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>
