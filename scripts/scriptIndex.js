@@ -7,7 +7,7 @@ function redirect(numberWebsite) {
 }
 
 
-var games = ['website2']
+var games = ['website1', 'website3', 'website4']
 
 function setView(nameInput) {
     var checkbox = document.getElementById(nameInput).checked
