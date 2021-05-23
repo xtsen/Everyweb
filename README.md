@@ -1,9 +1,9 @@
-# Projet de fin d'année NSI : Skate in peace
-Nous avons choisi de faire un site avec Louis regroupant nos deux hobby : les videos et clip de sakte et bien sur la bonne musique
+# Projet de fin d'année NSI : Everyweb
+Nous avons choisi de faire non pas un seul site mais plusieurs autour ed nos 2 passions : le skateboarding et la musique.
 
 ### Le lien pour aller sur le site : https://xtsen.github.io/Everyweb/
 ### Nous respectons le choix du navigateur de l'utilisateur c'est pourquoi notre site est disponible sur Tor : http://uctw27z3lh4wnmi3q4xsswjo5v7ch3wkbki7usuad27rchz7rdmzhdqd.onion
-A cause de la politique de protection des données de Tor certaine fonctionnalitées sont indisponible
+A cause de la politique de protection des données de Tor certaines fonctionnalitées sont indisponible
 
 ## Installation
 
@@ -15,6 +15,7 @@ Apres ca un dossier zip vas se telecharger et vous n'aurez plus qu'a cliquer sur
 ## Pourquoi ?
 
 Avec Louis nous avons longuement cherché quel sujet choisir pour remplir le contenu de notre site. Puis nous avon mis en commun nos loisirs/hobbys et nous nous sommes tous les deux rendu compte que nous avions une passion pour la musique mais nous aimions aussi tous les deux les vidéos de skate bien tourné.
+Alors c'est ainsi qu'est né 'Skate in peace'
 
 ### Quel interet pour l'utilisateur ?
 Nous avions remarquer auparavant que aucun site de skate n'était bien bien organisé et vraiment agréable a regarder. 
@@ -114,6 +115,7 @@ Ce projet représente plus de 30h de travail a nous deux
 
 ## Fonctionnalitées
 
+### Si vous cliquez sur la checkbox à coté de 'jeux' cela vous affichera seulement les jeux
 ### Si vous placez votre souris au dessus d'un des trois mots en haut de la page une ligne apparait en dessous du mot en commencant par le milieu
 ### Si vous cliquez sur la rubrique "Gallerie" cela vous emmène vers la page gallery.html
 ### Cliquer sur "A propos" vous emmène vers la page about.html
@@ -134,10 +136,6 @@ Ce projet représente plus de 30h de travail a nous deux
 
 # Pour les developpeurs
 Si vous ne vous y retrouvez pas dans ce monde de skate nous avons aussi pensé à vous !
-### La pages index :
-Sur la page index se trouve 2 site cachés. Sur ces deux sites vous devrez chercher deux codes de 4 chiffres. Ces codes sont des dates.
-### La page Galerie :
-Sur la page galerie vous trouverez 2 codes pareil de 4 chiffres. N'oubliez pas que les codes de cette page sont mieux cachés !
-### La page A propos :
-Sur la page A propos vous trouverez un bouton "contactez nous" et un mail sera deja près remplis vous devrez juste renseigné les codes
+
+Nous avons caché un code dans presque chaque sites donc cherchez bien !
 
