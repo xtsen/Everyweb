@@ -9,6 +9,7 @@ function redirectOnMain() {
         window.location.replace("../Everyweb/index.html") 
     }
     else {
-        document.getElementById('errorMessage').style.opacity = 1
+        document.getElementById('errorMessage').style.opacity = 1;
+        document.getElementById('phone-size').innerText = window.screen.width + "px , " + window.screen.height + "px";
     }
 }
