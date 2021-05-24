@@ -10,6 +10,6 @@ function redirectOnMain() {
     }
     else {
         document.getElementById('errorMessage').style.opacity = 1;
-        document.getElementById('linkPage').style.display= "block";
+        document.getElementById('linkPage').style.transform = "scale(1)"
     }
 }
