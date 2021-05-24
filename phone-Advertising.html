@@ -37,11 +37,15 @@
             .warning {
                 color: rgb(255, 208, 0);
             }
+            #errorMessage {
+                color: rgb(206, 56, 56);
+            }
         </style>
     </head>
     <body>
         <p class="advert"><span class="warning">Attention</span> pour une meilleure expérience, redirigez vous vers un écran plus grand (ordinateur, tablette ...)</p>
         <button type="button" onclick="redirectOnMain()">D'accord</button>
+        <p id="errorMessage"></p>
         <script type="text/javascript" src="scripts/phone-sizeScript.js"></script>
     </body>
 </html>

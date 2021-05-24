@@ -8,5 +8,7 @@ function redirectOnMain() {
     if (window.screen.width >= 1000) {
         window.location.replace("../Everyweb/index.html") 
     }
-    
+    else {
+        document.querySelector('#errorMessage').innerHTML = 'Vous n\'avez pas changé d\'appareil'
+    }
 }
