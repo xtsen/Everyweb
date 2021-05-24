@@ -6,23 +6,32 @@ function redirect(numberWebsite) {
     window.location.replace(websites[numberWebsite]);
 }
 
-
+// Liste de card ne correspondant pas au critère
 var games = ['website1', 'website3', 'website4']
+var music = ['website1', 'website2', 'website4']
 
 function setView(nameInput) {
     var checkbox = document.getElementById(nameInput).checked
 
     if (checkbox) {
-        removeGames();
+        removeCards(nameInput);
     }
     else if (checkbox != true){
         viewAll();
     }
 }
 
-function removeGames() {
-    games.forEach(game => document.getElementById(game).style.display="none")
+function removeCards(nameInput) {
+    if (nameInput == 'game') {
+        games.forEach(card => document.getElementById(card).style.display="none")
+    }
+    else if (nameInput == 'music') {
+        music.forEach(card => document.getElementById(card).style.display="none")
+    }
+    
 }
 function viewAll() {
-    games.forEach(game => document.getElementById(game).style.display="block")
+    // Ajouter à chaque fois les nouvelles listes
+    games.forEach(card => document.getElementById(card).style.display="block")
+    music.forEach(card => document.getElementById(card).style.display="block")
 }
