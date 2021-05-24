@@ -5,5 +5,8 @@ function checkWidth() {
 
 }
 function redirectOnMain() {
-    window.location.replace("../Everyweb/main.html")
+    if (window.screen.width >= 1000) {
+        window.location.replace("../Everyweb/main.html") 
+    }
+    
 }
