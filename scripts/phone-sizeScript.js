@@ -9,6 +9,6 @@ function redirectOnMain() {
         window.location.replace("../Everyweb/index.html") 
     }
     else {
-        document.querySelector('#errorMessage').innerHTML = 'Vous n\'avez pas changé d\'appareil'
+        document.getElementById('errorMessage').style.opacity = 1
     }
 }

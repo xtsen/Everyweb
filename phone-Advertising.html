@@ -43,13 +43,15 @@
             }
             #errorMessage {
                 color: rgb(206, 56, 56);
+                transition: all 0.3s ease;
+                opacity: 0;
             }
         </style>
     </head>
     <body>
         <p class="advert"><span class="warning">Attention</span> pour une meilleure expérience, redirigez vous vers un écran plus grand (ordinateur, tablette ...)</p>
         <button type="button" onclick="redirectOnMain()">D'accord</button>
-        <p id="errorMessage"></p>
+        <p id="errorMessage">Vous n'avez pas changé d'appareil</p>
         <script type="text/javascript" src="scripts/phone-sizeScript.js"></script>
     </body>
 </html>
