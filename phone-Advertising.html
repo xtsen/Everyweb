@@ -9,6 +9,7 @@
 
         <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
     
         <style type="text/css">
@@ -41,6 +42,19 @@
             .warning {
                 color: rgb(255, 208, 0);
             }
+            #linkPage {
+                font-family: 'Roboto Mono', monospace;
+                display: none;
+            }
+            .urlLink {
+                background-color: rgb(54, 54, 54);
+                padding: 4%;
+                font-size: 90%;
+            }
+            .imgLink {
+                width: 40%;
+                margin-left: 30%;
+            }
             #errorMessage {
                 text-align: center;
                 color: rgb(206, 56, 56);
@@ -51,9 +65,12 @@
     </head>
     <body>
         <p class="advert"><span class="warning">Attention</span> pour une meilleure expérience, redirigez vous vers un écran plus grand (ordinateur, tablette ...)</p>
+        <div id="linkPage">
+            <p class="urlLink">https://xtsen.github.io/Everyweb/</p>
+            <img class="imgLink" src="res/qrcode_xtsen.github.io.png">
+        </div>
         <button type="button" onclick="redirectOnMain()">D'accord</button>
         <p id="errorMessage">Vous n'avez pas changé d'appareil</p>
-        <p id="phone-size"></p>
         <script type="text/javascript" src="scripts/phone-sizeScript.js"></script>
     </body>
 </html>

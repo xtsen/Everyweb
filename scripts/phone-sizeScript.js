@@ -10,6 +10,6 @@ function redirectOnMain() {
     }
     else {
         document.getElementById('errorMessage').style.opacity = 1;
-        document.getElementById('phone-size').innerText = window.screen.width + "px , " + window.screen.height + "px";
+        document.getElementById('linkPage').style.display= "block";
     }
 }
