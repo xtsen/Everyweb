@@ -5,60 +5,40 @@
         <meta name="viewport" content="width=device-width, initial"/>
 
         <title>Everyweb</title>
-
-        <link rel="stylesheet" href="styles/styleIndex.css">
         <link rel="shortcut icon" type="image/png" href="Skate-in-peace/src/icons/logo.png"/>
 
         <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
     
+        <style type="text/css">
+            body {
+                background-color: #222222;
+                color: #fff;
+                display: grid;
+                grid-template-columns: auto;
+                font-family: Roboto;
+                margin-top: 45%;
+                font-size: 120%;
+                text-align: justify;
+            }
+            button {
+                padding: 3%;
+                background-color: #209b5d;
+                border-radius: 10px;
+                color: #fff;
+                margin-top: 5%;
+                font-size: 110%;
+                border: none;
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
     </head>
-    <body onload="checkWidth()">
-        <div id="sidebar">
-            <div id="filter">
-                <p class="titleSideBar">Filtrer la recherche :</p>
-                <div class="container">
-                    <input type="checkbox" id="game" onclick="setView('game')">
-                    <label for="game" class="labelCheckboxFilter">
-                        <span></span> Jeux
-                    </label>
-                    <input type="checkbox" id="music" onclick="setView('music')">
-                    <label for="music" class="labelCheckboxFilter">
-                        <span></span> Musique
-                    </label>
-                    <input type="checkbox" id="skate" onclick="setView('skate')">
-                    <label for="skate" class="labelCheckboxFilter">
-                        <span></span> Skate
-                    </label>
-                    <!-- <input type="checkbox" id="all" onclick="setView('all')">
-                    <label for="all" class="labelCheckboxFilter">
-                        <span></span> Tous
-                    </label> -->
-                </div>
-            </div>
-        </div>
-        <div id="mainBody">
-            <div id="header">
-                <p class="mainTitle">Everyweb</p>
-                <p class="mainSubtitle">Retrouvez tous nos sites pour notre projet de NSI</p>
-            </div>
-            <div id="websites">
-                <div class="website" id="website1" onclick="redirect(0)">
-                    <p class="titleWebsite">Skate in peace</p>
-                </div>
-                <div class="website" id="website2" onclick="redirect(1)">
-                    <p class="titleWebsite">Skate Escape</p>
-                </div>
-                <div class="website" id="website3" onclick="redirect(2)">
-                    <p class="titleWebsite">Just Listen</p>
-                </div>
-                <div class="website" id="website4" onclick="redirect(3)">
-                    <p class="titleWebsite">2021</p>
-                </div>
-            </div>
-        </div>
+    <body>
+        <p class="advert">Attention pour une meilleur expérience, redirigez vous vers un écran plus grand (ordinateur, tablette ...)</p>
+        <button type="button" onclick="redirectOnMain()">D'accord</button>
         <script type="text/javascript" src="scripts/phone-sizeScript.js"></script>
-        <script type="text/javascript" src="scripts/scriptIndex.js"></script>
     </body>
 </html>
