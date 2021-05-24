@@ -71,7 +71,7 @@ setTimeout(function(){
   
   function bang(){
     function donate2() {
-    var url ='https://xtsen.github.io/Skate-in-peace/main.html'
+    var url ='https://xtsen.github.io/Everyweb/Skate-in-peace/home.html'
     window.open(url,'_blank');
   }
     
