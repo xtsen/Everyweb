@@ -15,4 +15,9 @@ function initDate() {
 initDay()
 initDate()
 
-// const CLEFAPI = 'e4c47734a734e3497f7bbb4351410216';
+const CLEFAPI = '05102432d68f5cf4fbeab5852f88e77c';
+
+let url = 'https://api.openweathermap.org/data/2.5/weather?q=Rouen&appid=05102432d68f5cf4fbeab5852f88e77c';
+fetch(url).then((response) => 
+    response.json().then((data) => console.log(data))
+);
