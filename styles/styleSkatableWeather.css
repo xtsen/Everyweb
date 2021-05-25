@@ -3,12 +3,50 @@
 body {
     background: linear-gradient(145deg, #722286, rgb(107, 52, 195), #3A3DD8, #3ACCD8);
     color: #fff;
+    background-size: 200% 200%;
     font-family: Montserrat, "sans-serif";
+}
+.searchCity {
+    display: grid;
+    grid-template-columns: auto;
+    width: 40%;
+    margin: 10px 30%;
+    
+}
+#inputCity {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: none;
+    padding: 0.5%;
+    font-size: 130%;
+    letter-spacing: 3px;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+#inputCity:focus {
+    background-color: #222222;
+    color: #fff;
+}
+.btnCity {
+    width: 40%;
+    margin: 20px auto;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 2%;
+    font-size: 130%;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+.btnCity:hover {
+    background-color: rgba(255, 255, 255, 1);
 }
 .mainSection {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 200px 25%;
+    margin: 100px 25%;
     width: 50%;
     border-radius: 20px;
     height: 50vh;
@@ -38,7 +76,7 @@ body {
     font-weight: 500;
     margin: 0;
 }
-#location {
+#city {
     font-size: 120%;
 }
 #HumidityLevel {
@@ -79,9 +117,6 @@ body {
 .weatherInfo {
     font-size: 140%;
 }
-#temperature {
+#temp {
     font-size: 300%;
-}
-#temperatureInThreeHours {
-    margin: 0;
 }
