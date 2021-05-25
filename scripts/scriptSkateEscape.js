@@ -9,10 +9,11 @@ setTimeout(function(){
   var items = ['🛹']
   var sitems = items.sort()
   
+  // definition de la fenetre de jeu
   var wid = window.innerWidth
-  var hei = window.innerHeight
+  var heig = window.innerHeight
   gamebox.style.width = wid + 'px'
-  gamebox.style.height = hei + 'px'
+  gamebox.style.height = heig + 'px'
   
   var pane = $('#game-box'),
       box = $('#person'),
@@ -21,6 +22,7 @@ setTimeout(function(){
       d = {},
       x = 15;
   
+    // Copier d'un site
   function newv(v,a,b) {
       var n = parseInt(v, 10) - (d[a] ? x : 0) + (d[b] ? x : 0);
       return n < 0 ? 0 : n > w ? w : n;
@@ -30,17 +32,18 @@ setTimeout(function(){
       return n < 0 ? 0 : n > h ? h : n;
   }
   
+  // Création de notre personnage
   function path(){
-    var p = person.getBoundingClientRect()
-    var b = document.createElement('div')
-    b.className = "blob"
-    b.style.left = p.left-2.5+'px'
-    b.style.top = p.top+15+'px'
-    gamebox.appendChild(b)
+    var positionPerson = person.getBoundingClientRect()
+    var createPerson = document.createElement('div')
+    createPerson.className = "blob"
+    createPerson.style.left = positionPerson.left-2.5+'px'
+    createPerson.style.top = positionPerson.top+15+'px'
+    gamebox.appendChild(createPerson)
   }
   
-  $(window).keydown(function(e) { d[e.which] = true; });
-  $(window).keyup(function(e) { d[e.which] = false; });
+  $(window).keydown(function(keyboardPress) { d[keyboardPress.which] = true; });
+  $(window).keyup(function(keyboardPress) { d[keyboardPress.which] = false; });
   
   function mmm() {  
     box.css({
@@ -52,12 +55,12 @@ setTimeout(function(){
     }  
   }
   
-  var ani = ['horz','vert','cir']
+  var others = ['horz','vert','cir']
   function addPerson() {
-    var p = document.createElement('div')
-    p.className = 'person '+ani[Math.floor(Math.random()*ani.length)]
-    p.style.left = Math.random()*window.innerWidth+'px'
-    p.style.top = Math.random()*(window.innerHeight - 200)+100+'px'
+    var createOthers = document.createElement('div')
+    createOthers.className = 'person '+others[Math.floor(Math.random()*others.length)]
+    createOthers.style.left = Math.random()*window.innerWidth+'px'
+    createOthers.style.top = Math.random()*(window.innerHeight - 200)+100+'px'
     gamebox.appendChild(p)
   }
   
@@ -111,7 +114,7 @@ setTimeout(function(){
               elm.remove()
               document.querySelector('#d').innerHTML = document.querySelectorAll('.person').length
               kills++
-              console.log('Kills: '+kills)
+              console.log('personnes tués : '+kills)
             },1500)         
             death()
           }   
@@ -135,7 +138,7 @@ setTimeout(function(){
     var root = document.documentElement
     root.style.setProperty('--item',"'"+ sitems[Math.floor(Math.random()*sitems.length)]+"'")
     if(highscore < document.querySelectorAll('.person').length) {
-    root.style.setProperty('--high', "'HIGH "+document.querySelectorAll('.person').length+"'")
+    root.style.setProperty('--high', "'RECORD : "+document.querySelectorAll('.person').length+"'")
       highscore = document.querySelectorAll('.person').length
     }  
    
@@ -165,7 +168,7 @@ setTimeout(function(){
       window.ontouchstart = resetTimer;      
       window.onkeydown = resetTimer;   
   
-      function yourFunction() {
+      function PauseActivity() {
           // Après une longue inactivité
         var s_rect = document.querySelector('#person').getBoundingClientRect()
         var end = document.querySelector('#start').getBoundingClientRect()
@@ -176,7 +179,7 @@ setTimeout(function(){
                   s_rect.top > end.bottom)
         if(win) {
           
-          document.querySelector('#winner').innerHTML = '<h1>Félicitations</h1>Vous êtes arrivé au bout du jeu !<i><b>Gagné</b></i>Merci d\'avoir joué mais n\'hesitez pas à découvrir nos autres sites<br><br>Merci. 🙂<h3 onclick="hideWinner()">- Continuer à jouer -</h3>'
+          document.querySelector('#winner').innerHTML = '<h1>Félicitations</h1>Vous êtes arrivé au bout du jeu !<h3 onclick="hideWinner()">- Continuer à jouer -</h3>'
           document.querySelector('#winner').style.opacity = '1'
           function hideWinner() {
             document.querySelector('#winner').style.opacity = '0'
@@ -193,7 +196,7 @@ setTimeout(function(){
       }
       function resetTimer() {
           clearTimeout(t);
-          t = setTimeout(yourFunction, 1.5*60*1000);  
+          t = setTimeout(PauseActivity, 1.5*60*1000);  
       }
   }
   idleLogout();
