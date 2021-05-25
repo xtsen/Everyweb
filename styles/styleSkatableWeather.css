@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    background-color: #222222;
+    color: #fff;
+    font-family: Montserrat, "sans-serif";
+}
+.mainSection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 200px 25%;
+    width: 50%;
+    border-radius: 20px;
+    height: 50vh;
+}
+.subSection {
+    padding: 10%;
+}
+.skateOrNot {
+    background-color: rgba(50, 141, 216, 0.9);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#dayname {
+    font-size: 230%;
+    font-weight: 500;
+    margin: 0;
+}
+#dateName {
+    font-size: 160%;
+    font-weight: 500;
+    margin: 0;
+}
+#location {
+    font-size: 120%;
+}
+#HumidityLevel {
+    font-size: 300%;
+    font-weight: 500;
+}
+.criticalHumidityLevel {
+    color: #222222;
+}
+
+#skatable {
+    padding: 3%;
+    text-align: center;
+    background-color: #812003;
+    border-radius: 10px;
+    font-size: 130%;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+#skatable:hover {
+    transform: scale(0.95);
+}
+
+.weather {
+    background-color: rgba(54, 54, 54, 0.753);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
