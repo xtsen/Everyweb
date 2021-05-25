@@ -1,27 +1,27 @@
 setTimeout(function(){
   var person = document.getElementById("person");
   var gamebox = document.getElementById("game-box")
-  
+
   var score = 0
   var m = 0
   var t = 0
   var kills = 0
   var items = ['🛹']
   var sitems = items.sort()
-  
-  // definition de la fenetre de jeu
+
+  // Taille de l'ecran
   var wid = window.innerWidth
-  var heig = window.innerHeight
+  var hei = window.innerHeight
   gamebox.style.width = wid + 'px'
-  gamebox.style.height = heig + 'px'
-  
+  gamebox.style.height = hei + 'px'
+
   var pane = $('#game-box'),
       box = $('#person'),
       w = pane.width() - box.width(),
       h = pane.height() - box.height(),
       d = {},
       x = 15;
-  
+
     // Copier d'un site
   function newv(v,a,b) {
       var n = parseInt(v, 10) - (d[a] ? x : 0) + (d[b] ? x : 0);
@@ -31,39 +31,38 @@ setTimeout(function(){
       var n = parseInt(v, 10) - (d[a] ? x : 0) + (d[b] ? x : 0);
       return n < 0 ? 0 : n > h ? h : n;
   }
-  
-  // Création de notre personnage
+
   function path(){
-    var positionPerson = person.getBoundingClientRect()
+    var position = person.getBoundingClientRect()
     var createPerson = document.createElement('div')
     createPerson.className = "blob"
-    createPerson.style.left = positionPerson.left-2.5+'px'
-    createPerson.style.top = positionPerson.top+15+'px'
-    gamebox.appendChild(createPerson)
+    createPerson.style.left = position.left-2.5+'px'
+    createPerson.style.top = position.top+15+'px'
+    gamebox.appendChild(b)
   }
-  
-  $(window).keydown(function(keyboardPress) { d[keyboardPress.which] = true; });
-  $(window).keyup(function(keyboardPress) { d[keyboardPress.which] = false; });
-  
+
+  $(window).keydown(function(e) { d[e.which] = true; });
+  $(window).keyup(function(e) { d[e.which] = false; });
+
   function mmm() {  
     box.css({
           left: function(i,v) { return newv(v, 37, 39); },
           top: function(i,v) { return newh(v, 38, 40); }
       });
     if(d[37] == true || d[38] == true || d[39] == true || d[40] == true) {
-     path() 
+    path() 
     }  
   }
-  
-  var others = ['horz','vert','cir']
+
+  var ani = ['horz','vert','cir']
   function addPerson() {
-    var createOthers = document.createElement('div')
-    createOthers.className = 'person '+others[Math.floor(Math.random()*others.length)]
-    createOthers.style.left = Math.random()*window.innerWidth+'px'
-    createOthers.style.top = Math.random()*(window.innerHeight - 200)+100+'px'
+    var p = document.createElement('div')
+    p.className = 'person '+ani[Math.floor(Math.random()*ani.length)]
+    p.style.left = Math.random()*window.innerWidth+'px'
+    p.style.top = Math.random()*(window.innerHeight - 200)+100+'px'
     gamebox.appendChild(p)
   }
-  
+
   function addPeople() {
     addPerson()
     if(document.querySelectorAll('.person').length > 19) {
@@ -71,26 +70,17 @@ setTimeout(function(){
       reShuffle()
     }
   }
-  
+
   function bang(){
     function donate2() {
-    var url ='https://xtsen.github.io/Everyweb/Skate-in-peace/home.html'
+    var url ='https://donate.pih.org/page/contribute/donate'
     window.open(url,'_blank');
+    // window.location.href = url;
   }
     
     var s_rect = person.getBoundingClientRect()
     var rocks = document.querySelectorAll('.person')
     var end = document.querySelector('#end').getBoundingClientRect()
-    var don = document.querySelector('#donate').getBoundingClientRect()
-    var donate = !(s_rect.right < don.left || 
-                  s_rect.left  > don.right || 
-                  s_rect.bottom  < don.top || 
-                  s_rect.top > don.bottom)
-    if(donate) {
-      person.style.left = '50px'
-      person.style.top = '50px'
-      donate2()
-    }
     var win = !(s_rect.right + 30 < end.left || 
                   s_rect.left - 30 > end.right || 
                   s_rect.bottom + 60 < end.top || 
@@ -112,28 +102,28 @@ setTimeout(function(){
             elm.style.top = b.top+'px'
             setTimeout(function(){
               elm.remove()
-              document.querySelector('#d').innerHTML = document.querySelectorAll('.person').length
+              document.querySelector('#NBPeople').innerHTML = document.querySelectorAll('.person').length
               kills++
-              console.log('personnes tués : '+kills)
+              console.log('personnes tués: '+kills)
             },1500)         
             death()
           }   
     })
   }
-  
+
   var highscore = 0
   function reShuffle() {
     var b = document.querySelectorAll('.blob')
     b.forEach(function(elm){
       elm.remove()
     })
-    score++ 
+    score++
     addPerson()
     addPerson()
     addPerson()
     addPerson()
     addPerson()
-    document.querySelector('#d').innerHTML = document.querySelectorAll('.person').length
+    document.querySelector('#NBPeople').innerHTML = document.querySelectorAll('.person').length
     
     var root = document.documentElement
     root.style.setProperty('--item',"'"+ sitems[Math.floor(Math.random()*sitems.length)]+"'")
@@ -141,8 +131,9 @@ setTimeout(function(){
     root.style.setProperty('--high', "'RECORD : "+document.querySelectorAll('.person').length+"'")
       highscore = document.querySelectorAll('.person').length
     }  
-   
+  
     var p = document.querySelectorAll('.person')
+    
     p.forEach(function(elm){
       elm.style.left = Math.random()*window.innerWidth+'px'
       elm.style.top = Math.random()*(window.innerHeight - 200)+100+'px'
@@ -150,7 +141,7 @@ setTimeout(function(){
       person.style.top = '50px'
     })
   }
-  
+
   function death() {  
     person.classList.add('dead')  
     person.style.left = '50px'
@@ -159,17 +150,19 @@ setTimeout(function(){
       person.classList.remove('dead')  
     },100)
   }
-  
+
   var newGame = setInterval(addPeople)
-  
+
   function idleLogout() {
       var t;
-      window.onload = resetTimer;       
-      window.ontouchstart = resetTimer;      
+      window.onload = resetTimer;
+      window.onmousemove = resetTimer;
+      window.onmousedown = resetTimer;        
+      window.ontouchstart = resetTimer;  
+      window.onclick = resetTimer;      
       window.onkeydown = resetTimer;   
-  
-      function PauseActivity() {
-          // Après une longue inactivité
+
+      function Inactivity() {
         var s_rect = document.querySelector('#person').getBoundingClientRect()
         var end = document.querySelector('#start').getBoundingClientRect()
     
@@ -179,7 +172,7 @@ setTimeout(function(){
                   s_rect.top > end.bottom)
         if(win) {
           
-          document.querySelector('#winner').innerHTML = '<h1>Félicitations</h1>Vous êtes arrivé au bout du jeu !<h3 onclick="hideWinner()">- Continuer à jouer -</h3>'
+          document.querySelector('#winner').innerHTML = '<h1>Félicitation !</h1><i><b>Gagné </b></i>Durant cette periode difficile, il est important de pouvoir aller skater même virtuellement<br><br>Merci. 🙂<h3 onclick="hideWinner()">Continuer de jouer</h3>'
           document.querySelector('#winner').style.opacity = '1'
           function hideWinner() {
             document.querySelector('#winner').style.opacity = '0'
@@ -196,18 +189,17 @@ setTimeout(function(){
       }
       function resetTimer() {
           clearTimeout(t);
-          t = setTimeout(PauseActivity, 1.5*60*1000);  
+          t = setTimeout(Inactivity, 1.5*60*1000);
       }
   }
   idleLogout();
-  
+
   document.querySelector('#winner h3').addEventListener('click', function(){  
-     document.querySelector('#winner').style.opacity = '0'
-     
+    document.querySelector('#winner').style.opacity = '0'
+    
       var move = setInterval(function() {
         bang()
         mmm()
       }, 1000/30);  
-   })
-  },1000)
-  
+  })
+},1000)
