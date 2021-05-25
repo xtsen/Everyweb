@@ -7,6 +7,7 @@
         <title>Skatable Weather</title>
 
         <link rel="stylesheet" href="../styles/styleSkatableWeather.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
         <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,7 +17,7 @@
     <body>
 
         <form class="searchCity">
-            <input placeholder="Rechercher" id="inputCity">
+            <input type="text" placeholder="Rechercher" id="inputCity">
             <button type="submit" class="btnCity">
                 Rechercher
             </button>
@@ -25,13 +26,17 @@
             <div class="subSection skateOrNot">
                 <p id="dayname"></p>
                 <p id="dateName"></p>
-                <p id="city">Aizenay</p>
+                <p class="city">Aizenay</p>
                 <p id="HumidityLevel">72%</p>
+                <div class="flex">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                    <div class="description">Cloudy</div>
+                </div>
             </div>
             <div class="subSection weather">
-                <p id="wind" class="weatherInfo">vent : 30%</p>
-                <p id="humidity" class="weatherInfo">humidité : 80%</p>
-                <p id="temp">10°C</p>
+                <p class="wind" class="weatherInfo"></p>
+                <p class="humidity" class="weatherInfo"></p>
+                <p class="temp"></p>
                 <p id="skatable" class="cantSkate">Impossible de skater</p>
             </div>
         </div>
