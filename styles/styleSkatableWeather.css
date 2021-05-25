@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 body {
-    background-color: #222222;
+    background: linear-gradient(145deg, #722286, rgb(107, 52, 195), #3A3DD8, #3ACCD8);
     color: #fff;
     font-family: Montserrat, "sans-serif";
 }
@@ -52,19 +52,36 @@ body {
 #skatable {
     padding: 3%;
     text-align: center;
-    background-color: #812003;
     border-radius: 10px;
     font-size: 130%;
     font-weight: 500;
     color: #fff;
     transition: all 0.3s ease;
 }
+.cantSkate {
+    background-color: #812003;
+}
+.canSkate {
+    background-color: #408103;
+}
 #skatable:hover {
     transform: scale(0.95);
 }
 
+
+/* Weather section */
 .weather {
     background-color: rgba(54, 54, 54, 0.753);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.weatherInfo {
+    font-size: 140%;
+}
+#temperature {
+    font-size: 300%;
+}
+#temperatureInThreeHours {
+    margin: 0;
 }
