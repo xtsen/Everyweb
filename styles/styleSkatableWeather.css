@@ -15,6 +15,13 @@ body {
 }
 .subSection {
     padding: 10%;
+    transition: all 0.3s ease;
+}
+.subSection:hover {
+    border-radius: 20px;
+    transform: scale(1.2);
+    background-color: rgb(197, 197, 197);
+    color: #222222;
 }
 .skateOrNot {
     background-color: rgba(50, 141, 216, 0.9);
@@ -49,6 +56,7 @@ body {
     border-radius: 10px;
     font-size: 130%;
     font-weight: 500;
+    color: #fff;
     transition: all 0.3s ease;
 }
 #skatable:hover {
