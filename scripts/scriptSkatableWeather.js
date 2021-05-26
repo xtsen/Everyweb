@@ -13,7 +13,7 @@ function initDay () {
     document.getElementById("dayname").innerText = weekDays[day];
 }
 function initTime() {
-    document.getElementById("time").innerText = hours + "h " + minutes + "m";
+    document.getElementById("time").innerText = hours + "h" + minutes ;
 }
 function initDate() {
     document.getElementById("dateName").innerText = date + " " + yearMonths[month];
