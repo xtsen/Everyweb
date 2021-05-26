@@ -83,11 +83,19 @@ function searchCity() {
 }
 
 // Responsive 
+const width = window.screen.width
+console.log(width)
+
 function changePage1to2() {
+  if (width < 800) {
+
     document.getElementById("secondPart").style.opacity = "1";
     document.getElementById("secondPart").style.transform = "translateY(5%)"
+  }
 }
 function changePage2to1() {
-  document.getElementById("secondPart").style.transform = "translateY(-90%)"
-  document.getElementById("secondPart").style.opacity = "0";
+  if (width < 800) {
+    document.getElementById("secondPart").style.transform = "translateY(-90%)"
+    document.getElementById("secondPart").style.opacity = "0";
+  }
 }
