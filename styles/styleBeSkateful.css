@@ -48,7 +48,7 @@ p.littleWord {
     display: none;
     padding: 1%;
     width: 50%;
-    margin: 5% auto 0 auto;
+    margin: 5% auto;
     background-color: #fff;
     color: #222222;
     border-radius: 10px;
@@ -60,6 +60,7 @@ p.littleWord {
     margin: 0;
 }
 .answers {
+    margin-top: 5%;
     font-size: 140%;
     margin-left: 10%;
 }
@@ -75,7 +76,11 @@ p.littleWord {
     transition: all 0.3s ease;
 }
 .submitAnswers:hover {
-    background-color: rgb(62, 158, 196);
+    background-color: rgb(89, 196, 62);
     color: #fff;
     transform: scale(1.2);
+}
+#counterQuestion {
+    text-align: center;
+    font-size: 150%;
 }
