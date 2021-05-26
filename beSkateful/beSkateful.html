@@ -21,16 +21,27 @@
                 <p class="descriptionWebsite">Un des rares questionnaires qui porte sur le skate, peu de personnes sont capablent d'avoir à 100 points sans tricher. </p>
                 <p class="littleWord">Good Luck ;)</p>
             </header>
-            <div class="start">
+            <div id="start" onclick="startQuizz()">
                 Commencer
             </div>
             <div class="question">
                 <p class="titleQuestion"></p>
                 <div class="answers">
-                    <p id="answer1"></p>
-                    <p id="answer2"></p>
-                    <p id="answer3"></p>
-                    <p id="answer4"></p>
+                    <input type="checkbox" id="CheckboxAnswer1"/>
+                    <label id="labelAnswer1" for="CheckboxAnswer1"></label><br>
+
+                    <input type="checkbox" id="CheckboxAnswer2"/>
+                    <label id="labelAnswer2" for="CheckboxAnswer1"></label><br>
+
+                    <input type="checkbox" id="CheckboxAnswer3"/>
+                    <label id="labelAnswer3" for="CheckboxAnswer1"></label><br>
+
+                    <input type="checkbox" id="CheckboxAnswer4"/>
+                    <label id="labelAnswer4" for="CheckboxAnswer1"></label><br>
+
+                </div>
+                <div class="submitAnswers">
+                    Verifier
                 </div>
             </div>
         </div>

@@ -25,7 +25,7 @@ p.littleWord {
 }
 /* Question */
 
-.start {
+#start {
     width: 20%;
     margin: 10% auto 0 auto;
     text-align: center;
@@ -39,8 +39,43 @@ p.littleWord {
     cursor: pointer ;
     transition: all 0.3s ease;
 }
-.start:hover {
+#start:hover {
     background-color: rgb(241, 136, 136);
     color: #fff;
     box-shadow: -5px 5px 0px 0px rgb(241, 136, 136), -10px 10px 0px 0px rgb(241, 183, 136), -15px 15px 0px 0px rgb(241, 204, 136), -20px 20px 0px 0px rgb(241, 231, 136);
+}
+.question {
+    display: none;
+    padding: 1%;
+    width: 50%;
+    margin: 5% auto 0 auto;
+    background-color: #fff;
+    color: #222222;
+    border-radius: 10px;
+}
+.titleQuestion {
+    text-align: center;
+    font-weight: 400;
+    font-size: 250%;
+    margin: 0;
+}
+.answers {
+    font-size: 140%;
+    margin-left: 10%;
+}
+.submitAnswers {
+    color: #fff;
+    padding: 1%;
+    border-radius: 10px;text-align: center;
+    width: 30%;
+    font-size: 140%;
+    margin: 5% auto 0 auto;
+    background-color: #222222;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.submitAnswers:hover {
+    background-color: rgb(62, 158, 196);
+    color: #fff;
+    transform: scale(1.2);
 }
