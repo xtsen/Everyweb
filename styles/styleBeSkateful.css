@@ -107,3 +107,23 @@ p.littleWord {
 .badScore {
     color: #dd662f;
 }
+#againBTN {
+    width: 20%;
+    margin: 10% auto 0 auto;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 180%;
+    padding: 1%;
+    background-color: rgb(241, 231, 136);
+    color: #222222;
+    border-radius: 20px;
+    cursor: pointer ;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+#againBTN:hover {
+    background-color: rgb(241, 136, 136);
+    color: #fff;
+    box-shadow: -5px 5px 0px 0px rgb(241, 136, 136), -10px 10px 0px 0px rgb(241, 183, 136), -15px 15px 0px 0px rgb(241, 204, 136), -20px 20px 0px 0px rgb(241, 231, 136);
+}

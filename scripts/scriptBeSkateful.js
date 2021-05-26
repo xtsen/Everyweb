@@ -84,6 +84,7 @@ function startQuizz() {
     document.getElementById("header").style.cursor = "default";
     document.getElementById("start").style.display = "none";
     document.getElementById("question").style.opacity ="1";
+    document.getElementById("againBTN").style.opacity ="1";
     document.getElementById("counterQuestion").style.opacity ="1";
 
     titleQuestion = document.querySelector(".titleQuestion").innerText;
@@ -199,3 +200,6 @@ function function8() {
 //         return 0;
 //     }
 // }
+function again() {
+    window.location.replace("../beSkateful/beSkateful.html")
+}
