@@ -34,35 +34,28 @@ function correct() {
     actualQuestion = i+1;
     if (actualQuestion == 2) {
         score += function1()
-        console.log(score + " points")
     }else if (actualQuestion == 3) {
         score += function2()
-        console.log(score + " points")
     }else if (actualQuestion == 4) {
         score += function3()
-        console.log(score + " points")
     }else if (actualQuestion == 5) {
         score += function4()
-        console.log(score + " points")
     }else if (actualQuestion == 6) {
         score += function5()
-        console.log(score + " points")
     }else if (actualQuestion == 7) {
         score += function6()
-        console.log(score + " points")
     }else if (actualQuestion == 8) {
         score += function7()
-        console.log(score + " points")
     }else if (actualQuestion == 9) {
         score += function8()
-        console.log(score + " points")
     }else {
         console.log("error")
     }
-    document.getElementById("score").innerText = score + " / " + actualQuestion-1;
+    console.log(score + " / 8 ")
+    document.getElementById("score").innerText = score + " / 8 ";
 
     if (actualQuestion < 9) {
-        window.setTimeout(startQuizz, 3000);
+        window.setTimeout(startQuizz, 2000);
     }
     else {
         if (score >= 7) {
@@ -81,7 +74,6 @@ function correct() {
         document.getElementById("header").style.opacity = "1";
         document.getElementById("question").style.display = "none";
         document.getElementById("counterQuestion").style.display ="none";
-        console.log(score)
         
     }
 }
