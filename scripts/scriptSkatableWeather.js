@@ -53,11 +53,11 @@ let weather = {
       document.getElementById("skatable").style.backgroundColor = "#408103"
     }
     else if(speed >= 20){
-      document.getElementById("skatable").innerText = "Impossible de skater";
+      document.getElementById("skatable").innerText = "C'est chaud de skater";
       document.getElementById("skatable").style.backgroundColor = "#812003"
     }
     else if (humidity >= 80) {
-      document.getElementById("skatable").innerText = "Impossible de skater";
+      document.getElementById("skatable").innerText = "C'est chaud de skater";
       document.getElementById("skatable").style.backgroundColor = "#812003"
     }
   },
