@@ -9,6 +9,7 @@ body {
 /* Header */
 header {
     text-align: center;
+    transition: all 1s ease;
 }
 p.title {
     font-size: 300%;
@@ -45,13 +46,14 @@ p.littleWord {
     box-shadow: -5px 5px 0px 0px rgb(241, 136, 136), -10px 10px 0px 0px rgb(241, 183, 136), -15px 15px 0px 0px rgb(241, 204, 136), -20px 20px 0px 0px rgb(241, 231, 136);
 }
 #question {
-    display: none;
+    opacity: 0;
     padding: 1%;
-    width: 50%;
-    margin: 5% auto;
+    width: 60%;
+    margin: 2% auto 0 auto;
     background-color: #fff;
     color: #222222;
     border-radius: 10px;
+    transition: all 1s 1s ease;
 }
 .titleQuestion {
     text-align: center;
@@ -83,4 +85,6 @@ p.littleWord {
 #counterQuestion {
     text-align: center;
     font-size: 150%;
+    opacity: 0;
+    transition: all 1s 1s ease;
 }

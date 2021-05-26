@@ -19,12 +19,15 @@ const Answers = ["vers 1930", "début 1900", "vers 1950", "vers 1980",
             ];
 const StartAnswers = [0, 4, 8, 12, 16, 20]
 
-const nbOfQuestions = questions.length;
+const nbOfQuestions = questions.length-1;
 // console.log(questions.length)
 function startQuizz() {
     
+    document.getElementById("header").style.opacity = "0";
+    document.getElementById("header").style.cursor = "default";
     document.getElementById("start").style.display = "none";
-    document.getElementById("question").style.display ="block";
+    document.getElementById("question").style.opacity ="1";
+    document.getElementById("counterQuestion").style.opacity ="1";
 
     titleQuestion = document.querySelector(".titleQuestion").innerText;
     // console.log(i)
