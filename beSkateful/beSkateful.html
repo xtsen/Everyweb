@@ -24,7 +24,7 @@
             <div id="start" onclick="startQuizz()">
                 Commencer
             </div>
-            <div class="question">
+            <div id="question">
                 <p class="titleQuestion"></p>
                 <div class="answers">
                     <input type="checkbox" id="CheckboxAnswer1"/>
@@ -40,7 +40,7 @@
                     <label id="labelAnswer4" for="CheckboxAnswer1"></label><br>
 
                 </div>
-                <div class="submitAnswers">
+                <div class="submitAnswers" onclick="NextQuestion()">
                     Verifier
                 </div>
             </div>
