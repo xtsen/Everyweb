@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&display=swap');
+
+body {
+    background-color: #222222;
+    color: #fff;
+    font-family: Roboto;
+    padding: 0;
+}
+/* Header */
+header {
+    text-align: center;
+}
+p.title {
+    font-size: 300%;
+    text-align: center;
+}
+.descriptionWebsite {
+    font-size: 130%;
+}
+p.littleWord {
+    font-family: Montserrat, 'sans-serif';
+    font-weight: 600;
+    font-style: italic;
+    font-size: 140%;
+}
+/* Question */
+
+.start {
+    width: 20%;
+    margin: 10% auto 0 auto;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 180%;
+    padding: 1%;
+    background-color: rgb(241, 231, 136);
+    color: #222222;
+    border-radius: 20px;
+    cursor: pointer ;
+    transition: all 0.3s ease;
+}
+.start:hover {
+    background-color: rgb(241, 136, 136);
+    color: #fff;
+    box-shadow: -5px 5px 0px 0px rgb(241, 136, 136), -10px 10px 0px 0px rgb(241, 183, 136), -15px 15px 0px 0px rgb(241, 204, 136), -20px 20px 0px 0px rgb(241, 231, 136);
+}
