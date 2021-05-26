@@ -30,9 +30,10 @@ body {
     bottom: 0;
     padding: 10%;
     width: 100%;
-    height: 100vh;
+    height: max-content;
     background: rgb(22, 22, 22);
     border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 #filter {
     border-radius: 10px;
@@ -143,12 +144,12 @@ input:checked + label > span::before {
     margin-right: 15%;
     grid-template-columns: auto auto;
     column-gap: 20%;
-    grid-template-rows: 180% 180%;
-    row-gap: 20%;
+    /* grid-template-rows: 180% 180%; */
+    row-gap: 80%;
 }
 .website {
     width: 100%;
-    height: 100%;
+    height: 250%;
     background-color: #fff;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -208,4 +209,7 @@ input:checked + label > span::before {
 }
 #website4 {
     background-image: url('../res/2021.png');
+}
+#website5 {
+    background-image: url('../res/skatableWeather.png');
 }

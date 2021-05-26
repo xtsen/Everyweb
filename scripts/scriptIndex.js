@@ -2,13 +2,15 @@ function redirect(numberWebsite) {
     websites = ['Skate-in-peace/home.html', 
                 'Skate%20Escape/skateEscape.html', 
                 'Just%20Listen/justListen.html', 
-                'Skate-in-peace/cache/2021.html']
+                'Skate-in-peace/cache/2021.html',
+                'SkatableWeather/skatableWeather.html'
+            ]
     window.location.replace(websites[numberWebsite]);
 }
 
 // Liste de card ne correspondant pas au critère
-var games = ['website1', 'website3', 'website4']
-var music = ['website1', 'website2', 'website4']
+var games = ['website1', 'website3', 'website4', 'website5']
+var music = ['website1', 'website2', 'website4', 'website5']
 var skate = [ 'website3', 'website4']
 
 // Liste de critères 
