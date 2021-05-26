@@ -71,6 +71,10 @@ body {
     font-weight: 500;
     margin: 0;
 }
+#time {
+    font-size: 200%;
+    margin: 0;
+}
 #dateName {
     font-size: 160%;
     font-weight: 500;
@@ -117,6 +121,9 @@ body {
 .weatherInfo {
     font-size: 140%;
 }
-#temp {
+.wind {
+    font-size: 130%;
+}
+.temp {
     font-size: 300%;
 }

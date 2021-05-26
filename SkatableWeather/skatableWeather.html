@@ -14,30 +14,27 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
     
     </head>
-    <body>
+    <body onload="searchCity()">
 
-        <form class="searchCity">
-            <input type="text" placeholder="Rechercher" id="inputCity">
-            <button type="submit" class="btnCity">
+        <div class="searchCity">
+            <input type="text" value="Paris" id="inputCity">
+            <button type="submit" class="btnCity" onclick="searchCity()">
                 Rechercher
             </button>
-        </form>
+        </div>
         <div class="mainSection">
             <div class="subSection skateOrNot">
                 <p id="dayname"></p>
                 <p id="dateName"></p>
-                <p class="city">Aizenay</p>
-                <p id="HumidityLevel">72%</p>
-                <div class="flex">
-                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
-                    <div class="description">Cloudy</div>
-                </div>
+                <p class="city"></p>
+                <p id="HumidityLevel"></p>
+                <p id="time"></p>
             </div>
             <div class="subSection weather">
-                <p class="wind" class="weatherInfo"></p>
-                <p class="humidity" class="weatherInfo"></p>
+                <p id="windSpeed" class="weatherInfo wind"></p>
+                <p class="weatherInfo humidity"></p>
                 <p class="temp"></p>
-                <p id="skatable" class="cantSkate">Impossible de skater</p>
+                <p id="skatable"></p>
             </div>
         </div>
 

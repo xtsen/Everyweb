@@ -1,3 +1,4 @@
+// Date
 weekDays = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"]
 yearMonths = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Decembre"]
 
@@ -5,15 +6,23 @@ var Today = new Date();
 var day = Today.getDay();
 var month = Today.getMonth();
 var date = Today.getDate();
+var hours = Today.getHours();
+var minutes = Today.getMinutes();
 
 function initDay () {
     document.getElementById("dayname").innerText = weekDays[day];
+}
+function initTime() {
+    document.getElementById("time").innerText = hours + "h " + minutes + "m";
 }
 function initDate() {
     document.getElementById("dateName").innerText = date + " " + yearMonths[month];
 }
 initDay()
+initTime()
 initDate()
+
+// Weather
 let weather = {
   apiKey: "05102432d68f5cf4fbeab5852f88e77c",
   fetchWeather: function (city) {
@@ -29,16 +38,28 @@ let weather = {
   displayWeather: function (data) {
 
     const { name } = data;
-    const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
 
     document.querySelector(".city").innerText = "Météo à " + name;
-    document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
-    document.querySelector(".description").innerText = description;
     document.querySelector(".temp").innerText = temp + "°C";
+    document.getElementById("HumidityLevel").innerText = humidity + "%";
     document.querySelector(".humidity").innerText = "Humidité: " + humidity + "%";
     document.querySelector(".wind").innerText = "Vitesse du vent : " + speed + " km/h";
+
+    // Check if you can skate
+    if (speed <= 15 && humidity <= 80) {
+      document.getElementById("skatable").innerText = "Vas skater !";
+      document.getElementById("skatable").style.backgroundColor = "#408103"
+    }
+    else if(speed >= 20){
+      document.getElementById("skatable").innerText = "Impossible de skater";
+      document.getElementById("skatable").style.backgroundColor = "#812003"
+    }
+    else if (humidity >= 80) {
+      document.getElementById("skatable").innerText = "Impossible de skater";
+      document.getElementById("skatable").style.backgroundColor = "#812003"
+    }
   },
   search: function () {
     this.fetchWeather(document.getElementById("inputCity").value);
@@ -57,4 +78,7 @@ document
     }
   });
 
-weather.fetchWeather("Aizenay");
+function searchCity() {
+  weather.fetchWeather(document.getElementById("inputCity").value);
+}
+
