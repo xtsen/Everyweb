@@ -14,7 +14,7 @@ body {
     
 }
 #inputCity {
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -62,7 +62,7 @@ body {
     color: #222222;
 }
 .skateOrNot {
-    background-color: rgba(50, 141, 216, 0.9);
+    background-color: rgba(50, 141, 216, 1);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -126,4 +126,41 @@ body {
 }
 .temp {
     font-size: 300%;
+}
+@media screen and (max-width: 1000px){
+    #inputCity {
+        width: 100%;
+        margin: 0px auto;
+        font-size: 110%;
+        letter-spacing: 1px;
+        outline: none;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    .btnCity {
+        width: 70%;
+        font-size: 110%;
+    }
+    .mainSection {
+        grid-template-columns: auto;
+        margin: 100px 10%;
+        width: 80%;
+    }
+    .skateOrNot {
+        border-radius: 20px;
+    }
+    .weather {
+        border-radius: 20px;
+        z-index: -10;
+    }
+    .subSection:hover {
+        border-radius: 20px;
+        transform: scale(1);
+        background-color: rgba(50, 141, 216, 1);
+        color: #ffffff;
+    }
+    #secondPart {
+        transform: translateY(-90%);
+        opacity: 0;
+    }
 }

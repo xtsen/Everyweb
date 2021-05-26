@@ -82,3 +82,12 @@ function searchCity() {
   weather.fetchWeather(document.getElementById("inputCity").value);
 }
 
+// Responsive 
+function changePage1to2() {
+    document.getElementById("secondPart").style.opacity = "1";
+    document.getElementById("secondPart").style.transform = "translateY(5%)"
+}
+function changePage2to1() {
+  document.getElementById("secondPart").style.transform = "translateY(-90%)"
+  document.getElementById("secondPart").style.opacity = "0";
+}
