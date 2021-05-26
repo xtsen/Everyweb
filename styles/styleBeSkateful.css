@@ -88,3 +88,22 @@ p.littleWord {
     opacity: 0;
     transition: all 0.5s 0.5s ease;
 }
+.goodAnswer {
+    padding: 0.1%;
+    border-radius: 10px;
+    background-color: #4ce03ea8;
+    transform: scale(1.05);
+}
+#score {
+    text-align: center;
+    font-size: 500%;
+    opacity: 0;
+    cursor: default;
+    transition: all 0.5s ease;
+}
+.goodScore {
+    color: #27c53c;
+}
+.badScore {
+    color: #dd662f;
+}
