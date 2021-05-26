@@ -38,7 +38,7 @@ function startQuizz() {
     }
     actualQuestion = i+1;
     counter = document.getElementById("counterQuestion")
-    counterQuestion.innerText = "Question : " + actualQuestion + " / " + nbOfQuestions
+    counterQuestion.innerText = "Question : " + actualQuestion + " sur " + nbOfQuestions
     NextQuestion(actualQuestion)
     
 }
@@ -54,8 +54,10 @@ function NextQuestion(nbActualQuestion) {
     while (i < max) {
         i++;
         nbLabel += 1;
-        id = "labelAnswer" + String(nbLabel)
-        console.log(id)
-        document.getElementById(id).innerText = Answers[i-1]
+        idLabel = "labelAnswer" + String(nbLabel)
+        idCheckbox = "CheckboxAnswer" + String(nbLabel)
+        console.log(idLabel)
+        document.getElementById(idCheckbox).checked = false
+        document.getElementById(idLabel).innerText = Answers[i-1]
     }
 }
