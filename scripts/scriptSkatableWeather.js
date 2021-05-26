@@ -38,27 +38,50 @@ let weather = {
   displayWeather: function (data) {
 
     const { name } = data;
-    const { temp, humidity } = data.main;
+    const { temp, humidity, temp_max } = data.main;
+    const { rain } = data;
+    const { all } = data.clouds;
     const { speed } = data.wind;
+
+    rainChance = ( all + humidity )/2
 
     document.querySelector(".city").innerText = "Météo à " + name;
     document.querySelector(".temp").innerText = temp + "°C";
-    document.getElementById("HumidityLevel").innerText = humidity + "%";
+    document.querySelector(".tempMax").innerText = "Ressenti : " + temp_max + "°C";
+    if (rain != null) {
+      document.querySelector(".rain").innerText = "Il pleut"
+    }else if (rainChance > 70 && rain == null) {
+      document.querySelector(".rain").innerText = "Il ne pleut pleut pas"
+      document.querySelector(".chanceRain").innerHTML = "<span class='criticalRainLevel'>" + rainChance + "% </span>de chance qu'il pleuve"
+    }
+    else {
+      document.querySelector(".rain").innerText = "Il ne pleut pleut pas"
+      document.querySelector(".chanceRain").innerText = "Il y a " + rainChance + "% de chance qu'il pleuve"
+    }
     document.querySelector(".humidity").innerText = "Humidité: " + humidity + "%";
     document.querySelector(".wind").innerText = "Vitesse du vent : " + speed + " km/h";
 
     // Check if you can skate
-    if (speed <= 15 && humidity <= 80) {
+    if (speed > 10 && rain != null && rainChance > 80) {
+      Rain = 1000
+    }
+    else if (rain == null && rainChance < 60) {
+      Rain = false
+    }else{
+      Rain = true
+    }
+
+    if (speed <= 10 && Rain == false) {
       document.getElementById("skatable").innerText = "Vas skater !";
       document.getElementById("skatable").style.backgroundColor = "#408103"
     }
-    else if(speed >= 20){
+    else if(Rain == true || speed > 10){
       document.getElementById("skatable").innerText = "C'est chaud de skater";
-      document.getElementById("skatable").style.backgroundColor = "#812003"
+      document.getElementById("skatable").style.backgroundColor = "#DE9A23";
     }
-    else if (humidity >= 80) {
-      document.getElementById("skatable").innerText = "C'est chaud de skater";
-      document.getElementById("skatable").style.backgroundColor = "#812003"
+    else if (Rain == 1000) {
+      document.getElementById("skatable").innerText = "Impossible de skater";
+      document.getElementById("skatable").style.backgroundColor = "#812003";
     }
   },
   search: function () {
@@ -83,8 +106,7 @@ function searchCity() {
 }
 
 // Responsive 
-const width = window.screen.width
-console.log(width)
+const width = window.screen.width 
 
 function changePage1to2() {
   if (width < 800) {

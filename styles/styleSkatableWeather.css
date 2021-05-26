@@ -72,7 +72,7 @@ body {
     margin: 0;
 }
 #time {
-    font-size: 200%;
+    font-size: 250%;
     margin: 0;
 }
 #dateName {
@@ -122,10 +122,24 @@ body {
     font-size: 140%;
 }
 .wind {
-    font-size: 130%;
+    font-size: 140%;
 }
 .temp {
     font-size: 300%;
+    margin-bottom: 0;
+}
+#time {
+    text-align: center;
+}
+.rain {
+    margin: 0;
+}
+.chanceRain {
+    font-size: 140%;
+}
+.tempMax {
+    margin: 0;
+    font-size: 140%;
 }
 @media screen and (max-width: 1000px){
     #inputCity {
@@ -163,4 +177,7 @@ body {
         transform: translateY(-90%);
         opacity: 0;
     }
+}
+.criticalRainLevel {
+    color: lightcoral;
 }
