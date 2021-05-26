@@ -25,6 +25,8 @@ body {
     transition: all 0.3s ease;
 }
 #inputCity:focus {
+    border-radius: 40px;
+    width: 80%;
     background-color: #222222;
     color: #fff;
 }
