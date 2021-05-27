@@ -15,7 +15,7 @@
     
     </head>
     <body onload="checkWidth()">
-        <div id="sidebar">
+        <!-- <div id="sidebar">
             <div id="filter">
                 <p class="titleSideBar">Filtrer la recherche :</p>
                 <div class="container">
@@ -31,13 +31,34 @@
                     <label for="skate" class="labelCheckboxFilter">
                         <span></span> Skate
                     </label>
-                    <!-- <input type="checkbox" id="all" onclick="setView('all')">
-                    <label for="all" class="labelCheckboxFilter">
-                        <span></span> Tous
-                    </label> -->
+                </div>
+            </div>
+        </div> -->
+        <div class="wrapper">
+            <input type="checkbox" id="checkbox" class="wrapper__checkbox">
+            <label for="checkbox" class="wrapper__button">
+              <span class="wrapper__button-line"></span>
+              <span class="wrapper__button-line"></span>
+              <span class="wrapper__button-line"></span>
+            </label>
+            <div class="wrapper__menu">
+                <div class="container">
+                    <input type="checkbox" class="checkboxFilter" id="game" onclick="setView('game')">
+                    <label for="game" class="labelCheckboxFilter">
+                        <span></span> Jeux
+                    </label><br>
+                    <input type="checkbox" class="checkboxFilter" id="music" onclick="setView('music')">
+                    <label for="music" class="labelCheckboxFilter">
+                        <span></span> Musique
+                    </label><br>
+                    <input type="checkbox" class="checkboxFilter" id="skate" onclick="setView('skate')">
+                    <label for="skate" class="labelCheckboxFilter">
+                        <span></span> Skate
+                    </label>
                 </div>
             </div>
         </div>
+        
         <div id="mainBody">
             <div id="header">
                 <p class="mainTitle">Everyweb</p>
@@ -58,6 +79,9 @@
                 </div>
                 <div class="website" id="website5" onclick="redirect(4)">
                     <p class="titleWebsite">La météo</p>
+                </div>
+                <div class="website" id="website6" onclick="redirect(5)">
+                    <p class="titleWebsite">Quizz</p>
                 </div>
             </div>
         </div>
