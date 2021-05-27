@@ -51,11 +51,11 @@ function correct() {
     }else {
         console.log("error")
     }
-    console.log(score + " / 8 ")
+    // console.log(score + " / 8 ")
     document.getElementById("score").innerText = score + " / 8 ";
 
     if (actualQuestion < 9) {
-        window.setTimeout(startQuizz, 2000);
+        window.setTimeout(startQuizz, 3300);
     }
     else {
         if (score >= 7) {
@@ -103,7 +103,7 @@ function startQuizz() {
 function NextQuestion(nbActualQuestion) {
 
     document.querySelector(".titleQuestion").innerText = questions[nbActualQuestion];
-    
+
     i = StartAnswers[nbActualQuestion-1]
     // console.log(i)
     max = i + 4

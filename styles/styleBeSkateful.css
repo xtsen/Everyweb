@@ -127,3 +127,7 @@ p.littleWord {
     color: #fff;
     box-shadow: -5px 5px 0px 0px rgb(241, 136, 136), -10px 10px 0px 0px rgb(241, 183, 136), -15px 15px 0px 0px rgb(241, 204, 136), -20px 20px 0px 0px rgb(241, 231, 136);
 }
+#timer {
+    font-size: 250%;
+    text-align: center;
+}
