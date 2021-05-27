@@ -55,7 +55,8 @@ function correct() {
     document.getElementById("score").innerText = score + " / 8 ";
 
     if (actualQuestion < 9) {
-        window.setTimeout(startQuizz, 3300);
+        timer()
+        window.setTimeout(startQuizz, 3500);
     }
     else {
         if (score >= 7) {
@@ -72,6 +73,7 @@ function correct() {
         }
         document.getElementById("score").style.opacity = "1";
         document.getElementById("header").style.opacity = "1";
+        document.getElementById("againBTN").style.opacity = "1";
         document.getElementById("question").style.display = "none";
         document.getElementById("counterQuestion").style.display ="none";
         
@@ -80,6 +82,7 @@ function correct() {
 
 function startQuizz() {
     
+    // transition
     document.getElementById("header").style.opacity = "0";
     document.getElementById("header").style.cursor = "default";
     document.getElementById("start").style.display = "none";
@@ -90,6 +93,8 @@ function startQuizz() {
     titleQuestion = document.querySelector(".titleQuestion").innerText;
     // console.log(i)
     // console.log(questions[i], titleQuestion)
+
+    // Repérage de la question actuelle
     var i=0;
     while (questions[i] != titleQuestion) {
         i++;
@@ -202,4 +207,17 @@ function function8() {
 // }
 function again() {
     window.location.replace("../beSkateful/beSkateful.html")
+}
+function timer() {
+    document.getElementById("timer").style.display = "block";
+    document.getElementById("timer").innerText = 4
+    setTimeout(function(){ document.getElementById("timer").innerText = 3 }, 1000);
+    setTimeout(function(){ document.getElementById("timer").style.backgroundColor = "#1f9925" }, 1000);
+    setTimeout(function(){ document.getElementById("timer").innerText = 2 }, 2000);
+    setTimeout(function(){ document.getElementById("timer").style.backgroundColor = "#dbd141" }, 2000);
+    setTimeout(function(){ document.getElementById("timer").innerText = 1 }, 3000);
+    setTimeout(function(){ document.getElementById("timer").style.backgroundColor = "#c23c2a" }, 3000);
+    setTimeout(function(){ document.getElementById("timer").style.display = "none" }, 3500);
+    setTimeout(function(){ document.getElementById("timer").style.backgroundColor = "#222" }, 3500);
+    setTimeout(function(){ document.getElementById("timer").innerText = 4 }, 3500);
 }
