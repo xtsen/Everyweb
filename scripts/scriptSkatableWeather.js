@@ -40,26 +40,42 @@ let weather = {
     const { name } = data;
     const { temp, humidity, temp_max } = data.main;
     const { rain } = data;
+    const { snow } = data;
     const { all } = data.clouds;
     const { speed } = data.wind;
 
+    // Arrondi de la température a l'unité
+    temperature = String(temp)
+    temperature = temperature[0] + temperature[1]
+    temperature_max = String(temp_max)
+    temperature_max = temperature_max[0] + temperature_max[1]
+    windSpeed = String(speed)
+    windSpeed = windSpeed[0] + windSpeed[1]
     rainChance = ( all + humidity )/2
+    rainChance = String(rainChance)
+    rainChance = rainChance[0] + rainChance[1]
 
     document.querySelector(".city").innerText = "Météo à " + name;
-    document.querySelector(".temp").innerText = temp + "°C";
-    document.querySelector(".tempMax").innerText = "Ressenti : " + temp_max + "°C";
+    document.querySelector(".temp").innerText = temperature + "°C";
+    document.querySelector(".tempMax").innerText = "Ressenti : " + temperature_max + "°C";
     if (rain != null) {
       document.querySelector(".rain").innerText = "Il pleut"
     }else if (rainChance > 70 && rain == null) {
-      document.querySelector(".rain").innerText = "Il ne pleut pleut pas"
+      document.querySelector(".rain").innerText = "Il ne pleut pas"
       document.querySelector(".chanceRain").innerHTML = "<span class='criticalRainLevel'>" + rainChance + "% </span>de chance qu'il pleuve"
     }
-    else {
+    else if (temp <= 5) {
+      document.querySelector(".rain").innerText = "Tu risque de glisser";
+    }else if (snow != null) {
+      document.querySelector(".rain").innerText = "Il neige, a toi de voir";
+    }
+    
+    else{
       document.querySelector(".rain").innerText = "Il ne pleut pleut pas"
       document.querySelector(".chanceRain").innerText = "Il y a " + rainChance + "% de chance qu'il pleuve"
     }
     document.querySelector(".humidity").innerText = "Humidité: " + humidity + "%";
-    document.querySelector(".wind").innerText = "Vitesse du vent : " + speed + " km/h";
+    document.querySelector(".wind").innerText = "Vitesse du vent : " + windSpeed + " km/h";
 
     // Check if you can skate
     if (speed > 10 && rain != null && rainChance > 80) {
@@ -71,15 +87,15 @@ let weather = {
       Rain = true
     }
 
-    if (speed <= 10 && Rain == false) {
+    if (windSpeed <= 10 && Rain == false) {
       document.getElementById("skatable").innerText = "Vas skater !";
       document.getElementById("skatable").style.backgroundColor = "#408103"
     }
-    else if(Rain == true || speed > 10){
+    else if(Rain == true || windSpeed > 10){
       document.getElementById("skatable").innerText = "C'est chaud de skater";
       document.getElementById("skatable").style.backgroundColor = "#DE9A23";
     }
-    else if (Rain == 1000) {
+    else if (Rain == 1000 || snow != null) {
       document.getElementById("skatable").innerText = "Impossible de skater";
       document.getElementById("skatable").style.backgroundColor = "#812003";
     }
