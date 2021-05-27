@@ -65,7 +65,7 @@ let weather = {
     if (speed > 10 && rain != null && rainChance > 80) {
       Rain = 1000
     }
-    else if (rain == null && rainChance < 60) {
+    else if (rain == null && rainChance < 75) {
       Rain = false
     }else{
       Rain = true
