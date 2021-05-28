@@ -74,6 +74,11 @@ let weather = {
     document.querySelector(".temp").innerText = temperature + "°C";
     document.querySelector(".tempMax").innerText = "Ressenti : " + temperature_max + "°C";
     if (rain != null) {
+      if (snow != null) {
+        document.querySelector(".rain").innerText = "Il neige"
+      }else{
+        document.querySelector(".rain").innerText = "Il ne neige pas"
+      }
       document.querySelector(".chanceRain").innerText = "Il pleut"
     }else if (rainChance > 70 && rain == null) {
       document.querySelector(".rain").innerText = "Il ne pleut pas"
