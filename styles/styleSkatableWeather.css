@@ -136,10 +136,10 @@ body {
 .icon {
     margin: 0;
     background-color: rgb(216, 216, 216);
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
-    margin-left: 40%;
+    margin-left: 37.5%;
 }
 .description {
     font-size: 140%;
