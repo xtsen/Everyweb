@@ -102,16 +102,20 @@ let weather = {
     }
 
     if (windSpeed <= 10 && Rain == false) {
+      document.getElementById("videoBadWeather").style.opacity = "0";
       document.getElementById("videoGoodWeather").style.opacity = "1";
       document.getElementById("skatable").innerText = "Vas skater !";
       document.getElementById("skatable").style.backgroundColor = "#408103";
     }
     else if(Rain == true || windSpeed > 10){
+      document.getElementById("videoBadWeather").style.opacity = "1";
       document.getElementById("videoGoodWeather").style.opacity = "0";
       document.getElementById("skatable").innerText = "C'est chaud de skater";
       document.getElementById("skatable").style.backgroundColor = "#DE9A23";
     }
     else if (Rain == 1000 || snow != null) {
+
+      document.getElementById("videoBadWeather").style.opacity = "0";
       document.getElementById("videoGoodWeather").style.opacity = "0";
       document.getElementById("skatable").innerText = "Impossible de skater";
       document.getElementById("skatable").style.backgroundColor = "#812003";
