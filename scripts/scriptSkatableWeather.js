@@ -109,7 +109,6 @@ let weather = {
     }
     else if(Rain == true || windSpeed > 10){
       document.getElementById("videoBadWeather").style.opacity = "1";
-      document.getElementById("videoGoodWeather").style.opacity = "0";
       document.getElementById("skatable").innerText = "C'est chaud de skater";
       document.getElementById("skatable").style.backgroundColor = "#DE9A23";
     }
