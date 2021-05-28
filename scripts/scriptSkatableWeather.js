@@ -74,8 +74,7 @@ let weather = {
     document.querySelector(".temp").innerText = temperature + "°C";
     document.querySelector(".tempMax").innerText = "Ressenti : " + temperature_max + "°C";
     if (rain != null) {
-      document.querySelector(".rain").innerText = "Il pleut"
-      document.getElementById("videoRain").style.opacity = "1"
+      document.querySelector(".chanceRain").innerText = "Il pleut"
     }else if (rainChance > 70 && rain == null) {
       document.querySelector(".rain").innerText = "Il ne pleut pas"
       document.querySelector(".chanceRain").innerHTML = "<span class='criticalRainLevel'>" + rainChance + "% </span>de chance qu'il pleuve"
@@ -102,20 +101,23 @@ let weather = {
     }
 
     if (windSpeed <= 10 && Rain == false) {
+      document.getElementById("videoRain").style.opacity = "0";
       document.getElementById("videoBadWeather").style.opacity = "0";
       document.getElementById("videoGoodWeather").style.opacity = "1";
       document.getElementById("skatable").innerText = "Vas skater !";
       document.getElementById("skatable").style.backgroundColor = "#408103";
     }
     else if(Rain == true || windSpeed > 10){
+      document.getElementById("videoRain").style.opacity = "0";
+      document.getElementById("videoGoodWeather").style.opacity = "0";
       document.getElementById("videoBadWeather").style.opacity = "1";
       document.getElementById("skatable").innerText = "C'est chaud de skater";
       document.getElementById("skatable").style.backgroundColor = "#DE9A23";
     }
     else if (Rain == 1000 || snow != null) {
-
       document.getElementById("videoBadWeather").style.opacity = "0";
       document.getElementById("videoGoodWeather").style.opacity = "0";
+      document.getElementById("videoRain").style.opacity = "1"
       document.getElementById("skatable").innerText = "Impossible de skater";
       document.getElementById("skatable").style.backgroundColor = "#812003";
     }
