@@ -15,6 +15,7 @@ body {
     margin: 0;
     grid-template-columns: 10% 89%;
     column-gap: 1%;
+    background-size: 200% 200%;
 }
 @media screen and (max-width: 1000px){
     body {
@@ -22,7 +23,13 @@ body {
         column-gap: 1%;
     }
 }
-
+#bgVideo {
+    position: fixed;
+    top: 0;
+    max-width: 100%;
+    min-height: 100%;
+    z-index: -1000;
+}
 /* MENU */
 .wrapper {
     width: 100%;
@@ -122,10 +129,11 @@ body {
 
 .mainTitle {
     font-family: Cairo;
-    margin: 0;
-    text-align: center;
+    margin: 1% auto;
+    width: fit-content;
     font-size: 400%;
     font-weight: 500;
+    color: rgb(12, 12, 12);
 }
 .mainSubtitle {
     font-family: Cairo;
@@ -158,6 +166,8 @@ body {
     text-align: center;
     margin-top: 0;
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-color: rgba(53, 53, 53, 0.466);
     font-size: 150%;
 }
