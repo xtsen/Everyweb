@@ -15,25 +15,6 @@
     
     </head>
     <body onload="checkWidth()">
-        <!-- <div id="sidebar">
-            <div id="filter">
-                <p class="titleSideBar">Filtrer la recherche :</p>
-                <div class="container">
-                    <input type="checkbox" id="game" onclick="setView('game')">
-                    <label for="game" class="labelCheckboxFilter">
-                        <span></span> Jeux
-                    </label>
-                    <input type="checkbox" id="music" onclick="setView('music')">
-                    <label for="music" class="labelCheckboxFilter">
-                        <span></span> Musique
-                    </label>
-                    <input type="checkbox" id="skate" onclick="setView('skate')">
-                    <label for="skate" class="labelCheckboxFilter">
-                        <span></span> Skate
-                    </label>
-                </div>
-            </div>
-        </div> -->
         <div class="wrapper">
             <input type="checkbox" id="checkbox" class="wrapper__checkbox">
             <label for="checkbox" class="wrapper__button">
@@ -62,7 +43,7 @@
         <div id="mainBody">
             <div id="header">
                 <p class="mainTitle">Everyweb</p>
-                <p class="mainSubtitle">Retrouvez tous nos sites pour notre projet de NSI</p>
+                <p id="typewriter" class="mainSubtitle"></p>
             </div>
             <div id="websites">
                 <div class="website" id="website1" onclick="redirect(0)">
@@ -85,6 +66,8 @@
                 </div>
             </div>
         </div>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="scripts/typewriter.js"></script>
         <script type="text/javascript" src="scripts/phone-sizeScript.js"></script>
         <script type="text/javascript" src="scripts/scriptIndex.js"></script>
     </body>
