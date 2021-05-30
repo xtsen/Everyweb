@@ -1,5 +1,5 @@
 # Projet de fin d'année NSI : Everyweb
-Nous avons choisi de faire non pas un seul site mais plusieurs autour ed nos 2 passions : le skateboarding et la musique.
+Nous avons choisi de faire non pas un seul site mais plusieurs autour de nos 2 passions : le skateboarding et la musique.
 C'est un projet qui nous à demander beaucoup de temps (environ 100H) mais ca nous à aussi demander de savoir chercher et se debrouiller par soi même
 
 ### Le lien pour aller sur le site : https://xtsen.github.io/Everyweb/
