@@ -14,9 +14,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
     
     </head>
-    <body onload="checkWidth()">
+    <body  onload="checkWidth()">
+        <div class="cursor"></div> 
+        <!-- Main video -->
         <video id="bgVideo" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-            <source src="res/videoSkateStreetIndex.mp4" type="video/mp4">
+            <source id="sourceVideo" src="res/videoSkateStreetIndex.mp4" type="video/mp4">
         </video>
         <div class="wrapper">
             <input type="checkbox" id="checkbox" class="wrapper__checkbox">
@@ -48,26 +50,26 @@
                 <p class="mainTitle">Everyweb</p>
                 <p id="typewriter" class="mainSubtitle"></p>
             </div>
-            <div id="websites">
-                <div class="website" id="website1" onclick="redirect(0)">
-                    <p class="titleWebsite">Skate in peace</p>
-                </div>
-                <div class="website" id="website2" onclick="redirect(1)">
-                    <p class="titleWebsite">Skate Escape</p>
-                </div>
-                <div class="website" id="website3" onclick="redirect(2)">
-                    <p class="titleWebsite">Just Listen</p>
-                </div>
-                <div class="website" id="website4" onclick="redirect(3)">
-                    <p class="titleWebsite">2021</p>
-                </div>
-                <div class="website" id="website5" onclick="redirect(4)">
-                    <p class="titleWebsite">La météo</p>
-                </div>
-                <div class="website" id="website6" onclick="redirect(5)">
-                    <p class="titleWebsite">Quizz</p>
-                </div>
-            </div>
+            <ul id="websites">
+                <li class="website" data-site="skateInPeace" id="website1" onclick="redirect(0)">
+                    Skate in peace
+                </li>
+                <li class="website" data-site="skateEscape" id="website2" onclick="redirect(1)">
+                    Skate Escape
+                </li>
+                <li class="website" data-site="justListen" id="website3" onclick="redirect(2)">
+                    Just Listen
+                </li>
+                <li class="website" data-site="2021" id="website4" onclick="redirect(3)">
+                    2021
+                </li>
+                <li class="website" data-site="skatableWeather" id="website5" onclick="redirect(4)">
+                    Skatable Weather
+                </li>
+                <li class="website" data-site="beSkateful" id="website6" onclick="redirect(5)">
+                    Be skateful
+                </li>
+            </ul>
         </div>
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
         <script src="scripts/typewriter.js"></script>

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 * {
 	box-sizing: border-box;
+    cursor: none;
 }
 ::selection {
     background-color: #222222;
@@ -9,7 +10,7 @@
 body {
     display: grid;
     font-family: Roboto;
-    background-color: #222222;
+    background-color: #444444;
     color: #fff;
     padding: 0;
     margin: 0;
@@ -29,6 +30,7 @@ body {
     max-width: 100%;
     min-height: 100%;
     z-index: -1000;
+    transition: all 0.3s ease;
 }
 /* MENU */
 .wrapper {
@@ -125,12 +127,15 @@ body {
 #mainBody {
     padding: 0;
     margin: 0;
+    grid-template-columns: auto;
+    display: grid;
 }
 
 .mainTitle {
     font-family: Cairo;
-    margin: 1% auto;
-    width: fit-content;
+    margin: 0;
+    text-align: center;
+    width: 100%;
     font-size: 400%;
     font-weight: 500;
     color: rgb(12, 12, 12);
@@ -140,28 +145,50 @@ body {
     text-align: center;
     font-size: 180%
 }
-
-#websites {
-    display: grid;
-    margin-left: 15%;
-    margin-right: 15%;
-    grid-template-columns: auto auto;
-    column-gap: 20%;
-    /* grid-template-rows: 180% 180%; */
-    row-gap: 80%;
+.cursor {
+    box-sizing: content-box;
+    z-index: 1000;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    border: 2px solid white;
+    animation: borderAnim 4s ease-in-out infinite alternate;
+    pointer-events: none;
+    transition: transform 0.4s ease-in-out;
 }
-.website {
-    width: 100%;
-    height: 250%;
-    background-color: #fff;
-    background-size: 100%;
+  
+.hovered {
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    transition: all 0.3s ease;
+    transform: scale(6);
 }
-.titleWebsite {
+    
+@keyframes borderAnim {
+    0% {
+      border-radius: 32% 68% 27% 73% / 66% 59% 41% 34%;
+    }
+  
+    100% {
+      border-radius: 59% 41% 37% 63% / 54% 53% 47% 46%;
+    }
+}
+.website {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10% auto;
+    width: 50%;
+    padding: 2%;
+    list-style: none;
+    background-color: rgba(5, 5, 5, 0.472);
+    color: #ececec;
+    font-size: 200%;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+/* .titleWebsite {
     font-family: Cairo;
     text-align: center;
     margin-top: 0;
@@ -170,10 +197,12 @@ body {
     border-top-right-radius: 10px;
     background-color: rgba(53, 53, 53, 0.466);
     font-size: 150%;
-}
+} */
 .website:hover {
-    transform: scale(1.2);
+    transform: scale(1.7);
+    background: rgba(5, 5, 5, 0.8)
 }
+
 @media screen and (max-width: 1000px){
     .mainTitle {
         font-size: 200%;
@@ -203,7 +232,7 @@ body {
         font-size: 80%;
     }
 }
-#website1 {
+/* #website1 {
     background-image: url('../Skate-in-peace/src/icons/logo.png');
 }
 #website2 {
@@ -220,4 +249,4 @@ body {
 }
 #website6 {
     background-image: url('../res/beSkateful.png');
-}
+} */

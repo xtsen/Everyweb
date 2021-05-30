@@ -49,3 +49,30 @@ function viewAll() {
     // Decocher tous les critères
     critères.forEach(critère => document.getElementById(critère).checked = false)
 }
+
+// Change background on hover
+
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', curs => {
+    cursor.style.top = `${curs.pageY - 30}px`
+    cursor.style.left = `${curs.pageX - 30}px`
+})
+
+const allLinks = document.querySelectorAll('li');
+
+allLinks.forEach(link => {
+
+    const site = link.getAttribute('data-site');
+
+    link.addEventListener('mouseenter', () => {
+        cursor.classList.add('hovered');
+        cursor.style.backgroundImage = `url(res/${site}.png)`;
+    })
+
+    link.addEventListener('mouseout', () => {
+        cursor.classList.remove('hovered');
+        cursor.style.backgroundImage = `none`;
+    })
+
+})
