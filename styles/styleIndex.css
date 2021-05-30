@@ -136,14 +136,14 @@ body {
     margin: 0;
     text-align: center;
     width: 100%;
-    font-size: 400%;
+    font-size: 100px;
     font-weight: 500;
     color: rgb(12, 12, 12);
 }
 .mainSubtitle {
     font-family: Cairo;
     text-align: center;
-    font-size: 180%
+    font-size: 180%;
 }
 .cursor {
     box-sizing: content-box;
