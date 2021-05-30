@@ -144,7 +144,6 @@ body {
     font-family: Cairo;
     text-align: center;
     font-size: 45px;
-    font-size: 80px;
 }
 .cursor {
     box-sizing: content-box;
@@ -186,7 +185,6 @@ body {
     background-color: rgba(5, 5, 5, 0.472);
     color: #ececec;
     font-size: 60px;
-    font-size: 85px;
     border-radius: 10px;
     transition: all 0.5s ease;
 }
