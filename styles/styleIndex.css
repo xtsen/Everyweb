@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 * {
 	box-sizing: border-box;
-    cursor: none;
+    /* cursor: none; */
 }
 ::selection {
     background-color: #222222;
