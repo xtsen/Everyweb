@@ -143,11 +143,8 @@ body {
 .mainSubtitle {
     font-family: Cairo;
     text-align: center;
-<<<<<<< HEAD
     font-size: 45px;
-=======
     font-size: 80px;
->>>>>>> 4f3daaada165eab252581d9121f76809013c4672
 }
 .cursor {
     box-sizing: content-box;
@@ -188,11 +185,8 @@ body {
     list-style: none;
     background-color: rgba(5, 5, 5, 0.472);
     color: #ececec;
-<<<<<<< HEAD
     font-size: 60px;
-=======
     font-size: 85px;
->>>>>>> 4f3daaada165eab252581d9121f76809013c4672
     border-radius: 10px;
     transition: all 0.5s ease;
 }
