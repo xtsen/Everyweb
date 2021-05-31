@@ -136,14 +136,14 @@ body {
     margin: 0;
     text-align: center;
     width: 100%;
-    font-size: 100px;
+    font-size: 450%;
     font-weight: 500;
     color: rgb(12, 12, 12);
 }
 .mainSubtitle {
     font-family: Cairo;
     text-align: center;
-    font-size: 50px;
+    font-size: 180%;
 }
 .cursor {
     box-sizing: content-box;
@@ -184,7 +184,7 @@ body {
     list-style: none;
     background-color: rgba(5, 5, 5, 0.472);
     color: #ececec;
-    font-size: 55px;
+    font-size: 180%;
     border-radius: 10px;
     transition: all 0.5s ease;
 }
